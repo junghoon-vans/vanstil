@@ -3,12 +3,12 @@ HTML5
 
 ### Index
 
-> -	[HTML5](#html)
-> -	[HTMl5 표준과 의의](#html5-표준과-의의)
-> -	[HTML5의 기능](#html5의-기능)
-> -	[HTML5 문서 편집](#html5-문서-편집)
-> -	[HTML 페이지 기본](#html-페이지-기본)
-> -	[HTML 태그의 특징](#html-태그의-특징)
+-	[HTML5](#html)
+-	[HTMl5 표준과 의의](#html5-표준과-의의)
+-	[HTML5의 기능](#html5의-기능)
+-	[HTML5 문서 편집](#html5-문서-편집)
+-	[HTML 페이지 기본](#html-페이지-기본)
+-	[HTML 태그의 특징](#html-태그의-특징)
 
 ---
 
