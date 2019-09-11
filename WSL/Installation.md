@@ -12,7 +12,9 @@ Window Subsystem for Linux
 #### WSL 활성화
 
 -	관리자 권한으로 Windows PowerShell 실행
--	다음과 같은 명령어를 실행<br>`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+-	다음과 같은 명령어를 실행
+
+	`Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
 
 #### Linux 설치
 
@@ -22,10 +24,12 @@ Window Subsystem for Linux
 #### 기본 설정하기
 
 -	User의 ID 및 PW 설정
--	WSL 배포판의 패키지 업데이트<br>`bash
-	$ sudo apt-get update
-	$ sudo apt-get upgrade
-	`
+-	WSL 배포판의 패키지 업데이트
+
+	```Bash
+	  $ sudo apt-get update
+	  $ sudo apt full-upgrade
+	```
 
 #### WSL에서 Windows 디렉토리 접속 경로
 
