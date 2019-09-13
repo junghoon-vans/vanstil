@@ -75,7 +75,7 @@ public class Hanoi {
             ++count;
         } else {
             move(n-1, source, destination, auxiliary); // 소스 기둥 -> 보조 기둥
-            System.out.println(n+" : "+source+" -> "+destination); // 마지막 원반 목적지로 이동(전체원반수가 1이 아닐때)
+            System.out.println(n+" : "+source+" -> "+destination); // 마지막 원판 목적지로 이동(전체원판수가 1이 아닐때)
             ++count;
             move(n-1, auxiliary, source, destination); // 보조 기둥-> 목적지 기둥
         }
