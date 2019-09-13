@@ -6,9 +6,9 @@ WSL Terminal Customizing
 -	기본적으로 제공하는 색상이나 폰트가 예쁘지 않고 가독성이 떨어짐.
 -	Windows에서 제공하는 기본 터미널인 CMD를 기반으로 하기 때문임.
 
----
-
 ### 터미널 색상 변경
+
+---
 
 폰트나 배경 색상을 바꾸는 것으로 위 문제점들을 해결할 수 있다. WSL에서 제공하는 터미널은 CMD를 활용한 것이므로, CMD의 색상 설정으로 WSL 색상 변경이 가능하다.
 
@@ -27,9 +27,9 @@ WSL Terminal Customizing
 
 -	Microsoft Colortool을 이용
 
----
-
 ### 터미널 폰트 변경
+
+---
 
 기본 폰트가 코딩을 하는데 있어서 가독성이 떨어지므로, 다른 폰트로 변경하는 것이 좋다.
 
@@ -49,3 +49,31 @@ WSL Terminal Customizing
 -	[D2Coding](https://github.com/naver/d2codingfont)
 
 개인적으로 이 중에서 한글 지원이 잘 되는 `D2Coding` 폰트가 사용하기 좋았다.
+
+### zsh/oh-my-zsh 설치
+
+---
+
+WSL에서 기본적으로 제공하는 리눅스 Shell은 `bash`이다. 다양한 테마와 기능을 제공하는 `zsh`를 사용하면 보다 편리하게 코딩 작업이 가능하다.
+
+-	zsh 설치
+
+```Bash
+    $ sudo apt-get install zsh
+```
+
+-	oh-my-zsh 설치
+
+```Bash
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+-	테마변경
+
+```Bash
+    $ sudo vi ~/.zshrc
+```
+
+```vim
+    ZSH_THEME = "agnoster" # 해당 부분만 변경 후 저장
+```
