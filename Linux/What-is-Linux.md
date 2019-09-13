@@ -142,6 +142,8 @@
 
 ### 리눅스 등장 계기
 
+---
+
 -	GNU: `GNU is Not UNIX`의 약어로 `UNIX`와 호환되면서 더 강력한 운영체제를 만들고자 하는 프로젝트
 -	FSF(Free Software Foundation): 리처드 스톨먼이 설립한 자유 소프트웨어 재단
 	-	자유 소프트웨어
