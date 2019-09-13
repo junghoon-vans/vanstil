@@ -10,3 +10,5 @@ Today I Learned
 	-	[Customization](WSL/Customization.md)
 -	[Linux](Linux/)
 	-	[What is Linux](Linux/What-is-Linux.md)
+-	[Algorithm](/Algorithm)
+	-	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
