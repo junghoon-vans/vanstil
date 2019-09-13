@@ -6,6 +6,8 @@ WSL Terminal Customizing
 -	기본적으로 제공하는 색상이나 폰트가 예쁘지 않고 가독성이 떨어짐.
 -	Windows에서 제공하는 기본 터미널인 CMD를 기반으로 하기 때문임.
 
+---
+
 ### 터미널 색상 변경
 
 폰트나 배경 색상을 바꾸는 것으로 위 문제점들을 해결할 수 있다. WSL에서 제공하는 터미널은 CMD를 활용한 것이므로, CMD의 색상 설정으로 WSL 색상 변경이 가능하다.
@@ -24,6 +26,8 @@ WSL Terminal Customizing
 #### 2. CMD 컬러를 변경하는 방법
 
 -	Microsoft Colortool을 이용
+
+---
 
 ### 터미널 폰트 변경
 
