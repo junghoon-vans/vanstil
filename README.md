@@ -8,6 +8,7 @@ Today I Learned
 -	[Linux](Linux/)
 	-	[What is Linux](Linux/What-is-Linux.md)
 	-	[License](Linux/License.md)
+	-	[Partition](Linux/Partition.md)
 -	[Web](Web/)
 	-	[html5](Web/html5.md)
 -	[WSL](WSL/)
