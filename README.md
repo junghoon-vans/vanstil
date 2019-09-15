@@ -1,7 +1,7 @@
 Today I Learned
 ---------------
 
-#### Contents
+### Contents
 
 -	[Algorithm](/Algorithm)
 	-	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
