@@ -13,6 +13,7 @@ Today I Learned
 	-	[Commands about File System](Linux/Commands-about-File-System.md)
 	-	[Shell](Linux/Shell.md)
 	-	[Process Management](Linux/Process-Management.md)
+	-	[Editor](Linux/Editor.md)
 -	[Web](Web/)
 	-	[html5](Web/html5.md)
 -	[WSL](WSL/)
