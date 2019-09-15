@@ -14,6 +14,7 @@ Today I Learned
 	-	[Shell](Linux/Shell.md)
 	-	[Process Management](Linux/Process-Management.md)
 	-	[Editor](Linux/Editor.md)
+	-	[Install Software](Linux/Install-Software.md)
 -	[Web](Web/)
 	-	[html5](Web/html5.md)
 -	[WSL](WSL/)
