@@ -4,8 +4,8 @@ Editor
 Contents
 --------
 
--	종류
--	사용
+-	[종류](#종류)
+-	[사용](#사용)
 	-	[pico](#pico)
 		-	[pico 사용하기](#pico-사용하기)
 		-	[pico 단축키](#pico-단축키)
