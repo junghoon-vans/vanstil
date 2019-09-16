@@ -15,6 +15,7 @@ Today I Learned
 	-	[Process Management](Linux/Process-Management.md)
 	-	[Editor](Linux/Editor.md)
 	-	[Install Software](Linux/Install-Software.md)
+	- [Device Settings](Linux/Device-Settings.md)
 -	[Web](Web/)
 	-	[html5](Web/html5.md)
 -	[WSL](WSL/)
