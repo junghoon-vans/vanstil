@@ -18,7 +18,7 @@ Contents
 
 ### GPL
 
-> (General Public License)
+> General Public License
 
 리눅스는 `GNU프로젝트`와 연계하여 발전해왔기 때문에 `FSF(Free Software Foundation)`의 `GPL(General Public License)`를 따른다.
 
@@ -28,7 +28,7 @@ Contents
 
 ### LGPL
 
-> (Library/Lesser General Public License)
+> Library/Lesser General Public License
 
 `GPL`의 강력한 제약을 완화시키기 위해서 탄생했다. 기존 `GPL`과 다른 점은 자유 소프트웨어뿐만이 아니라 독점 소프트웨어에서도 사용 가능하다는 것이다.
 
@@ -37,7 +37,7 @@ Contents
 
 ### BSD
 
-> (Berkeley Software Distribution)
+> Berkeley Software Distribution
 
 버클리 캘리포니아대학에서 배포하는 공개소프트웨어 라이선스로 해당 소프트웨어를 누구나 개작할 수 있으며, 수정 후 배포가 가능하다.
 
@@ -54,7 +54,7 @@ Contents
 
 ### MPL
 
-> (Mozila Public License)
+> Mozila Public License
 
 모질라 재단에서 규정한 라이선스로 `BSD와 GPL 라이선스`의 혼합적 성격을 띈다. `MPL`은 파이어폭스를 비롯한 모질라 재단 프로그램에 적용되어 있으며, 썬 마이크로시스템즈의 라이선스인 CDDL(Common Development and Distribution License) 탄생에 영향을 주었다.
 
@@ -63,15 +63,15 @@ Contents
 
 ### MIT
 
-> (Massachusetts Institute of Technology)
+> Massachusetts Institute of Technology
 
 미국 MIT 대학에서 개발한 라이선스로 `BSD 라이선스`를 기초로 작성되었기 때문에 `BSD`와 매우 유사하다. 이 라이선스가 적용된 소프트웨어에는 `X 윈도우 시스템, JQuery, Node.js`가 있다.
 
 > -	해당 소프트웨어를 누구나 개작가능
 > -	수정본의 재배포 시 소스 비공개 가능
 
-##라이선스 특징 비교
---------------------
+라이선스 특징 비교
+------------------
 
 | 라이선스 | 무료이용 | 배포 | 소스코드 취득 및 수정 | 2차적 저작물 소스코드 공개 | 독점 소프트웨어 |
 |:--------:|:--------:|:----:|:---------------------:|:--------------------------:|:---------------:|
