@@ -12,7 +12,9 @@ Contents
   - [GNOME](#GNOME)
 - [X 윈도우 활용](#x-윈도우-활용)
     - [원격지에서 X 클라이언트 이용](#원격지에서-x-클라이언트-이용)
-      - []
+      - [xhost](#xhost)
+      - [display](#display)
+      - [xauth](#xauth)
 
 
 개념
