@@ -7,6 +7,7 @@ Today I Learned
 	-	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
 -	[HTML5](HTML5/)
 	-	[html5](HTML5/html5.md)
+	- [Tag](HTML5/Tag.md)
 -	[Linux](Linux/)
 	-	[What is Linux](Linux/What-is-Linux.md)
 	-	[License](Linux/License.md)
