@@ -5,6 +5,8 @@ Today I Learned
 
 -	[Algorithm](/Algorithm)
 	-	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
+-	[HTML5](HTML5/)
+	-	[html5](HTML5/html5.md)
 -	[Linux](Linux/)
 	-	[What is Linux](Linux/What-is-Linux.md)
 	-	[License](Linux/License.md)
@@ -16,8 +18,6 @@ Today I Learned
 	-	[Editor](Linux/Editor.md)
 	-	[Install Software](Linux/Install-Software.md)
 	- [Device Settings](Linux/Device-Settings.md)
--	[Web](Web/)
-	-	[html5](Web/html5.md)
 -	[WSL](WSL/)
 	-	[Installation](WSL/Installation.md)
 	-	[Customization](WSL/Customization.md)
