@@ -154,7 +154,7 @@ $ lpstat [option]
 |-a|받아들이는 요청들의 상태|
 
 #### cancel
-
+프린터 작업을 취소하는 명령으로 우선 `lpstat`로 요청ID를 확인해야 한다
 ```bash
 $ cancel Request-ID
 ```
