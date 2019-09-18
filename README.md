@@ -20,6 +20,7 @@ Today I Learned
 	-	[Install Software](Linux/Install-Software.md)
 	- [Device Settings](Linux/Device-Settings.md)
  	- [X Window](Linux/X-Window.md)
+	- [Internet](Linux/Internet.md)
 -	[WSL](WSL/)
 	-	[Installation](WSL/Installation.md)
 	-	[Customization](WSL/Customization.md)
