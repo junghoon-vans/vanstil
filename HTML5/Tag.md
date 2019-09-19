@@ -12,6 +12,9 @@ Contents
   - [table](#table)
   - [hyperlink](#hyperlink)
   - [Inline Frame](#inline-frame)
+  - [미디어삽입](#미디어삽입)
+    - [video](#video)
+    - [audio](#audio)
 
 메타 태그
 ---
@@ -171,4 +174,30 @@ HTML 페이지 내에 HTML 페이지 삽입
 
 ```HTML
 <iframe src="html 파일" width="100" height="100"></iframe>
+```
+
+### 미디어삽입
+HTML5에서 웹 페이지에 미디어 삽입 표준화
+- `audio`, `video` 태그
+  - 플러그인 필요 없음
+  - 지원되는 확장자 미디어 재생
+- 비표준 미디어 재생시
+  - flash
+  - `embed`, `object` 태그 이용
+
+#### video
+```HTML
+<video src="파일" width="320" height="240" controls autoplay loop></video>
+
+<video controls autoplay>
+  <source src="파일">
+  <!--source 태그로 지정 가능-->
+</video>
+```
+
+> autoplay 속성은 크롬에서는 지원하지 않는다.
+
+#### audio
+```HTML
+<audio src="파일" controls autoplay loop></audio>
 ```
