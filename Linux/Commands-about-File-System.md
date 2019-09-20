@@ -417,6 +417,7 @@ $ quota
 |  -g  | 그룹 쿼터 정보 출력   |
 
 #### setquota
+vi편집기를 이용하지 않고 명령행에서 쿼터 설정
 
 ```bash
 $ setquota [option] user block_soft block_hard inode_soft inode_hard
