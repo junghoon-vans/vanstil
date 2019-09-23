@@ -1,4 +1,4 @@
-Change Default Shell to WSL VSCode
+Change Default Shell to WSL
 ---
 
 1. Click `Ctrl + ,` to open Settings
