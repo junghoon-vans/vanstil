@@ -14,7 +14,7 @@ Contents
 - [터미널 폰트 변경](#터미널-폰트-변경)
   - [WSL 폰트 변경](#wsl-폰트-변경)
   - [가독성 좋은 폰트](#가독성-좋은-폰트)
-- zsh/oh-my-zsh
+- [zsh/oh-my-zsh](#zsh/oh-my-zsh)
   - [zsh 설치](#zsh-설치)
   - [oh-my-zsh 설치](#oh-my-zsh-설치)
   - [테마 적용](#테마-적용)
@@ -36,8 +36,16 @@ Contents
 -	Ubuntu default Background-color: `RGB(48,10,36)`
 
 ### CMD 색상 변경
+[Microsoft Colortool](https://github.com/microsoft/terminal/releases/tag/1904.29002)을 이용하면 CMD를 비롯한 WSL Shell의 배경색상을 변경할 수 있다.
 
--	Microsoft Colortool을 이용
+- CMD 실행
+- 'colortool'이 담긴 디렉터리로 이동
+- 아래 코드 입력
+```Bash
+colortool.exe -b solarized_dark # 컬러 스키마 설정
+```
+
+
 
 터미널 폰트 변경
 ---
