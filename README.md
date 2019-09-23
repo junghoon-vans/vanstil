@@ -22,6 +22,8 @@ Today I Learned
 	- [Device Settings](Linux/Device-Settings.md)
  	- [X Window](Linux/X-Window.md)
 	- [Internet](Linux/Internet.md)
+- [VSCode](VSCode/)
+	- [Change Default Shell to WSL](VSCode/Change-Default-Shell-to-WSL.md)
 -	[WSL](WSL/)
 	-	[Installation](WSL/Installation.md)
 	-	[Customization](WSL/Customization.md)
