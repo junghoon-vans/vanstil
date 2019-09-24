@@ -21,6 +21,9 @@ Contents
     - [선택형 입력](#선택형-입력)
     - [콤보 박스](#콤보-박스)
     - [레이블](#레이블)
+    - [시간 정보](#시간-정보)
+    - [숫자](#숫자)
+    - [입력 정보 힌트](#입력-정보-힌트)
 
 구조
 ---
@@ -151,4 +154,59 @@ Countries: <input type="text" list="countries"> <br>
 
 <label for="pass">비밀번호: </label>
 <input id="pass" type="password">
+```
+
+#### 색 입력
+```html
+<form>
+  <input type="color" value="#00BFFF" onchange= "document.body.style.color=this.value">
+</form>
+```
+
+> html에서의 색 표현은 RGB hex값으로 표기
+
+#### 시간 정보
+```html
+<pre>
+  month :<input type="month" value="2016-09"><br>
+  week : <input type="week" value="2016-W36"><br>
+  data : <input type="date" value="2016-09-01"><br>
+  time : <input type="time" value="21:30"><br>
+  local:<input type="datetime-local" value="2016-09-01T21:30:10.32"><br>
+</pre>
+```
+
+#### 숫자
+- 스핀버튼: `number`
+- 슬라이드 바: `range`
+
+```html
+<input type="number" min="0.0" max="10.0" step="0.5">
+
+<input type="range" min="0" max="100" list=temperatures>
+<datalist id="temperatures">
+  <option value="10" label="Low">
+  <option value="50" label="Medium">
+  <option value="90" label="High">
+</datalist>
+```
+
+#### 입력 정보 힌트
+`placeholder` 속성에 사용자가 입력할 데이터 힌트 작성
+
+```html
+email: <input type="url" placeholder="id@host">
+webpage: <input type="url" placeholder="http://">
+phone: <input type="url" placeholder="010-1234-5678">
+```
+
+#### 그룹핑
+`fieldset` 태그로 폼 요소들을 그룹핑하고 `legend`로 그룹 제목 표기
+```html
+<fieldset>
+  <legend>회원정보</legend>
+  이메일: <input type="email"><br>
+  홈페이지: <input type="url"><br>
+  전화번호: <input type="tel">
+</fieldset>
 ```
