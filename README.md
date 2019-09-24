@@ -22,6 +22,8 @@ Today I Learned
 	- [Device Settings](Linux/Device-Settings.md)
  	- [X Window](Linux/X-Window.md)
 	- [Internet](Linux/Internet.md)
+- [Shell](Shell/)
+	- [zsh-syntax-highlighting](Shell/zsh-syntax-highlighting.md)
 - [VSCode](VSCode/)
 	- [Change Default Shell to WSL](VSCode/Change-Default-Shell-to-WSL.md)
 -	[WSL](WSL/)
