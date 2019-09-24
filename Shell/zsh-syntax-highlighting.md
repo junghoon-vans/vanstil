@@ -5,6 +5,7 @@ Contents
 - 설치
   - [일반 설치](#일반-설치)
   - [plugin manager 이용](#plugin-manager-이용)
+- 오류 해결(#오류-해결)
 
 설치
 ---
@@ -22,7 +23,7 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 ```Bash
 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
-> syntax highlighting 재실행 없이 적용 
+> syntax highlighting 재실행 없이 적용
 
 ### plugin manager 이용
 oh-my-zsh의 plugin으로써 설치하고 사용하는 방법은 다음과 같다.
@@ -39,3 +40,11 @@ plugins=( [plugins...] zsh-syntax-highlighting) # zsh-syntax-highlighting 마지
 
 #### 적용
 우분투 Shell을 재실행하면 적용된다.
+
+오류 해결
+---
+`plugin manager`로 적용시키다 보면 `insecure directories`라는 오류가 발생할 수 있는데, 이럴때는 아래와 같은 코드를 실행하면 된다.
+
+```bash
+compaudit | xargs chmod g-w,o-w
+```
