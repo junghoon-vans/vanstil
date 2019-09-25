@@ -1,56 +1,56 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
- 
- 
+
+
 public class MergeSort {
 
-	static int size; // Á¤·ÄÇÒ ¼öÀÇ °³¼ö Á¤ÀÇ
-	static List<Integer> list; // Á¤·ÄÇÒ ¼öÀÇ ¸®½ºÆ®
-    static int[] sortedList; // Á¤·ÄµÇ´Â ¼ıÀÚ
-    
+	static int size; // ì •ë ¬í•  ìˆ˜ì˜ ê°œìˆ˜ ì •ì˜
+	static List<Integer> list; // ì •ë ¬í•  ìˆ˜ì˜ ë¦¬ìŠ¤íŠ¸
+    static int[] sortedList; // ì •ë ¬ë˜ëŠ” ìˆ«ì
+
     public static void main(String[] args) {
-    	// º´ÇÕ Á¤·ÄÇÒ ¸®½ºÆ® ÀÔ·Â
-    	System.out.println("Á¤·ÄÇÒ ¸®½ºÆ®ÀÇ »çÀÌÁî¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+    	// ë³‘í•© ì •ë ¬í•  ë¦¬ìŠ¤íŠ¸ ì…ë ¥
+    	System.out.println("ì •ë ¬í•  ë¦¬ìŠ¤íŠ¸ì˜ ì‚¬ì´ì¦ˆë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
     	Scanner sc = new Scanner(System.in);
     	size = sc.nextInt();
     	list = new ArrayList<>();
-    	
-    	System.out.println("¸®½ºÆ®ÀÇ ÀÎ¼ö¸¦ Â÷·Ê·Î ÀÔ·ÂÇÏ¼¼¿ä.");
+
+    	System.out.println("ë¦¬ìŠ¤íŠ¸ì˜ ì¸ìˆ˜ë¥¼ ì°¨ë¡€ë¡œ ì…ë ¥í•˜ì„¸ìš”.");
     	for(int i=0; i<=size-1; i++) {
     		list.add(sc.nextInt());
     	}
     	
     	sc.close();
-    	
-        
-    	// º´ÇÕ Á¤·Ä ½ÃÀÛ
-        System.out.println("º´ÇÕ Á¤·Ä Àü: "+ list.toString());
-        System.out.println("-----------------º´ÇÕ Á¤·Ä ½ÃÀÛ------------------");
-        
+
+
+    	// ë³‘í•© ì •ë ¬ ì‹œì‘
+        System.out.println("ë³‘í•© ì •ë ¬ ì „: "+ list.toString());
+        System.out.println("-----------------ë³‘í•© ì •ë ¬ ì‹œì‘------------------");
+
         if(size==1) {
-        	System.out.println("º´ÇÕ Á¤·Ä ÈÄ: "+ list.toString());
+        	System.out.println("ë³‘í•© ì •ë ¬ í›„: "+ list.toString());
     	}else{
         sortedList = new int[size];
         mergeSort(list, 0, size-1);
     	}
     }
-    
+
     public static void mergeSort(List<Integer> list, int begin, int end) {
         int middle;
         if(begin<end) {
             middle = (begin+end)/2;
-            mergeSort(list, begin, middle);    // begin¿¡ ´ëÇÑ ºĞÇÒ ÀÛ¾÷ ¼öÇà
-            mergeSort(list, middle+1, end);    // end¿¡ ´ëÇÑ ºĞÇÒ ÀÛ¾÷ ¼öÇà
-            merge(list, begin, middle, end);   // ºÎºĞÁıÇÕ¿¡ ´ëÇÏ¿© Á¤·Ä°ú º´ÇÕ ÀÛ¾÷ ¼öÇà
+            mergeSort(list, begin, middle);    // beginì— ëŒ€í•œ ë¶„í•  ì‘ì—… ìˆ˜í–‰
+            mergeSort(list, middle+1, end);    // endì— ëŒ€í•œ ë¶„í•  ì‘ì—… ìˆ˜í–‰
+            merge(list, begin, middle, end);   // ë¶€ë¶„ì§‘í•©ì— ëŒ€í•˜ì—¬ ì •ë ¬ê³¼ ë³‘í•© ì‘ì—… ìˆ˜í–‰
         }
     }
-    
+
     public static void merge(List<Integer> list, int begin, int middle, int end) {
-        int i = begin;             // Ã¹ ¹øÂ° ºÎºĞÁıÇÕÀÇ ½ÃÀÛ À§Ä¡ ¼³Á¤
-        int j = middle+1;     // µÎ ¹øÂ° ºÎºĞÁıÇÕÀÇ ½ÃÀÛ À§Ä¡ ¼³Á¤
-        int k = begin;             // ¹è¿­ sorted¿¡ Á¤·ÄµÈ ¿ø¼Ò¸¦ ÀúÀåÇÒ À§Ä¡ ¼³Á¤
-        
+        int i = begin;             // ì²« ë²ˆì§¸ ë¶€ë¶„ì§‘í•©ì˜ ì‹œì‘ ìœ„ì¹˜ ì„¤ì •
+        int j = middle+1;     // ë‘ ë²ˆì§¸ ë¶€ë¶„ì§‘í•©ì˜ ì‹œì‘ ìœ„ì¹˜ ì„¤ì •
+        int k = begin;             // ë°°ì—´ sortedì— ì •ë ¬ëœ ì›ì†Œë¥¼ ì €ì¥í•  ìœ„ì¹˜ ì„¤ì •
+
         while(i<=middle && j<=end) {
             if(list.get(i)<=list.get(j)) {
                 sortedList[k] = list.get(i);
@@ -70,11 +70,11 @@ public class MergeSort {
 	                sortedList[k] = list.get(t);
 	            }
 	        }
-	        
+
 	        for(int t=begin;t<=end;t++) {
 	            list.set(t, sortedList[t]);
 	        }
-	        System.out.println("º´ÇÕ Á¤·Ä ÈÄ: "+ list.toString());
+	        System.out.println("ë³‘í•© ì •ë ¬ í›„: "+ list.toString());
     }
-        
+
 }
