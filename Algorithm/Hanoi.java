@@ -3,35 +3,35 @@ import java.util.Scanner;
 public class Hanoi {
 
 	public int count = 0;
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		System.out.println("¿øÆÇ °¹¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+
+		System.out.println("ì›íŒ ê°¯ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		sc.close();
-		
+
 		Hanoi hanoi = new Hanoi();
 		hanoi.move(n, "1", "2", "3");
 		hanoi.showCount();
-		
+
 	}
-	
+
 	public void move(int n, String source, String auxiliary, String destination) {
 		if (n==1) {
 			System.out.println(n+" : "+source+" -> "+destination);
 			++count;
 		} else {
-			move(n-1, source, destination, auxiliary); // ¼Ò½º ±âµÕ -> º¸Á¶ ±âµÕ
-			System.out.println(n+" : "+source+" -> "+destination); // ¸¶Áö¸· ¿øÆÇ ¸ñÀûÁö·Î ÀÌµ¿(ÀüÃ¼ ¿øÆÇ¼ö°¡ 1ÀÌ ¾Æ´Ò¶§)
+			move(n-1, source, destination, auxiliary); // ì†ŒìŠ¤ ê¸°ë‘¥ -> ë³´ì¡° ê¸°ë‘¥
+			System.out.println(n+" : "+source+" -> "+destination); // ë§ˆì§€ë§‰ ì›íŒ ëª©ì ì§€ë¡œ ì´ë™(ì „ì²´ ì›íŒìˆ˜ê°€ 1ì´ ì•„ë‹ë•Œ)
 			++count;
-			move(n-1, auxiliary, source, destination); // º¸Á¶ ±âµÕ-> ¸ñÀûÁö ±âµÕ
+			move(n-1, auxiliary, source, destination); // ë³´ì¡° ê¸°ë‘¥-> ëª©ì ì§€ ê¸°ë‘¥
 		}
 	}
-	
+
 	public void showCount() {
-		System.out.println("ÀÌµ¿ È½¼ö: " + count);
+		System.out.println("ì´ë™ íšŸìˆ˜: " + count);
 	}
-	
+
 }
