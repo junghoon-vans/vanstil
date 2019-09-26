@@ -15,6 +15,10 @@ Contents
   - [스타일 합치기](#스타일-합치기)
   - [오버라이딩](#오버라이딩)
   - [스타일 적용 우선순위](#스타일-적용-우선순위)
+- [CSS3 색 표현](#css3-색-표현)
+  - [방법](#방법)
+  - [관련 프로퍼티](#관련-프로퍼티)
+- [텍스트](#텍스트)
 
 
 CSS3 개요
@@ -92,3 +96,31 @@ CSS3 규칙
 2. `<style>` 태그에 선언된 스타일
 3. `.css` 스타일 시트 파일에 선언된 스타일
 4. 브라우저의 디폴트 스타일
+
+
+CSS 색 표현
+---
+### 방법
+
+- 16진수
+  - ex) `#8A2BE2`
+- 10진수코드와 rgb()
+  - ex) `rgb(138,43,226)`
+- 색 이름
+  - CSS3 표준에서는 140개의 색 이름이 지정되어 있음.
+
+### 관련 프로퍼티
+```css
+color : 색
+background-color: 색
+border-color: 색
+```
+
+텍스트
+---
+텍스트를 꾸미는 CSS3 스타일 시트
+```CSS3
+text-indent : <length>|<percentage>; /* 들여쓰기 */
+text-align : left|right|center|justify /* 정렬 */
+text-decoration underline:
+```
