@@ -8,6 +8,7 @@ Today I Learned
 	- [MergeSort](/Algorithm/MergeSort.java)
 - [CSS](/CSS)
 	- [Introduction](/CSS/Introduction.md)
+	- [Selector](/CSS/Selector.md)
 -	[HTML5](HTML5/)
 	-	[Introduction](HTML5/Introduction.md)
 	- [Tag](HTML5/Tag.md)
