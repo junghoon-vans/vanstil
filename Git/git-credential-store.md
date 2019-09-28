@@ -8,8 +8,18 @@ git credential store
 git config --global credential.helper store
 ```
 
+> global 속성을 제외하면 해당 디렉토리에만 적용된다.
+
 ### 캐시로 저장
 ```bash
 git config --global credential.helper cache
 ```
-> global 속성을 제외하면 해당 디렉토리에만 적용된다.
+
+> cache는 기본적으로 15분 동안 인증 절차를 요구하지 않는다.
+
+```bash
+git config credential.helper 'cache --timeout=3600'
+# 3600초 동안 인증 절차를 생략한다.
+```
+
+> 시간을 설정할 때는 위와 같이 timeout 속성을 이용한다. (단위는 초)
