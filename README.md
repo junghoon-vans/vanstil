@@ -9,6 +9,8 @@ Today I Learned
 - [CSS](/CSS)
 	- [Introduction](/CSS/Introduction.md)
 	- [Selector](/CSS/Selector.md)
+- [Git](/Git)
+	- [git credential store](/Git/git-credential-store.md)
 -	[HTML5](/HTML5)
 	-	[Introduction](HTML5/Introduction.md)
 	- [Tag](/HTML5/Tag.md)
