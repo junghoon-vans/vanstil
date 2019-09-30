@@ -30,6 +30,7 @@ Today I Learned
 	- [Internet](/Linux/Internet.md)
 - [Shell](/Shell)
 	- [zsh-syntax-highlighting](/Shell/zsh-syntax-highlighting.md)
+	- [disable zsh-syntax-highlighting underline](/Shell/disable-zsh-syntax-highlighting-underline.md)
 - [VSCode](/VSCode)
 	- [Change Default Shell to WSL](/VSCode/Change-Default-Shell-to-WSL.md)
 -	[WSL](/WSL)
