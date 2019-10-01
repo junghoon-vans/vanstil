@@ -122,5 +122,5 @@ border-color: 색
 ```CSS3
 text-indent : <length>|<percentage>; /* 들여쓰기 */
 text-align : left|right|center|justify /* 정렬 */
-text-decoration underline:
+text-decoration none|underline|overline|line-through: /* 라인 */
 ```
