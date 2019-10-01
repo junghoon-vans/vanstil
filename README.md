@@ -32,6 +32,7 @@ Today I Learned
 	- [zsh-syntax-highlighting](/Shell/zsh-syntax-highlighting.md)
 	- [disable zsh-syntax-highlighting underline](/Shell/disable-zsh-syntax-highlighting-underline.md)
 	- [oh-my-zsh customization](Shell/oh-my-zsh-customization.md)
+	- [Change Directory Colors](Shell/Changing-Directory-Colors.md)
 - [VSCode](/VSCode)
 	- [Change Default Shell to WSL](/VSCode/Change-Default-Shell-to-WSL.md)
 -	[WSL](/WSL)
