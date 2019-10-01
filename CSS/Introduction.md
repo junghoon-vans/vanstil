@@ -19,7 +19,9 @@ Contents
   - [방법](#방법)
   - [관련 프로퍼티](#관련-프로퍼티)
 - [텍스트](#텍스트)
-
+  - [프로퍼티](#프로퍼티)
+  - [폰트](#폰트)
+  - [CSS3의 표준 길이 단위](#css3의-표준-길이-단위)
 
 CSS3 개요
 ---
@@ -118,9 +120,43 @@ border-color: 색
 
 텍스트
 ---
-텍스트를 꾸미는 CSS3 스타일 시트
+
+### 프로퍼티
+
 ```CSS3
 text-indent : <length>|<percentage>; /* 들여쓰기 */
 text-align : left|right|center|justify /* 정렬 */
 text-decoration none|underline|overline|line-through: /* 라인 */
 ```
+
+### 폰트
+CSS3의 폰트와 모양
+
+- font-family
+```css3
+font-family: Arial, "Times New Roman", Selif:
+```
+
+- font-size
+```css3
+font-size: 40px;
+```
+
+- font 프로퍼티
+```css3
+font: italic bold 40px consolas, sans-selif;
+/* font: font-style font-weight font-size font-family */
+```
+
+### CSS3의 표준 길이 단위
+
+| 단위 | 의미     |
+| :------------- | :------------- |
+| em      | 배수      |
+| % | 퍼센트|
+| px | 픽셀 수 |
+| cm | 센티미터 |
+| mm | 밀리미터 |
+| in | 인치 |
+
+> HTML5에서는 단위를 사용하지 않으면 CSS 스타일 오류
