@@ -6,6 +6,7 @@ Today I Learned
 -	[Algorithm](/Algorithm)
 	-	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
 	- [MergeSort](/Algorithm/MergeSort.java)
+	- [QuickSort](/Algorithm/QuickSort.java)
 - [CSS](/CSS)
 	- [Introduction](/CSS/Introduction.md)
 	- [Selector](/CSS/Selector.md)
