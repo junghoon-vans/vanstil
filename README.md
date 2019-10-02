@@ -12,7 +12,7 @@ Today I Learned
 	- [Selector](/CSS/Selector.md)
 	- [Box Model](/CSS/Box-Model.md)
 - [Git](/Git)
-	- [git credential store](/Git/git-credential-store.md)
+	- [git credential](/Git/git-credential.md)
 -	[HTML5](/HTML5)
 	-	[Introduction](HTML5/Introduction.md)
 	- [Tag](/HTML5/Tag.md)
