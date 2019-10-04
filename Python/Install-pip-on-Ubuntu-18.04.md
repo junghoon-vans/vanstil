@@ -1,7 +1,7 @@
 Install pip on Ubuntu 18.04
 ===
 
-1. Update Packages on your PC before install pip(recomend)
+1. Update Packages on your PC before install pip(recommend)
 ```bash
 $ sudo apt Update
 ```
