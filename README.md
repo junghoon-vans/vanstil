@@ -32,6 +32,8 @@ Today I Learned
 	- [Device Settings](/Linux/Device-Settings.md)
  	- [X Window](/Linux/X-Window.md)
 	- [Internet](/Linux/Internet.md)
+- [Python](/Python)
+	- [Install-pip-on-Ubuntu-18.04](Python/Install-pip-on-Ubuntu-18.04.md)
 - [Shell](/Shell)
 	- [zsh-syntax-highlighting](/Shell/zsh-syntax-highlighting.md)
 	- [disable zsh-syntax-highlighting underline](/Shell/disable-zsh-syntax-highlighting-underline.md)
