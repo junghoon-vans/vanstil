@@ -11,6 +11,8 @@ Today I Learned
 	- [Introduction](/CSS/Introduction.md)
 	- [Selector](/CSS/Selector.md)
 	- [Box Model](/CSS/Box-Model.md)
+- [Django](/Django)
+	- [Install](/Django/Install.md)
 - [Git](/Git)
 	- [git credential](/Git/git-credential.md)
 -	[HTML5](/HTML5)
