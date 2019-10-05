@@ -15,6 +15,7 @@ Today I Learned
 	- [Install](/Django/Install.md)
 - [Git](/Git)
 	- [git credential](/Git/git-credential.md)
+	- [core.autocrlf](/Git/core.autocrlf.md)
 -	[HTML5](/HTML5)
 	-	[Introduction](HTML5/Introduction.md)
 	- [Tag](/HTML5/Tag.md)
