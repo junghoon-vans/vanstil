@@ -24,6 +24,13 @@ Window Subsystem for Linux
 #### 기본 설정하기
 
 -	User의 ID 및 PW 설정
+
+	```Bash
+	Enter new UNIX username: #원하는 사용자명
+	Enter new UNIX password:
+	Retype new UNIX password:
+	```
+
 -	WSL 배포판의 패키지 업데이트
 
 	```Bash

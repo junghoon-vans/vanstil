@@ -1,5 +1,5 @@
 WSL Terminal Customizing
-===
+========================
 
 `Windows Subsystem for Linux` 터미널의 문제점
 
@@ -7,20 +7,21 @@ WSL Terminal Customizing
 -	Windows에서 제공하는 기본 터미널인 CMD를 기반으로 하기 때문임.
 
 Contents
----
-- [터미널 배경색 변경](#터미널-배경색-변경)
-  - [WSL 테마 설정](#wsl-테마-설정)
-  - [CMD 색상 변경](#cmd-색상-변경)
-- [터미널 폰트 변경](#터미널-폰트-변경)
-  - [WSL 폰트 변경](#wsl-폰트-변경)
-  - [가독성 좋은 폰트](#가독성-좋은-폰트)
-- [zsh/oh-my-zsh](#zsh/oh-my-zsh)
-  - [zsh 설치](#zsh-설치)
-  - [oh-my-zsh 설치](#oh-my-zsh-설치)
-  - [테마 적용](#테마-적용)
+--------
+
+-	[터미널 배경색 변경](#터미널-배경색-변경)
+	-	[WSL 테마 설정](#wsl-테마-설정)
+	-	[CMD 색상 변경](#cmd-색상-변경)
+-	[터미널 폰트 변경](#터미널-폰트-변경)
+	-	[WSL 폰트 변경](#wsl-폰트-변경)
+	-	[가독성 좋은 폰트](#가독성-좋은-폰트)
+-	[zsh/oh-my-zsh](#zsh/oh-my-zsh)
+	-	[zsh 설치](#zsh-설치)
+	-	[oh-my-zsh 설치](#oh-my-zsh-설치)
+	-	[테마 적용](#테마-적용)
 
 터미널 배경색 변경
----
+------------------
 
 폰트나 배경 색상을 바꾸는 것으로 위 문제점들을 해결할 수 있다. WSL에서 제공하는 터미널은 CMD를 활용한 것이므로, CMD의 색상 설정으로 WSL 색상 변경이 가능하다.
 
@@ -36,19 +37,19 @@ Contents
 -	Ubuntu default Background-color: `RGB(48,10,36)`
 
 ### CMD 색상 변경
+
 [Microsoft Colortool](https://github.com/microsoft/terminal/releases/tag/1904.29002)을 이용하면 CMD를 비롯한 WSL Shell의 배경색상을 변경할 수 있다.
 
-- CMD 실행
-- 'colortool'이 담긴 디렉터리로 이동
-- 아래 코드 입력
+-	CMD 실행
+-	'colortool'이 담긴 디렉터리로 이동
+-	아래 코드 입력
+
 ```Bash
 colortool.exe -b solarized_dark # 컬러 스키마 설정
 ```
 
-
-
 터미널 폰트 변경
----
+----------------
 
 기본 폰트가 코딩을 하는데 있어서 가독성이 떨어지므로, 다른 폰트로 변경하는 것이 좋다.
 
@@ -70,7 +71,7 @@ colortool.exe -b solarized_dark # 컬러 스키마 설정
 개인적으로 이 중에서 한글 지원이 잘 되는 `D2Coding` 폰트가 사용하기 좋았다.
 
 zsh/oh-my-zsh
----
+-------------
 
 WSL에서 기본적으로 제공하는 리눅스 Shell은 `bash`이다. 다양한 테마와 기능을 제공하는 `zsh`를 사용하면 보다 편리하게 코딩 작업이 가능하다.
 
@@ -78,15 +79,41 @@ WSL에서 기본적으로 제공하는 리눅스 Shell은 `bash`이다. 다양�
 
 ```Bash
     $ sudo apt-get install zsh
+    # 기본 쉘을 zsh로 변경
+    $ chsh -s /usr/bin/zsh
 ```
 
-###	oh-my-zsh 설치
+혹시라도 아래와 같은 메시지가 나오면 2번을 선택해주면 된다.
 
 ```Bash
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+This is the Z Shell configuration function for new users,
+zsh-newuser-install.
+You are seeing this message because you have no zsh startup files
+(the files .zshenv, .zprofile, .zshrc, .zlogin in the directory
+~). This function can help you with a few settings that should
+make your use of the shell easier.
+
+You can:
+
+(q) Quit and do nothing. The function will be run again next time.
+
+(0) Exit, creating the file ~/.zshrc containing just a comment.
+That will prevent this function being run again.
+
+(1) Continue to the main menu.
+
+(2) Populate your ~/.zshrc with the configuration recommended
+by the system administrator and exit (you will need to edit
+the file by hand, if so desired).
 ```
 
-###	테마 적용
+### oh-my-zsh 설치
+
+```Bash
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+```
+
+### 테마 적용
 
 ```Bash
     $ sudo vi ~/.zshrc
