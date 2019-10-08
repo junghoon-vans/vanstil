@@ -15,8 +15,9 @@ Contents
     - [박스 그림자](#박스-그림자)
 - [배치](#배치)
   - [블록 박스와 인라인 박스](#블록-박스와-인라인-박스)
-  - [박스 유형 제어](#박스-유형-제어)
-  - [박스 배치](#박스-배치)
+  - [display](#display)
+  - [position](#position)
+  - [z-index](#z-index)
 
 박스 모델
 ---
@@ -103,8 +104,8 @@ box-shadow: h-shadow v-shadow blur-radius spread-radius color|none|inset
   - 인라인 태그는 인라인 박스, 블록 태그는 블록 박스로 출력
 - 블록 박스와 인라인 박스의 디폴트 출력 모양
 
-### 박스 유형 제어
-display: 디폴트 박스 유형을 무시하고, HTML 태그의 박스 유형을 달리 지정
+### display
+디폴트 박스 유형을 무시하고, HTML 태그의 박스 유형을 달리 지정
 ```css3
 display: block;
 display: inline;
@@ -130,7 +131,8 @@ display: inline-block;
   - width와 height로 크기 조절 가능
   - padding, border, margin 조절 가능
 
-### 박스 배치
+### position
+박스의 배치에 사용하는 프로퍼티
 - normal flow
   - 웹 페이지에 나타난 순서대로 HTML 태그 배치
 - position 프로퍼티를 이용한 배치
@@ -140,3 +142,23 @@ display: inline-block;
   - 고정 배치 - `position: fixed`
   - 유동 배치 - `float : left|right`
 > position을 이용할 때, 태그 위치와 크기는 top, bottom, left, right, width, height 프로퍼티로 지정
+
+### z-index
+HTML 태그들을 z축을 따라 수직으로 쌓는 프로퍼티로 값이 클수록 위에 위치
+- z-index의 지정이 없는 경우, HTML문서에 나오는 순서로 z-index의 값이 자동 결정
+- z-index는 position의 프로퍼티가 relative나 absolute인 경우에만 작동
+
+### visibility
+태그를 보이거나 숨길 때 사용
+- 사용법: `visibility: visible|hidden`
+- hidden을 사용하더라도 공간은 차지
+
+### overflow
+콘텐츠가 width와 height 프로퍼티에서 설정한 태그의 크기를 넘어가는 경우 콘텐츠를 자를지 말지 지정함
+- 블록태그에만 적용됨
+- overflow 프로퍼티는 박스 크기가 지정되어 있어야 함
+- 사용법: `overflow: visible|hidden|scroll|auto`
+  - visible: 콘텐츠가 잘리지 않고 태그 영역을 넘어 출력(디폴트)
+  - Hidden: 콘텐츠를 태그 크기로 잘라 넘어가는 것은 보이지 않음. 스크롤바없음
+  - Scroll: 스크롤바를 항상 부착하여 콘텐츠 출력
+  - Auto: 콘텐츠가 박스높이(height)보다 넘치면 스크롤바 자동생성
