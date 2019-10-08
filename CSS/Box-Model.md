@@ -16,6 +16,7 @@ Contents
 - [배치](#배치)
   - [블록 박스와 인라인 박스](#블록-박스와-인라인-박스)
   - [박스 유형 제어](#박스-유형-제어)
+  - [박스 배치](#박스-배치)
 
 박스 모델
 ---
@@ -103,6 +104,7 @@ box-shadow: h-shadow v-shadow blur-radius spread-radius color|none|inset
 - 블록 박스와 인라인 박스의 디폴트 출력 모양
 
 ### 박스 유형 제어
+display: 디폴트 박스 유형을 무시하고, HTML 태그의 박스 유형을 달리 지정
 ```css3
 display: block;
 display: inline;
@@ -127,3 +129,14 @@ display: inline-block;
   - 옆에 다른 요소 배치 가능
   - width와 height로 크기 조절 가능
   - padding, border, margin 조절 가능
+
+### 박스 배치
+- normal flow
+  - 웹 페이지에 나타난 순서대로 HTML 태그 배치
+- position 프로퍼티를 이용한 배치
+  - 정적 배치 - `position: static`
+  - 상대 배치 - `position: relative`
+  - 절대 배치 - `position: absolute`
+  - 고정 배치 - `position: fixed`
+  - 유동 배치 - `float : left|right`
+> position을 이용할 때, 태그 위치와 크기는 top, bottom, left, right, width, height 프로퍼티로 지정
