@@ -21,6 +21,8 @@ Today I Learned
 	-	[Introduction](HTML5/Introduction.md)
 	-	[Tag](/HTML5/Tag.md)
 	-	[Structure and Form](/HTML5/Structure-and-Form.md)
+-	[JavaScript](/JavaScript)
+	-	[Introduction](JavaScript/Introduction.md)
 -	[Linux](/Linux)
 	-	[What is Linux](/Linux/What-is-Linux.md)
 	-	[License](/Linux/License.md)
