@@ -37,8 +37,3 @@ Window Subsystem for Linux
 	  $ sudo apt-get update
 	  $ sudo apt full-upgrade
 	```
-
-#### WSL에서 Windows 디렉토리 접속 경로
-
--	`/mnt/드라이브명`를 통해서 자신이 원하는 드라이브로 이동
--	`/mnt/드라이브명/디렉토리명`으로 해당 드라이브 상의 특정 폴더 접속
