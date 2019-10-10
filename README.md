@@ -33,6 +33,7 @@ Today I Learned
 	-	[Device Settings](/Linux/Device-Settings.md)
 	-	[X Window](/Linux/X-Window.md)
 	-	[Internet](/Linux/Internet.md)
+	-	[Set User Password](/Linux/Set-User-Password.md)
 -	[Python](/Python)
 	-	[Install-pip-on-Ubuntu-18.04](Python/Install-pip-on-Ubuntu-18.04.md)
 -	[Shell](/Shell)
