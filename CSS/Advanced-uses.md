@@ -16,7 +16,10 @@ Contents
 	-	[배경색과 테두리 효과](#배경색과-테두리-효과)
 	-	[줄무늬](#줄무늬)
 -	[폼 꾸미기](#폼-꾸미기)
--	[애니메이션](#애니메이션)
+-	[동적 변화](#동적-변화)
+	-	[애니메이션](#애니메이션)
+	-	[전환](#전환)
+	-	[변환](#변환)
 
 리스트 꾸미기
 -------------
@@ -118,14 +121,51 @@ input[type=text]:hover {
 
 > 마우스가 위에 올라갔을 때 text 속성을 가진 input 태그 스타일이 적용됨
 
-애니메이션
-----------
+동적 변화
+---------
 
-HTML 태그의 모양 변화를 시간 단위로 설정 1. `@keyframes`로 HTML 태그의 시간별 모양 변화 그리기
+### 애니메이션
+
+HTML 태그의 모양 변화를 시간 단위로 설정
+
+1.	`@keyframes`로 HTML 태그의 시간별 모양 변화 그리기
 
 ```css3
 @keyframestextColorAnimation{
    0% { color : blue; } /* 시작시. 0% 대신 from 사용가능*/
    30% { color : green; } /* 30% 경과시까지*/
    100% { color : red; } /* 끝까지. 100% 대신 to 사용가능*/
+```
+
+1.	애니메이션 스타일 시트 작성
+
+```CSS3
+span {
+	animation-name : textColorAnimation; /* 애니메이션코드이름*/
+	animation-duration : 5s; /* 애니메이션1회시간은5초*/
+	animation-iteration-count : infinite; /* 무한반복*/
+}
+```
+
+### 전환
+
+HTML 태그에 적용된 CSS3 프로퍼티 값의 변화를 서서히 진행시켜 애니메이션 효과 생성, `transition` 프로퍼티 사용
+
+```CSS3
+span{
+	transition : font-size 5s;
+}
+span:hover{
+	font-size : 500%;
+ }
+```
+
+### 변환
+
+텍스트나 이미지를 회전, 확대 다양한 기하학적인 모양으로 출력
+
+```CSS3
+div {
+	transform : rotate(20deg);
+}
 ```
