@@ -1,4 +1,4 @@
-Advanced uses
+Advanced Uses
 =============
 
 Contents
