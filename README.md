@@ -15,6 +15,7 @@ Today I Learned
 	-	[Advanced Uses](/CSS/Advanced-Uses.md)
 -	[Django](/Django)
 	-	[Install](/Django/Install.md)
+	- [Circle Image Cropping](/Django/Circle-Image-Cropping.md)
 -	[Git](/Git)
 	-	[git credential](/Git/git-credential.md)
 	-	[core.autocrlf](/Git/core.autocrlf.md)
