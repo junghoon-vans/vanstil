@@ -18,10 +18,10 @@ Today I Learned
 ---
 
 #### Algorithm
--	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
--	[MergeSort](/Algorithm/MergeSort.java)
--	[QuickSort](/Algorithm/QuickSort.java)
-- [N_Queens](/Algorithm/N_Queens.java)
+ -	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
+ -	[MergeSort](/Algorithm/MergeSort.java)
+ -	[QuickSort](/Algorithm/QuickSort.java)
+ - [N_Queens](/Algorithm/N_Queens.java)
 
 #### CSS
  -	[Introduction](/CSS/Introduction.md)
@@ -45,6 +45,7 @@ Today I Learned
 #### JavaScript
  -	[Introduction](/JavaScript/Introduction.md)
  -	[Data Type](/JavaScript/Data-Type.md)
+ -  [Core Object and Array](/JavaScript/Core-Object-and-Array.md)
 
 #### Linux
  -	[What is Linux](/Linux/What-is-Linux.md)
