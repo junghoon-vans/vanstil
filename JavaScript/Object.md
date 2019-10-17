@@ -167,6 +167,15 @@ var res = hello.concat("Javascript");
   - 새 메소드 추가(메소드 이름에 함수 지정)
 
 ```js
+//메소드로 사용할 3 개의 함수 작성
+function inquiry() { return this.balance; } // 잔금 조회
+function deposit(money) { this.balance += money; } // money 만큼 저금
+function withdraw(money) { // 예금 인출, money는 인출하고자 하는 액수
+// money가 balance보다 작다고 가정
+  this.balance -= money;
+  return money;
+}
+// 사용자 객체 만들기
 var account = new Object();
 account.owner = "반정훈"; // 계좌 주인 프로퍼티 생성 및 초기화
 account.code = "111"; // 코드 프로퍼티 생성 및 초기화
