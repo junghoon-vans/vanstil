@@ -45,8 +45,9 @@ Today I Learned
 #### JavaScript
  -	[Introduction](/JavaScript/Introduction.md)
  -	[Data Type](/JavaScript/Data-Type.md)
- -  [Core Object and Array](/JavaScript/Core-Object-and-Array.md)
-
+ -  [Object](/JavaScript/Object.md)
+ -  [Array](/JavaScript/Array.md)
+ 
 #### Linux
  -	[What is Linux](/Linux/What-is-Linux.md)
  -	[License](/Linux/License.md)
