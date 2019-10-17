@@ -11,6 +11,9 @@ Contents
   - [종류](#종류)
     - [Date 객체](#date-객체)
     - [String 객체](#string-객체)
+- [사용자 객체 생성](#사용자-객체-생성)
+  - [new Object()](#new-object)
+  - [리터럴 표기법](#리터럴-표기법)
 
 구성
 ---
@@ -147,3 +150,50 @@ var res = hello.concat("Javascript");
 | round(x) | x를 반올림한 정수 리턴                    |
 | sqrt(x)  | x의 제곱근 리턴                           |
 > x와 y는 정수/실수 가능
+
+사용자 객체 생성
+---
+- 직접 객체 만들기
+  - new Object() 이용: 자바스크립트 코어 객체 중 Object타입 이용
+  - 리터럴 표기법 이용
+- 객체의 틀(프로토타입)을 만들고 객체 생성하기
+
+### new Object()
+- new Object()로 빈 객체 생성
+- 빈 객체에 프로퍼티 추가
+  - 새로운 프로퍼티 추가(프로퍼티 이름과 초기값 지정)
+- 빈 객체에 메소드 추가
+  - 메소드로 사용할 함수 미리 작성
+  - 새 메소드 추가(메소드 이름에 함수 지정)
+
+```js
+var account = new Object();
+account.owner = "반정훈"; // 계좌 주인 프로퍼티 생성 및 초기화
+account.code = "111"; // 코드 프로퍼티 생성 및 초기화
+account.balance = 35000; // 잔액 프로퍼티 생성 및 초기화
+account.inquiry = inquiry; // 메소드 작성
+account.deposit = deposit; // 메소드 작성
+account.withdraw = withdraw; // 메소드 작성
+```
+
+### 리터럴 표기법
+중괄호를 이용하여 객체의 프로퍼티와 메소드를 한 번에
+작성 가능, 가독성이 높다
+
+```js
+var account = {
+  // 프로퍼티 생성 및 초기화
+  owner : "반정훈", // 계좌 주인 프로퍼티 추가
+  code : "111", // 계좌 코드 프로퍼티 추가
+  balance : 35000, // 잔액 프로퍼티 추가
+
+  // 메소드 작성
+  inquiry : function () { return this.balance; }, // 잔금 조회
+  deposit : function(money) { this.balance += money; }, // 저금. money 만큼 저금
+  withdraw : function (money) { // 예금 인출, money는 인출하고자 하는 액수
+  // money가 balance보다 작다고 가정
+    this.balance -= money;
+    return money;
+  }
+};
+```
