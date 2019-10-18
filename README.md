@@ -30,7 +30,8 @@ Today I Learned
  -	[Advanced Uses](/CSS/Advanced-Uses.md)
 
 #### Django
- -	[Install](/Django/Install.md)
+ - [Install](/Django/Install.md)
+ - [Start Project](/Django/Start-Project.md)
  - [Circle Image Cropping](/Django/Circle-Image-Cropping.md)
 
 #### Git
@@ -47,7 +48,7 @@ Today I Learned
  -	[Data Type](/JavaScript/Data-Type.md)
  -  [Object](/JavaScript/Object.md)
  -  [Array](/JavaScript/Array.md)
- 
+
 #### Linux
  -	[What is Linux](/Linux/What-is-Linux.md)
  -	[License](/Linux/License.md)
