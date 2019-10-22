@@ -5,8 +5,8 @@ Rebase Commit
 ```bash
 $ git rebase -i <commit hash>
 pick -> edit
-$ git commit —amend —author="AuthorName <email@address.com>"
-$ git rebase —continue
+$ git commit --amend --author="AuthorName <email@address.com>"
+$ git rebase --continue
 $ git push -f
 ```
 
@@ -14,7 +14,7 @@ $ git push -f
 ```bash
 $ git rebase -i <commit hash>
 pick -> edit
-$ GIT_COMMITTER_DATE="Sat 19 Oct 00:00:00 2019 KST" git commit --amend --no-edit --date "Sat 19 Oct 00:00:00 2019 KST"
-$ git rebase —continue
+$ GIT_COMMITTER_DATE="Mon 21 Oct 00:00:00 2019 KST" git commit --amend --no-edit --date "Mon 21 Oct 00:00:00 2019 KST"
+$ git rebase --continue
 $ git push -f
 ```
