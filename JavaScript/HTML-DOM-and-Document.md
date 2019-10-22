@@ -9,14 +9,18 @@ HTML DOM and Document
 Contents
 ---
 - [HTML DOM](#html-dom)
-   - [DOM 트리](#dom-트리)
-     - [DOM 트리의 특징](#dom-트리의-특징)
-     - [브라우저가 HTML 태그를 화면에 그리는 과정](#브라우저가-html-태그를-화면에-그리는-과정)
-   - [DOM 객체 구성 요소](#dom-객체-구성-요소)
-   - [DOM 객체 프로퍼티](#dom-객체-프로퍼티)
-   - [DOM 객체 다루기](#dom-객체-다루기)
-     - [innerHTML 프로퍼티](#innerhtml-프로퍼티)
-     - [this](#this)
+  - [DOM 트리](#dom-트리)
+    - [DOM 트리의 특징](#dom-트리의-특징)
+    - [브라우저가 HTML 태그를 화면에 그리는 과정](#브라우저가-html-태그를-화면에-그리는-과정)
+  - [DOM 객체 구성 요소](#dom-객체-구성-요소)
+  - [DOM 객체 프로퍼티](#dom-객체-프로퍼티)
+  - [DOM 객체 다루기](#dom-객체-다루기)
+    - [getElementById](#getelementbyid)
+    - [getElementByTagName](#getelementbytagname)
+    - [getElementByClassName](#getelementbyclassname)
+    - [innerHTML 프로퍼티](#innerhtml-프로퍼티)
+    - [this](#this)
+- [Document 객체](#Document 객체)
 
 HTML DOM
 ---
@@ -84,6 +88,8 @@ Sibling 관계에 있는 DOM 객체들은 다음 2개의 프로퍼티로 접근
 - nextElementSibling 프로퍼티 – 이후 sibling 객체
 
 ### DOM 객체 다루기
+#### getElementById
+`document.getElementById()`
 - DOM 객체 구분
   ```HTML5
   <p id="hi">안녕하세요</p>
@@ -100,6 +106,23 @@ Sibling 관계에 있는 DOM 객체들은 다음 2개의 프로퍼티로 접근
   span.style.fontSize = "30px"; // ‘문장입니다’의 폰트를 30px 크기로 변경
   span.style.border = "3px dotted magenta"; // 3픽셀의 magenta 점선 테두리
   ```
+#### getElementByTagName
+`document.getElementsByTagName()`
+태그 이름이 같은 모든 DOM 객체들을 찾아 컬렉션 리턴
+
+```js
+function change() {
+  var spanArray = document.getElementsByTagName("span");
+  for(var i=0; i<spanArray.length; i++) {
+    var span = spanArray[i];
+    span.style.color = "orchid";
+    span.style.fontSize = "20px";
+  }
+}
+```
+#### getElementByClassName
+`document.getElementsByClassName()`
+class 속성이 같은 모든 DOM 객체들을 찾아 컬렉션 리턴
 
 #### innerHTML 프로퍼티
 시작 태그와 종료 태그 사이에 들어 있는 HTML 콘텐츠를 다룸
@@ -126,3 +149,24 @@ onclick="change()">
 ```html5
 <div onclick="this.style.backgroundColor='orange'">
 ```
+
+Document 객체
+---
+HTML 문서 전체를 대변하는 객체이자 DOM 객체를 접근하는 경로의 시작점
+> HTML 문서 로드 전, Document 객체를 생성하고 DOM 트리 생성
+
+- 프로퍼티: HTML 문서의 전반적인 속성 내포
+- 메소드: DOM 객체 검색, DOM 객체 생성, HTML 문서 전반적 제어
+- 컬렉션: HTML 태그들을 배열처럼 접근할 수 있는 컬렉션을 둠
+
+### document 객체 접근
+- window.document 또는 document 이름으로 접근
+- document 객체는 DOM 객체가 아님
+
+### write() and writeln()
+- write()
+  - 현재 document 객체에 담긴 HTML 콘텐츠 마지막에 HTML 텍스트를 추가
+  - 추가되는 HTML 텍스트는 DOM 객체로 바뀌고 DOM 트리에 추가
+  - 삽입된 HTML 텍스트가 브라우저 화면에 출력
+- writeln()
+  - HTML 텍스트에 `\n`을 덧붙여 출력. 한 칸 띄는 효과
