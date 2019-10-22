@@ -35,8 +35,9 @@ Today I Learned
  - [Circle Image Cropping](/Django/Circle-Image-Cropping.md)
 
 #### Git
- -	[git credential](/Git/git-credential.md)
- -	[core.autocrlf](/Git/core.autocrlf.md)
+ - [git credential](/Git/git-credential.md)
+ - [core.autocrlf](/Git/core.autocrlf.md)
+ - [Rebase Commit](/Git/Rebase-Commit.md)
 
 #### HTML5
  -	[Introduction](HTML5/Introduction.md)
