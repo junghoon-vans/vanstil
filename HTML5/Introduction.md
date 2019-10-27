@@ -4,7 +4,7 @@ Introduction
 Contents
 ---
 
--	[HTML5](#html)
+-	[HTML5](#html5)
 -	[HTMl5 표준과 의의](#html5-표준과-의의)
 -	[HTML5의 기능](#html5의-기능)
 -	[HTML5 문서 편집](#html5-문서-편집)
