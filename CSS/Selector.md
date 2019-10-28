@@ -93,9 +93,7 @@ Contents
   - `와일드 문자(*)`를 사용하여 모든 태그에 적용시키는 선택자
 - 속성 선택자
   - HTML 태그의 특정 속성에 대해 값이 일치하는 태그에만 스타일 적용하는 선택자
-  - ex) input[type=text] `{ color : red; }`
-    - type 속성값이 'text'인 `<input>`태그에 적용
-
+  - ex) `input[type=text] { color : red; }`
 
 ### 가상 클래스 선택자
 - 어떤 조건이나 상황에서 스타일을 적용하도록 만든 선택자
