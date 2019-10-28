@@ -69,7 +69,7 @@ border-image: url("border.jpg") 30 round:
 
 - background-color: 배경 색
 - background-image: 배경 이미지
-- background-position: 배경 이미지 위치#
+- background-position: 배경 이미지 위치
 - background-repeat: 배경 이미지 반복 출력
 
 #### 단축 프로퍼티
