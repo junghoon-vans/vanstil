@@ -52,7 +52,7 @@ HTML 태그의 텍스트나 이미지가 출력되는 부분
 ### 둥근 모서리
 ```css3
 border-radius: 50px;
-broder-radius: 0px 20px 40px 60px;
+border-radius: 0px 20px 40px 60px;
 /* 왼쪽 상단부터 시계 방향으로 적용 */
 ```
 
