@@ -19,7 +19,10 @@ Contents
     - [HTML 태그에 이벤트 리스너](#html-태그에-이벤트-리스너)
   - [이벤트 객체에 들어 있는 정보](#이벤트-객체에-들어-있는-정보)
   - [preventDefault()](#preventDefault)
-
+- [이벤트 흐름](#이벤트-흐름)
+  - [이벤트가 흘러가는 과정](#이벤트가-흘러가는-과정)
+  - [캡쳐 리스너와 버블 리스너 등록](#캡쳐-리스너와-버블-리스너-등록)
+  - [이벤트 흐름 중단](#이벤트-흐름-중단)
 
 개요
 ---
@@ -147,3 +150,28 @@ function f(e) {
 이동 안되는 링크
 </a>
 ```
+
+이벤트 흐름
+---
+이벤트가 발생하면 window 객체에 먼저 도달하고, DOM 트리를 따라 이벤트 타겟에 도착하고, 다시 반대 방향으로 흘러 window 객체에 도달한 다음 사라지는 과정
+
+### 이벤트가 흘러가는 과정
+- 캡쳐 단계(capturing phase)
+  - 이벤트가 window 객체에서 중간의 모든 DOM 객체를 거쳐 타겟 객체에 전달되는 과정
+  - 이벤트가 거쳐가는 모든 DOM 객체(window포함)의 이벤트 리스너 실행
+- 버블 단계(bubbling phase)
+  - 이벤트가 타겟에서 중간의 모든 DOM 객체를 거쳐 window 객체에 전달되는 과정
+  - 이벤트가 거쳐가는 모든 DOM 객체(window포함)의 이벤트 리스너 실행
+
+### 캡쳐 리스너와 버블 리스너 등록
+addEventListener()의 3 번째 매개 변수 이용
+> true이면 캡쳐 리스너, false이면 버블 리스너
+
+```js
+var b = document.getElementById("button");
+b.addEventListener("click", capFunc, true); // 캡쳐 단계에서 capFunc() 실행
+b.addEventListener("click", bubbleFunc, false); // 버블 단계에서 bubbleFunc() 실행
+```
+
+### 이벤트 흐름 중단
+이벤트 객체의 stopPropagation() 호출
