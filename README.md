@@ -50,6 +50,7 @@ Today I Learned
  - [Object](/JavaScript/Object.md)
  - [Array](/JavaScript/Array.md)
  - [HTML DOM and Document](/JavaScript/HTML-DOM-and-Document.md)
+ - [Event](/JavaScript/Event.md)
 
 #### Linux
  -	[What is Linux](/Linux/What-is-Linux.md)
