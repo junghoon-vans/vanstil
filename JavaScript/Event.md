@@ -23,6 +23,16 @@ Contents
   - [이벤트가 흘러가는 과정](#이벤트가-흘러가는-과정)
   - [캡쳐 리스너와 버블 리스너 등록](#캡쳐-리스너와-버블-리스너-등록)
   - [이벤트 흐름 중단](#이벤트-흐름-중단)
+- [마우스 핸들링](#마우스-핸들링)
+  - [마우스 이벤트 객체 프로퍼티](#마우스-이벤트-객체-프로퍼티)
+  - [마우스 이벤트](#마우스-이벤트)
+    - [onclick](#onclick)
+    - [ondblclick](#ondblclick)
+    - [onmousedown/up](#onmousedownup)
+    - [onmouseover/out](#onmouseoverout)
+    - [onmouseenter/leave](#onmouseenterleave)
+    - [onwheel](#onwheel)
+    - [oncontextmenu](#oncontextmenu)
 
 개요
 ---
@@ -175,3 +185,44 @@ b.addEventListener("click", bubbleFunc, false); // 버블 단계에서 bubbleFun
 
 ### 이벤트 흐름 중단
 이벤트 객체의 stopPropagation() 호출
+
+마우스 핸들링
+---
+### 마우스 이벤트 객체 프로퍼티
+| 프로퍼티 | 설명 |
+| :------------- | :------------- |
+| x, y     | (x, y)는 타겟 객체의 부모 객체 내에서의 마우스 좌표 |
+| clientX, clientY | (clientX, clientY)는 브라우저 윈도우의 문서출력 영역 내에서의 마우스의 좌표 |
+| screenX, screenY | (screenX, screenY)는 스크린을 기준으로 한 마우스 좌표 |
+| offsetX, offsetY | (offsetX, offsetY)는 타겟 객체 내에서의 마우스 좌표 |
+| button | 0: 아무 버튼도 눌러지지 않았음 <br> 1: 왼쪽 버튼이 눌러졌음 <br> 2: 오른쪽 버튼이 눌러졌음 <br> 3: 왼쪽, 오른쪽 버튼이 모두 눌러졌음 <br> 4: 중간 버튼이 눌러졌음 |
+| wheelDelta | 양수: 위쪽으로 굴린 경우 <br> 음수: 아래쪽으로 굴린 경우 |
+
+### 마우스 이벤트
+#### onclick
+- HTML 태그 클릭될 때
+#### ondblclick
+- HTML 태그가 더블클릭될 때
+#### onmousedown/up
+- 마우스 버튼을 누르는(놓는) 순간
+#### onmouseover/out
+- 마우스가 태그 위로 올라가는(떠나는) 순간
+- 자식 영역도 인지
+#### onmouseenter/leave
+- 마우스가 태그 위로 올라가는(떠나는) 순간
+#### onwheel
+- HTML 태그에 마우스 휠이 구르는 동안 계속 호출
+```js
+obj.onwheel = function (e) {
+  if(e.wheelDelta < 0) { // 아래쪽으로 휠을 굴린 경우
+    ...
+  }
+  else { // 위쪽으로 휠을 굴린 경우
+    ...
+  }
+};
+```
+#### oncontextmenu
+- HTML 태그 위에 마우스 오른쪽 버튼 클릭
+- 디폴트로 컨텍스트 메뉴 출력
+- oncontextmenu 리스너에 false 리턴하면 디폴트 행동 취소
