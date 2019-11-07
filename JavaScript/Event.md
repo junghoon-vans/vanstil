@@ -26,13 +26,6 @@ Contents
 - [마우스 핸들링](#마우스-핸들링)
   - [마우스 이벤트 객체 프로퍼티](#마우스-이벤트-객체-프로퍼티)
   - [마우스 이벤트](#마우스-이벤트)
-    - [onclick](#onclick)
-    - [ondblclick](#ondblclick)
-    - [onmousedown/up](#onmousedownup)
-    - [onmouseover/out](#onmouseoverout)
-    - [onmouseenter/leave](#onmouseenterleave)
-    - [onwheel](#onwheel)
-    - [oncontextmenu](#oncontextmenu)
 - [load](#load)
   - [문서의 로딩](#문서의-로딩)
   - [이미지 로딩](#이미지-로딩)
@@ -212,19 +205,20 @@ b.addEventListener("click", bubbleFunc, false); // 버블 단계에서 bubbleFun
 | wheelDelta | 양수: 위쪽으로 굴린 경우 <br> 음수: 아래쪽으로 굴린 경우 |
 
 ### 마우스 이벤트
-#### onclick
-- HTML 태그 클릭될 때
-#### ondblclick
-- HTML 태그가 더블클릭될 때
-#### onmousedown/up
-- 마우스 버튼을 누르는(놓는) 순간
-#### onmouseover/out
-- 마우스가 태그 위로 올라가는(떠나는) 순간
-- 자식 영역도 인지
-#### onmouseenter/leave
-- 마우스가 태그 위로 올라가는(떠나는) 순간
-#### onwheel
-- HTML 태그에 마우스 휠이 구르는 동안 계속 호출
+- onclick
+  - HTML 태그 클릭될 때
+- ondblclick
+  - HTML 태그가 더블클릭될 때
+- onmousedown/up
+  - 마우스 버튼을 누르는(놓는) 순간
+- onmouseover/out
+  - 마우스가 태그 위로 올라가는(떠나는) 순간
+  - 자식 영역도 인지
+- onmouseenter/leave
+  - 마우스가 태그 위로 올라가는(떠나는) 순간
+- onwheel
+  - HTML 태그에 마우스 휠이 구르는 동안 계속 호출
+  
 ```js
 obj.onwheel = function (e) {
   if(e.wheelDelta < 0) { // 아래쪽으로 휠을 굴린 경우
