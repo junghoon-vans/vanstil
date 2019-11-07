@@ -33,6 +33,13 @@ Contents
     - [onmouseenter/leave](#onmouseenterleave)
     - [onwheel](#onwheel)
     - [oncontextmenu](#oncontextmenu)
+- [load](#load)
+  - [문서의 로딩](#문서의-로딩)
+  - [이미지 로딩](#이미지-로딩)
+    - [Image 객체](#image-객체)
+    - [onload](#onload)
+    - [새로운 이미지 로딩](#새로운-이미지-로딩)
+    - [이미지 객체 생성](#이미지-객체-생성)
 
 개요
 ---
@@ -226,3 +233,40 @@ obj.onwheel = function (e) {
 - HTML 태그 위에 마우스 오른쪽 버튼 클릭
 - 디폴트로 컨텍스트 메뉴 출력
 - oncontextmenu 리스너에 false 리턴하면 디폴트 행동 취소
+
+
+load
+---
+### 문서의 로딩
+- window 객체에서 onload 발생
+  - 웹 페이지 로딩 완료시 호출되는 이벤트 리스너
+- onload 리스너 작성 방법
+```js
+window.onload="alert('onload');";
+```
+```html5
+<body onload="alert('onload');">
+```
+> 같은 표현, `<body>`에 onload를 단 window 객체에 load 이벤트가 전달됨
+>  document.onload는 최근에 와서 많은 브라우저에서 작동하지 않음
+
+### 이미지 로딩
+#### Image 객체
+- `<img>` 태그에 의해 생성되는 DOM 객체
+- `new Image();` 자바스크립트 코드에 의해 생성되는 객체
+#### onload
+- 이미지의 로딩이 완료되면 Image객체에 발생하는 이벤트
+#### 새로운 이미지 로딩
+```js
+var myImg = document.getElementById("myImg");
+myImg.onload = function () { // 이미지 로딩 완료 시 실행
+var width = myImg.width; // 정확한 이미지 폭 읽기
+}
+myImg.src = "banana.png"; // 이미지 로딩 지시
+```
+
+#### 이미지 객체 생성
+```js
+var bananaImg = new Image(); // 이미지 객체 생성
+bananaImg.src = "banana.png"; // 이미지 로딩
+```
