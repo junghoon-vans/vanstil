@@ -40,6 +40,12 @@ Contents
     - [onload](#onload)
     - [새로운 이미지 로딩](#새로운-이미지-로딩)
     - [이미지 객체 생성](#이미지-객체-생성)
+- [폼과 이벤트 활용](#폼과-이벤트-활용)
+  - [라디오버튼과 체크박스](#라디오버튼과-체크박스)
+  - [select 객체와 onchange](#select-객체와-onchange)
+- [키 이벤트](#키-이벤트)
+  - [onkeydown, onkeypress, onkeyup](#onkeydown-onkeypress-onkeyup)
+  - [onreset과 onsubmit](#onreset과-onsubmit)
 
 개요
 ---
@@ -270,3 +276,97 @@ myImg.src = "banana.png"; // 이미지 로딩 지시
 var bananaImg = new Image(); // 이미지 객체 생성
 bananaImg.src = "banana.png"; // 이미지 로딩
 ```
+
+### 폼과 이벤트 활용
+- 포커스
+  - 포커스는 현재 키 입력에 대한 독점권
+  -	브라우저는 포커스를 가지고 있는 HTML 태그 요소에 키 공급
+- onblur
+  - 포커스를 잃을 때 발생하는 이벤트 리스너
+- onfocus
+  -	포커스를 잃을 때 발생하는 이벤트 리스너
+
+#### 라디오버튼과 체크박스
+라디오버튼
+`<input type="radio">`로 만들어진 라디오 버튼 DOM 객체
+
+```html
+<form>
+	<input type="radio" name="city" value="seoul">서울
+	<input type="radio" name="city" value="busan">부산
+	<input type="radio" name="city" value="chunchen">춘천
+</form>
+```
+
+> 라디오 버튼 객체들 알아내기 –> 그 그룹의 Name으로
+
+체크박스
+`<input type="checkbox">`로 만들어진 체크박스 DOM 객체
+
+#### select 객체와 onchange
+- select 객체는 select 태그로 만들어진 콤보박스
+- option 객체는 option 태그로 표현되는 옵션 아이템
+```html
+<select id="fruits">
+  <option value="1">딸기</option>
+	<option value="2" selected>바나나</option>
+	<option value="3">사과</option>
+</select>
+```
+
+선택된 옵션 알아내기
+```javascript
+var sel = document.getElementById("fruits");
+var index = sel.selectedIndex;  // index는 선택 상태의 옵션 인덱스
+```
+
+옵션 선택
+```javascript
+sel.selectedIndex = 2;  // 3번째 옵션 “사과” 선택
+sel.options[2].selected = true; // 3번째 옵션 “사과” 선택
+```			
+
+select와 onchange 리스너
+선택된 옵션이 변경되면 select 객체의 onchange 리스너 호출
+```html
+<select id="fruits" onchange="drawImage()">...</select>
+```
+
+키 이벤트
+---
+
+### onkeydown, onkeypress, onkeyup
+- onkeydown
+  - 키가 눌러지는 순간 호출. 모든 키에 대해 작동
+
+- onkeypress
+  -	문자 키와 Enter, Space, Esc 키에 대해서만 눌러지는 순간에 추가 호출
+  -	문자 키가 아닌 경우(F1, Shift, PgDn, Del, Ins 등) 호출되지 않음
+
+- onkeyup
+  -	눌러진 키가 떼어지는 순간 호출
+
+### onreset과 onsubmit
+
+- onreset
+  - reset 버튼(`<input type="reset">`) 클릭 시 false를 리턴하면 폼이 초기화되지 않음
+
+- onsubmit
+  -	submit(`<input type="submit">`) 버튼 클릭 시 false를 리턴하면 폼 전송하지 않음
+
+- 리스너 작성
+  -	onreset과 onsubmit 리스너는 form 태그에 달아야 한다
+
+```html
+<form onreset="..." onsubmit="...">
+```		
+
+| 프로퍼티  | 설명                                 | r/w |
+|:----------|:-------------------------------------|:----|
+| keyCode   | 입력된 키의 유니코드 값              | r   |
+| altKey    | Alt 키가 눌러진 상태이면 true        | r   |
+| altLeft   | 왼쪽 Alt 키가 눌러진 상태이면 true   | r   |
+| ctrlKey   | ctrl 키가 눌러진 상태이면 true       | r   |
+| ctrlLeft  | 왼쪽 ctrl 키가 눌러진 상태이면 true  | r   |
+| shiftKey  | shift 키가 눌러진 상태이면 true      | r   |
+| shiftLeft | 왼쪽 shift 키가 눌러진 상태이면 true | r   |
