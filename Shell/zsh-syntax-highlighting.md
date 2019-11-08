@@ -5,7 +5,7 @@ Contents
 - 설치
   - [일반 설치](#일반-설치)
   - [plugin manager 이용](#plugin-manager-이용)
-- 오류 해결(#오류-해결)
+- [오류 해결](#오류-해결)
 
 설치
 ---
