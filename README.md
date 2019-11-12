@@ -38,6 +38,7 @@ Today I Learned
  - [git credential](/Git/git-credential.md)
  - [core.autocrlf](/Git/core.autocrlf.md)
  - [Rebase Commit](/Git/Rebase-Commit.md)
+ - [gitignore](/Git/gitignore.md)
 
 #### HTML5
  -	[Introduction](HTML5/Introduction.md)
