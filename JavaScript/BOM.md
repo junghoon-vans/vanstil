@@ -7,8 +7,11 @@ Condtents
   - [브라우저 공통 BOM 객체들과 기능](#브라우저-공통-bom-객체들과-기능)
 - [window](#window)
   - [윈도우 열기](#윈도우-열기)
-  - [sWindowName](#swindowname)
-  - [sFeature](#sfeature)
+    - [sWindowName](#swindowname)
+    - [sFeature](#sfeature)
+  - [윈도우 닫기](#윈도우-닫기)
+  - [윈도우 위치 및 크기 조절](#윈도우-위치-조절-및-크기-조절)
+  - [웹 페이지 스크롤](#웹-페이지-스크롤)
 
 BOM
 ---
@@ -69,3 +72,73 @@ window.open()
 
 > yes는 속성을 반영하도록 지시
 > no가 디폴트이며 0과 같은 값
+
+### 윈도우 닫기
+```js
+var newWin=null; // 새로 연 윈도우 기억
+function load(URL) {
+newWin = window.open(URL, "myWin", "left=300,top=300,width=400,height=300");
+}
+function closeNewWindow() {
+if(newWin==null || newWin.closed) // 윈도우가 열리지 않았거나 닫힌 경우
+return; // 윈도우가 없는 경우 그냥 리턴
+else
+newWin.close(); // 열어 놓은 윈도우 닫기
+}
+```
+
+### 타이머 활용
+window 객체의 타이머 기능 2가지
+- 타임아웃 코드 1회 호출
+  - setTimeout()/clearTimeout()
+- 타임아웃 코드 반복 호출
+  - setInterval()/clearInterval()
+
+#### setTimeout()/clearTimeout()
+```js
+var timerID = setTimeout("timeOutCode", msec);
+clearTimeout(timerID);
+```
+#### setInterval()/clearInterval()
+```js
+var timerID = setInterval("timeOutCode", msec);
+clearInterval(timerID);
+```
+
+윈도우 위치 및 크기 조절
+---
+
+윈도우를 오른쪽으로 5픽셀, 아래로 10픽셀 이동
+```js
+window.moveBy(5, 10);
+moveBy(5, 10);
+```
+윈도우를 스크린의 (25, 10) 위치로 이동
+```js
+window.moveTo(25, 10);
+self.moveTo(25, 10);
+```
+윈도우 크기를 5 픽셀 좁게, 10픽셀 길게 조절
+```js
+window.resizeBy(-5, 10);
+resizeTo(self.outerWidth-5, self.outerHeight+10);
+```
+윈도우 크기를 200x300으로 조절
+```js
+window.resizeTo(200, 300);
+```
+
+웹 페이지 스크롤
+---
+웹 페이지를 위로 10픽셀 스크롤(마우스 스크롤 다운)
+```js
+window.scrollBy(0, 10); // 옆으로 0, 위로 10픽셀
+```
+웹 페이지를 왼쪽으로 10픽셀, 아래로 15픽셀 스크롤(마우스 스크롤 업)
+```js
+window.scrollBy(10, -15);
+```
+웹 페이지의 (0, 200) 좌표 부분이 현재 윈도우의 왼쪽 상단 모서리에 출력되도록 스크롤
+```js
+window.scrollTo(0, 200);
+```
