@@ -105,8 +105,7 @@ var timerID = setInterval("timeOutCode", msec);
 clearInterval(timerID);
 ```
 
-윈도우 위치 및 크기 조절
----
+### 윈도우 위치 및 크기 조절
 
 윈도우를 오른쪽으로 5픽셀, 아래로 10픽셀 이동
 ```js
@@ -128,8 +127,7 @@ resizeTo(self.outerWidth-5, self.outerHeight+10);
 window.resizeTo(200, 300);
 ```
 
-웹 페이지 스크롤
----
+### 웹 페이지 스크롤
 웹 페이지를 위로 10픽셀 스크롤(마우스 스크롤 다운)
 ```js
 window.scrollBy(0, 10); // 옆으로 0, 위로 10픽셀
@@ -142,3 +140,38 @@ window.scrollBy(10, -15);
 ```js
 window.scrollTo(0, 200);
 ```
+
+location 객체
+---
+- 윈도우에 로드된 웹 페이지의 URL 정보를 나타내는 객체
+- location 객체로 현재 윈도우에 웹 페이지 열기
+```js
+window.location = "http://www.naver.com";
+window.location.href = = "http://www.naver.com";
+window.location.assign("http://www.naver.com");
+window.location.replace("http://www.naver.com");
+```
+- 새 윈도우에 웹 페이지 열기
+```js
+var win=window.open(); // 빈 윈도우 열기
+win.location="http://www.naver.com"; // 네이버 페이지 로드
+```
+
+### 프로퍼티와 메소드
+| 프로퍼티 | 설명 |
+| :------------- | :------------- |
+| hash  | `#`을 포함하는 앵커 이름 문자열 |
+| host | 도메인과 포트 번호를 포함하는 웹 서버 주소 문자열 |
+| hostname | 웹 서버 이름 |
+| href | URL 전체 문자열 |
+| pathname | 디렉터리 부분 문자열 |
+| port | 포트 번호 문자열 |
+| protocol 프로토콜 문자열 |
+| searcgh | URL에서 `?`와 그 뒷부분 문자열로서,  주로 웹 서버로 검색을 요청할 때 동반되는 파라미터 문자열 |
+
+| 메소드 | 설명     |
+| :------------- | :------------- |
+| assign() | 새로운 웹 페이지를 로드한다. |
+| reload() | 현재 웹 페이지를 다시 로드한다. 페이지가 수정되었으면 반영한다. |
+| replace() | 현재 웹 페이지의 URL을 히스토리에서 제거하고, 새로운 페이지를 로드한
+다. |
