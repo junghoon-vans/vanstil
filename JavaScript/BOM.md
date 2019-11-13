@@ -14,6 +14,9 @@ Condtents
   - [웹 페이지 스크롤](#웹-페이지-스크롤)
 - [location](#location)
   - [프로퍼티와 메소드](#프로퍼티와-메소드)
+- [navigator](#navigator)
+- [screen](#screen)
+- [history](#history)
 
 BOM
 ---
@@ -177,3 +180,55 @@ win.location="http://www.naver.com"; // 네이버 페이지 로드
 | reload() | 현재 웹 페이지를 다시 로드한다. 페이지가 수정되었으면 반영한다. |
 | replace() | 현재 웹 페이지의 URL을 히스토리에서 제거하고, 새로운 페이지를 로드한
 다. |
+
+navigator
+---
+
+- 현재 작동중인 브라우저에 대한 다양한 정보를 나타내는 객체
+- window.navigator 또는 navigator
+
+| 프로퍼티 | 설명     |
+| :------------- | :------------- |
+| appCodeName | 브라우저의 코드 이름을 가진 문자열 |
+| appName | 브라우저 이름 문자열 |
+| appVersion | 브라우저의 플랫폼과 버전에 관한 문자열 |
+| platform | 운영체제 플랫폼의 이름 |
+| product | 브라우저 엔진의 이름 |
+| userAgent | 브라우저가 웹 서버로 데이터를 전송할 때, HTTP 헤더 속의 user-agent 필드에 저장하는 문자열로서 웹 서버가 클라이언트를 인식하기 위한 목적 |
+| vendor | 브라우저 제작 회사의 이름 문자열 |
+| language | 브라우저의 언어를 나타내는 문자열 |
+| onLine | 브라우저가 현재 온라인 작동중이면 true, 아니면 false |
+| plugins | 브라우저에 설치된 플러그인에 대한 컬렉션 |
+| cookieEnabled | 브라우저에 쿠키를 사용할 수 있는 상태면 true, 아니면 false |
+| geolocation | 위치 정보를 제공하는 geolocation 객체에 대한 레퍼런스 |
+
+screen
+---
+
+- 브라우저가 실행되는 스크린 장치에 관한 정보를 담고 있는 객체
+- window.screen 혹은 screen
+
+| 프로퍼티 | 설명 |
+| :------------- | :------------- |
+| availHeight | 작업 표시줄 등을 제외하고 브라우저가 출력 가능한 영역의 높이 |
+| availWidth | 작업 표시줄 등을 제외하고 브라우저가 출력 가능한 영역의 폭 |
+| pixelDepth | 한 픽셀의 색을 나타내기 위해 사용되는 비트 수 |
+| colorDepth | 한 픽셀의 색을 나타내기 위해 사용되는 비트 수로, pixelDepth와 동일. 대부분 브라우저에서 지원되므로 pixelDepth보다 이것을 사용하는 것이 권장됨 |
+| height | 스크린의 수직 픽셀 수 |
+| width | 스크린의 수평 픽셀 수 |
+
+history
+---
+
+- 윈도우에서 방문한 웹 페이지 리스트(히스토리)를 나타내는 객체
+- Window.history 혹은 history
+
+| 프로퍼티 | 설명 |
+| :------------- | :------------- |
+| length | 히스토리 리스트에 있는 엔트리 수 |
+
+| 메소드 | 설명 |
+| :------------- | :------------- |
+| back() | 히스토리에 있는 이전 웹 페이지로 이동. 브라우저의 <back> 버튼과 동일 |
+| forward() | 히스토리에 있는 다음 웹 페이지로 이동. 브라우저의 <forward> 버튼과 동일 |
+| go(n) | 히스토리에서 현재 웹 페이지에서 n만큼 상태적인 웹 페이지로 이동 |
