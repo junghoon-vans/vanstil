@@ -31,7 +31,7 @@ Contents
 	-	[디스크 쿼터 명령어](#디스크-쿼터-명령어)
 		-	[quotacheck](#quotacheck)
 		-	[edquota](#edquota)
-		-	[quotaon](#quotaon)
+		-	[quotaon/off](#quotaonoff)
 		-	[repquota](#repquota)
 		-	[quota](#quota)
 		-	[setquota](#setquota)
@@ -103,7 +103,7 @@ Contents
 파일이나 디렉터리 생성 시 부여되는 기본 허가권 값 지정
 
 ```bash
-% umask [option] value
+ 	$ umask [option] value
 ```
 
 **주요 옵션**
@@ -245,7 +245,9 @@ $ mkfs [-t fs_type] [option] device
 
 #### mke2fs
 
-ext2, ext3, ext4 파일 시스템을 만드는 명령으로 최근 리눅스에서 mkfs 명령 시 사용됨. 별도 지정 없을 시 ext2로 생성/
+ext2, ext3, ext4 파일 시스템을 만드는 명령으로 최근 리눅스에서 mkfs 명령 시 사용됨.
+
+> 별도 지정 없을 시 ext2로 생성
 
 ```bash
 $ mke2fs [option] device
@@ -368,7 +370,7 @@ $ edquota [option]
 |  -t  | Soft limit을 초과한 후부터 적용되는 시간제한 설정       |
 |  -p  | 특정 사용자 쿼터를 다른 사용자에게 동일한 설정으로 적용 |
 
-#### quotaon
+#### quotaon/off
 
 쿼터 설정을 활성화/비활성화
 
