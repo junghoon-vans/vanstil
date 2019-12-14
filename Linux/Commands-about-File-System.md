@@ -103,7 +103,7 @@ Contents
 파일이나 디렉터리 생성 시 부여되는 기본 허가권 값 지정
 
 ```bash
- 	$ umask [option] value
+$ umask [option] value
 ```
 
 **주요 옵션**
