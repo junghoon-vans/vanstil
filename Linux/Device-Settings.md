@@ -227,7 +227,7 @@ $ cdparanoia [option]
 이미지 관련 하드웨어를 사용할 수 있도록 해주는 API
 
 ### XSANE
-SANE 스케나 인터페이스를 이용하여 X-Windows 기반으로 만든 프로그램
+SANE 스캐너 인터페이스를 이용하여 X-Windows 기반으로 만든 프로그램
 
 ### 스캐너 명령어
 #### sane find scanner
