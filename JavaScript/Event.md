@@ -76,7 +76,7 @@ p.onmouseover = over;
 ### DOM 객체 addEventListener() 메소드
 - addEventListener() 사용의 차별점
   - removeEventListener() 이용 제거 가능
-  - 동일한 리벤트 리스너에 여러 함수를 중복 등록 가능
+  - 동일한 이벤트 리스너에 여러 함수를 중복 등록 가능
 
 ```js
 var p;
@@ -212,7 +212,7 @@ b.addEventListener("click", bubbleFunc, false); // 버블 단계에서 bubbleFun
   - 마우스 버튼을 누르는(놓는) 순간
 - onmouseover/out
   - 마우스가 태그 위로 올라가는(떠나는) 순간
-  - 자식 영역도 인지
+  - 자식 영역 포함
 - onmouseenter/leave
   - 마우스가 태그 위로 올라가는(떠나는) 순간
 - onwheel
@@ -229,6 +229,14 @@ obj.onwheel = function (e) {
 };
 ```
 #### oncontextmenu
+
+```js
+document.oncontextmenu = function () {
+   ...
+   return false; // 컨텍스트 메뉴 출력 금지
+}
+```
+
 - HTML 태그 위에 마우스 오른쪽 버튼 클릭
 - 디폴트로 컨텍스트 메뉴 출력
 - oncontextmenu 리스너에 false 리턴하면 디폴트 행동 취소
