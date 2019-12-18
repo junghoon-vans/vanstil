@@ -56,7 +56,7 @@ Contents
 ---
 ### HTML 태그 내에 작성
 HTML 태그의 이벤트 리스너 속성에 리스너 코드 직접 작성
-```js
+```html5
 <p onmouseover="this.style.backgroundColor='orchid'" onmouseout="this.style.backgroundColor='white'">
 마우스 올리면 orchid 색으로 변경
 </p>
@@ -161,8 +161,7 @@ function f(e) {
 > 이벤트 디폴트 행동: 특정 이벤트에 대한 HTML 태그의 기본 행동
 
 ```html5
-<a href="http://www.naver.com" onclick="event.preventDefault();"
->
+<a href="http://www.naver.com" onclick="event.preventDefault();">
 이동 안되는 링크
 </a>
 ```
