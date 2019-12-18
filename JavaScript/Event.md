@@ -114,8 +114,7 @@ p.addEventListener("mouseover",
 
 #### 이름을 가진 이벤트 리스너
 ```js
-function f(
-e) { // 매개변수 e에 이벤트 객체 전달받음
+function f(e) { // 매개변수 e에 이벤트 객체 전달받음
 ...
 }
 obj.onclick = f; // obj 객체의 onclick 리스너로 함수 f 등록
@@ -145,6 +144,7 @@ function f(e) {
   - 이벤트 객체의 프로퍼티와 메소드로 알 수 있음
 - 이벤트의 종류마다 조금씩 다름
   - 이벤트 객체의 공통 멤버
+
     | 멤버 | 설명     |
     | :------------- | :------------- |
     | type    | 현재 발생한 이벤트의 종류를 나타내는 문자 (clickm load 등) |
@@ -218,7 +218,7 @@ b.addEventListener("click", bubbleFunc, false); // 버블 단계에서 bubbleFun
   - 마우스가 태그 위로 올라가는(떠나는) 순간
 - onwheel
   - HTML 태그에 마우스 휠이 구르는 동안 계속 호출
-  
+
 ```js
 obj.onwheel = function (e) {
   if(e.wheelDelta < 0) { // 아래쪽으로 휠을 굴린 경우
