@@ -10,6 +10,7 @@ Today I Learned
 -	[HTML5](#html5)
 -	[JavaScript](#javascript)
 -	[Linux](#linux)
+- [Nodejs](#nodejs)
 -	[Python](#python)
 -	[Shell](#shell)
 -	[VSCode](#vscode)
@@ -68,6 +69,9 @@ Today I Learned
  -	[X Window](/Linux/X-Window.md)
  -	[Internet](/Linux/Internet.md)
  -	[Set User Password](/Linux/Set-User-Password.md)
+
+#### Nodejs
+- [How to install Nodejs](Nodejs/How-to-install-Nodejs.md)
 
 #### Python
  -	[Install-pip-on-Ubuntu-18.04](Python/Install-pip-on-Ubuntu-18.04.md)
