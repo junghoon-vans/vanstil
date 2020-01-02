@@ -29,3 +29,17 @@ Install npm
     ```bash
     npm --version
     ```
+
+Install yarn
+---
+
+1. Install yarn using apt package manager
+
+    ```bash
+    sudo apt install npm
+    ```
+2. Verify the installation
+
+    ```bash
+    yarn --version
+    ```
