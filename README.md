@@ -34,6 +34,7 @@ Today I Learned
 - [Install](/Django/Install.md)
 - [Start Project](/Django/Start-Project.md)
 - [Circle Image Cropping](/Django/Circle-Image-Cropping.md)
+- [OSError: mysqlconfig not found](/Django/OSError-mysqlconfig-not-found.md)
 
 #### Git
 - [git credential](/Git/git-credential.md)
