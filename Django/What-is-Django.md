@@ -1,4 +1,4 @@
-What is django?
+What is Django?
 ===
 
 장고란?
