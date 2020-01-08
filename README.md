@@ -31,6 +31,7 @@ Today I Learned
 -	[Advanced Uses](/CSS/Advanced-Uses.md)
 
 #### Django
+- [What is Django](/Django/What-is-Django.md)
 - [Install](/Django/Install.md)
 - [Start Project](/Django/Start-Project.md)
 - [Circle Image Cropping](/Django/Circle-Image-Cropping.md)
