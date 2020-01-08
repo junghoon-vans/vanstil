@@ -6,7 +6,7 @@ Django
 
 - [What is Django](/Django/What-is-Django.md)
 - [MTV Pattern](/Django/MTV-Pattern.md)
-- [Install](/Django/Install.md)
+- [Install Django](/Django/Install-Django.md)
 - [Start Project](/Django/Start-Project.md)
 
 문제 해결
