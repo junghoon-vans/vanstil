@@ -32,6 +32,7 @@ Today I Learned
 
 #### Django
 - [What is Django](/Django/What-is-Django.md)
+- [MTV Pattern](/Django/MTV-Pattern.md)
 - [Install](/Django/Install.md)
 - [Start Project](/Django/Start-Project.md)
 - [Circle Image Cropping](/Django/Circle-Image-Cropping.md)
