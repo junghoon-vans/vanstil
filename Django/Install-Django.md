@@ -25,7 +25,8 @@ $ python -m venv "가상환경 이름"
 
 ### 실행 명령어
 ```bash
-$ source "가상환경 이름"/Scripts/activate
+$ source "가상환경 이름"/scripts/activate
+$ source "가상환경명"/bin/activate
 ```
 
 ### 종료 명령어
