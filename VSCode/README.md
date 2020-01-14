@@ -1,4 +1,4 @@
 VSCode
 ===
 
--	[Change Default Shell to WSL](/VSCode/Change-Default-Shell-to-WSL.md)
+- [Change Default Shell to WSL](Change-Default-Shell-to-WSL.md)

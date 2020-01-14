@@ -1,10 +1,10 @@
 JavaScript
 ===
 
-- [Introduction](/JavaScript/Introduction.md)
-- [Data Type](/JavaScript/Data-Type.md)
-- [Object](/JavaScript/Object.md)
-- [Array](/JavaScript/Array.md)
-- [HTML DOM and Document](/JavaScript/HTML-DOM-and-Document.md)
-- [Event](/JavaScript/Event.md)
-- [BOM](/JavaScript/BOM.md)
+- [Introduction](Introduction.md)
+- [Data Type](Data-Type.md)
+- [Object](Object.md)
+- [Array](Array.md)
+- [HTML DOM and Document](HTML-DOM-and-Document.md)
+- [Event](Event.md)
+- [BOM](BOM.md)

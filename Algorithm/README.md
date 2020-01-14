@@ -1,7 +1,7 @@
 Algorithm
 ===
 
--	[Towers of Hanoi](/Algorithm/Towers-of-Hanoi.md)
--	[MergeSort](/Algorithm/MergeSort.java)
--	[QuickSort](/Algorithm/QuickSort.java)
-- [N_Queens](/Algorithm/N_Queens.java)
+- [Towers of Hanoi](Towers-of-Hanoi.md)
+- [MergeSort](MergeSort.java)
+- [QuickSort](QuickSort.java)
+- [N_Queens](N_Queens.java)

@@ -1,7 +1,7 @@
 CSS
 ===
 
--	[Introduction](/CSS/Introduction.md)
--	[Selector](/CSS/Selector.md)
--	[Box Model](/CSS/Box-Model.md)
--	[Advanced Uses](/CSS/Advanced-Uses.md)
+- [Introduction](Introduction.md)
+- [Selector](Selector.md)
+- [Box Model](Box-Model.md)
+- [Advanced Uses](Advanced-Uses.md)
