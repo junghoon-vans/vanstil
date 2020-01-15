@@ -1,4 +1,4 @@
-Start Python!
+파이썬 시작하기
 ===
 
 파이썬이 설치되어 있지 않다면 우선 [이 링크](https://www.python.org/)에 접속하여 설치한다.

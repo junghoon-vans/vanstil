@@ -4,8 +4,9 @@ Python
 교안
 ---
 
-- [Start Python!](Start-Python.md)
-- [Python Data Type](Python-Data-Type.md)
+- [파이썬 시작하기](start-python.md)
+- [파이썬 자료형](data-type.md)
+- [파이썬 제어문](control-statement.md)
 
 문제해결
 ---
