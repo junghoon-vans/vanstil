@@ -8,6 +8,7 @@ Django
 - [MTV Pattern](MTV-Pattern.md)
 - [Install Django](Install-Django.md)
 - [Django Project Start!](Django-Project-Start.md)
+- [Hello Lion](Hello-Lion.md)
 
 문제 해결
 ---
