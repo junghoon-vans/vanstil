@@ -20,3 +20,4 @@ Linux
 문제 해결
 ---
 -	[Set User Password](/Linux/Set-User-Password.md)
+-   [Change ftp Server](/Linux/Change-ftp-Server.md)
