@@ -15,7 +15,7 @@ Contents
 -	[터미널 폰트 변경](#터미널-폰트-변경)
 	-	[WSL 폰트 변경](#wsl-폰트-변경)
 	-	[가독성 좋은 폰트](#가독성-좋은-폰트)
--	[zsh/oh-my-zsh](#zsh/oh-my-zsh)
+-	[zsh/oh-my-zsh](#zshoh-my-zsh)
 	-	[zsh 설치](#zsh-설치)
 	-	[oh-my-zsh 설치](#oh-my-zsh-설치)
 	-	[테마 적용](#테마-적용)
