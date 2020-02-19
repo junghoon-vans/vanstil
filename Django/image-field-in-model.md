@@ -1,0 +1,34 @@
+image field in model
+===
+
+이미지를 업로드할 수 있는 모델을 생성하기 위해서는 우선적으로 media 설정이 필요하다. 만약 진행하지 않았다면 해당 [링크](\static-and-media.md)를 참고하여 진행하도록 한다.
+
+```python
+# models.py
+class Post(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    likes = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='likes', through='Like')
+    pub_date = models.DateTimeField('publish')
+    # 이미지 필드
+    image = models.ImageField(upload_to='images/', blank=True)
+    content = models.TextField()
+```
+
+`Post`라는 글을 작성하기 위한 모델에 `image`라는 필드를 만들었다. 여기에는 models 클래스의 ImageField 메소드가 사용된다.
+
+> upload_to 속성은 이미지 업로드 시 경로를 의미하며, settings.py에서 설정한 media 경로가 기준인 상대 경로를 말한다.
+
+만약 모델이 수정되었으면 마이그레이션을 해주어야 한다.
+
+- `python manage.py makemigrations`
+- `python manage.py migrate`
+
+이후 이미지를 활용하기 위한 파이썬 패키지를 설치한다.
+
+- `pip install pillow`
+
+이제 파일 업로드가 가능하게 되었을 것이다. 만약에 템플릿 상에서 모델의 사진을 출력하려 한다면 다음과 같이 사용하면 된다.
+
+```html
+<img src="{{post.image.url}}" alt="...">
+```

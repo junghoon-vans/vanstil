@@ -11,6 +11,7 @@ Django
 - [Hello Lion](Hello-Lion.md)
 - [Extend Template](Extend-Template.md)
 - [static and media](static-and-media.md)
+- [image field in model](image-field-in-model.md)
 
 문제 해결
 ---
