@@ -10,6 +10,7 @@ Django
 - [Django Project Start!](Django-Project-Start.md)
 - [Hello Lion](Hello-Lion.md)
 - [Extend Template](Extend-Template.md)
+- [static and media](static-and-media.md)
 
 문제 해결
 ---
