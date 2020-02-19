@@ -9,6 +9,7 @@ Django
 - [Install Django](Install-Django.md)
 - [Django Project Start!](Django-Project-Start.md)
 - [Hello Lion](Hello-Lion.md)
+- [Extend Template](Extend-Template.md)
 
 문제 해결
 ---
