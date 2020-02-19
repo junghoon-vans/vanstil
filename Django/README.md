@@ -13,6 +13,8 @@ Django
 - [static and media](static-and-media.md)
 - [image field in model](image-field-in-model.md)
 - [Create Post](Create-Post.md)
+- [csrf-token](csrf-token.md)
+- [GET/POST](GET-POST.md)
 
 문제 해결
 ---

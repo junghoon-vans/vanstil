@@ -1,8 +1,6 @@
 Create Post
 ===
 
-- 글 작성 페이지 생성
-
 Post Form
 ---
 
@@ -23,6 +21,10 @@ Post Form
     
 {% endblock %}
 ```
+
+<주요 개념>
+- [GET/POST](\GET-POST.md)
+- [csrf-token](\csrf-token.md)
 
 Url path
 ---
