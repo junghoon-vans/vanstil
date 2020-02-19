@@ -14,6 +14,8 @@ class Post(models.Model):
     content = models.TextField()
 ```
 
+> 해당 소스코드가 사용된 전체 코드는 [다음 주소](https://github.com/likelionmju/likelionmyongji_lionstagram/blob/master/page/models.py)를 통해서 확인해볼 수 있다.
+
 `Post`라는 글을 작성하기 위한 모델에 `image`라는 필드를 만들었다. 여기에는 models 클래스의 ImageField 메소드가 사용된다.
 
 > upload_to 속성은 이미지 업로드 시 경로를 의미하며, settings.py에서 설정한 media 경로가 기준인 상대 경로를 말한다.
@@ -27,8 +29,9 @@ class Post(models.Model):
 
 - `pip install pillow`
 
-이제 파일 업로드가 가능하게 되었을 것이다. 만약에 템플릿 상에서 모델의 사진을 출력하려 한다면 다음과 같이 사용하면 된다.
+이제 파일 업로드가 가능하게 되었을 것이다. 템플릿 상에서 위 모델로 생성된 글의 이미지를 출력하려 한다면 다음과 같이 사용하면 된다.
 
 ```html
 <img src="{{post.image.url}}" alt="...">
+<!-- post는 Post로 생성된 객체 하나를 의미-->
 ```
