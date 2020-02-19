@@ -12,6 +12,7 @@ Django
 - [Extend Template](Extend-Template.md)
 - [static and media](static-and-media.md)
 - [image field in model](image-field-in-model.md)
+- [Create Post](Create-Post.md)
 
 문제 해결
 ---
