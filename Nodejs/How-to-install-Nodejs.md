@@ -36,7 +36,7 @@ Install yarn
 1. Install yarn using apt package manager
 
     ```bash
-    sudo apt install npm
+    sudo npm i -g yarn
     ```
 2. Verify the installation
 
