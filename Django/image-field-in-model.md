@@ -5,13 +5,11 @@ image field in model
 
 ```python
 # models.py
+from django.conf import settings
+
 class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    likes = models.ManyToManyField(settings.AUTH_USER_MODEL, blank=True, related_name='likes', through='Like')
-    pub_date = models.DateTimeField('publish')
-    # 이미지 필드
     image = models.ImageField(upload_to='images/', blank=True)
-    content = models.TextField()
+    ...
 ```
 
 > 해당 소스코드가 사용된 전체 코드는 [다음 주소](https://github.com/likelionmju/likelionmyongji_lionstagram/blob/master/page/models.py)를 통해서 확인해볼 수 있다.
