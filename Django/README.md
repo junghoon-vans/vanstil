@@ -15,6 +15,7 @@ Django
 - [Create Post](Create-Post.md)
 - [csrf-token](csrf-token.md)
 - [GET/POST](GET-POST.md)
+- [Update and Delete Post](update-and-delete-post.md)
 
 문제 해결
 ---
