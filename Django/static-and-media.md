@@ -54,5 +54,8 @@ MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
 
 ```python
 # urls.py
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns += static('/media/', document_root=settings.MEDIA_ROOT)
 ```
