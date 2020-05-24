@@ -4,13 +4,13 @@
 Contents
 ---
 
-- [정보보호(Information Security)](#정보보호(Information-Security))
+- [정보보호(Information Security)](#정보보호Information-Security)
   - [목표](#목표)
-- [정보보호 관리(Information Security Management)](#정보보호-관리(Information-Security-Management))
+- [정보보호 관리(Information Security Management)](#정보보호-관리Information-Security-Management)
   - [보호대책](#보호대책)
   - [용어](#용어)
-- [보안 공격(Security Attack)](#보안-공격(Security-Attack))
-- [통제(Control)](#통제(Control))
+- [보안 공격(Security Attack)](#보안-공격Security-Attack)
+- [통제(Control)](#통제Control)
 
 정보보호(Information Security)
 ---
