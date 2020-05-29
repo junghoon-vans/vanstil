@@ -69,15 +69,15 @@ Contents
 ---
 
 - 윈도우 XP 이전
-  1. POST(Power On Self Test)
-  2. 기본 부팅 관련 설정사항(CMOS) 로드
-  3. MBR 로드 (기본 파일시스템 정보 로드)
-  4. NTLDR(NT Loader) 실행
-  5. ntoskrnl.exe 실행 -> hal.dll을 읽음   
+  - POST(Power On Self Test)
+  - 기본 부팅 관련 설정사항(CMOS) 로드
+  - MBR 로드 (기본 파일시스템 정보 로드)
+  - NTLDR(NT Loader) 실행
+  - ntoskrnl.exe 실행 -> hal.dll을 읽음   
 - 윈도우 Vista 이후
-  1-3. 위와 동일
-  4. 윈도우 부트 서브 시스템 실행
-  5. 윈도우 OS 로더(Winload.exe) 실행
+  - 3단계까지 위와 동일
+  - 윈도우 부트 서브 시스템 실행
+  - 윈도우 OS 로더(Winload.exe) 실행
     - 각종 장치 드라이브를 로드하고, ntoskrnl.exe를 실행
 
 윈도우 계정
