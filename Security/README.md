@@ -14,3 +14,5 @@ Security
 - 시스템 보안
   - [보안 운영체제](Secure-OS.md)
   - [클라이언트 보안](Client-Security.md)
+  - 서버 보안
+    - [윈도우](Windows.md)
