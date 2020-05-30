@@ -14,7 +14,7 @@ Contents
   - [링형](#링형)
   - [허브/트리형](#허브트리형)
 - [규모](#규모)
-  - [LAN(Local Area Network)](#lanlocal-area-network))
+  - [LAN(Local Area Network)](#lanlocal-area-network)
   - [MAN(Metropolitan Area Network)](#manmetropolitan-area-network)
   - [WAN(Wide Area Network)](#wanwide-area-network)
 
