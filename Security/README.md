@@ -20,4 +20,6 @@ Security
     - [관리](Server-Management.md)
     - [시스템 보안위협](System-Threats.md)
 - 네트워크
-  - [무선통신 보안](#Wireless-Communication-Security.md)
+  - [무선통신 보안](Wireless-Communication-Security.md)
+  - [관리](Network-Management.md)
+
