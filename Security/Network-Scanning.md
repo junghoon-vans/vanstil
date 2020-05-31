@@ -1,0 +1,132 @@
+네트워크 스캐닝
+===
+
+사이버 공격을 위한 정보 수집은 풋 프린팅, 스캐닝, 목록화 과정을 거친다.
+
+Contents
+---
+
+- [풋 프린팅](#풋-프린팅)
+- [스캐닝](#스캐닝)
+  - [Sweep](#sweep)
+  - [Open Scan](#open-scan)
+  - [Stealth Scan](#stealth-scan)
+    - [TCP FIN Scan](#tcp-fin-scan)
+    - [TCP NULL Scan](#tcp-null-scan)
+    - [TCP XMAS Scan](#tcp-xmas-scan)
+    - [TCP ACK-Scan](#tcp-ack-scan)
+  - [NMap(Network Mapper)](#nmapnetwork-mapper)
+    - [문법](#문법)
+  - [운영체제 탐지](#운영체제-탐지)
+    - [배너 그래빙(banner grabbing)](#배너-그래빙banner-grabbing)
+    - [TCP/IP](#tcpip)
+- [목록화](#목록화)
+
+풋 프린팅
+---
+
+공격자가 공격 전 다양한 정보 수집을 하는 단계
+
+- 사회공학 기법이 주로 사용
+- IP블록, 이름 및 계정정보, 전화번호 등 수집
+
+스캐닝
+---
+
+실제 공격방법을 결정 또는 공격에 이용될 수 있는 네트워크 구조, 시스템이 제공하는 서비스 정보를 얻음
+
+### Sweep
+
+- 네트워크에 속해 있는 시스템 유무 판단
+- 목표 네트워크의 IP 주소와 네트워크 범위를 알아내는 기법
+
+### Open Scan
+
+시스템 활성화 여부 및 서비스의 활성화 여부를 조사
+
+- TCP Full Open Scan(=TCP SYN/ACK Scan)
+  - 완전한 TCP 연결을 맺어서 신뢰성 있는 결과를 얻을 수 있음
+  - 다만 속도가 느리고 로그를 남김
+- TCP Half Open Scan(=TCP SYN Scan)
+  - 세션을 완전히 연결하지 않고 포트의 활성화 여부를 판단
+  - 포트가 열려있는 경우
+    - SYN/ACK 패킷을 받으면 그 즉시 RST 패킷을 보내 연결을 끊음
+    - 로그를 남기지는 않지만 세그먼트(SYN) 전송기록은 남음
+- UDP Scan
+  - 아무런 응답이 없으면 해당 포트의 활성화를 의미
+  - ICMP Unreachable 패킷을 받으면 해당 포트의 비활성화를 의미
+
+### Stealth Scan
+
+TCP 헤더를 조작하여 특수한 패킷을 생성하여 보낸 후 그 응답으로 포트 활성화 파악
+
+- 세션을 완전히 연결하지 않으므로 로그가 남지 않음
+
+#### TCP FIN Scan
+
+- TCP 헤더 내에 FIN 플래그를 설정하여 전송
+- 응답
+  - 포트가 열려있는 경우에는 응답이 없음
+  - 포트가 닫혀 있는 경우에는 RST 패킷
+
+#### TCP NULL Scan
+
+- TCP 헤더 내에 플래그 값을 설정하지 않고 전송
+- 응답은 FIN Scan과 동일
+
+#### TCP XMAS Scan
+
+- TCP 헤더 내에 모든 플래그를 설정하여 전송
+- 응답은 FIN Scan과 동일
+
+#### TCP ACK-Scan
+
+- TCP 헤더 내에 ACK 플래그를 설정하여 전송
+- 방화벽의 필터링 정책을 테스트
+  - Stateful 방화벽인가
+  - 대상 포트가 방화벽에 의해 필터링되는가
+- 응답
+  - 필터링이 되는 경우 응답이 없거나 ICMP 메시지를 수신
+  - 필터링 되지 않으면 RST+ACK를 수신
+
+### NMap(Network Mapper)
+
+OS의 종류 및 사용 서비스에 대한 정보, FTP 서버의 취약점을 이용한 bounce 공격 수행 가능한 스캔 도구
+
+- 모든 운영체제에서 사용 가능
+- 오픈소스로 사용자가 기능 추가 가능
+
+#### 문법
+
+```
+nmap [scan_type] [port_option] [target]
+```
+
+- [-sS] : TCP SYN(Half-open) Scan
+- [-sF] : TCP FIN Scan
+- [-v] : 자세하게 출력
+- [-O] : 대상 호스트의 OS 정보를 출력
+- [-T] : NMap 속도 지정 (0 : 느림 ~ 5 : 빠름)
+- [-f] : 스캔 시 F/W을 통과할 수 있도록 패킷을 분할
+
+### 운영체제 탐지
+
+#### 배너 그래빙(banner grabbing)
+
+- 상대 시스템의 OS를 확인하는 가장 기본적인 방법
+- banner는 원격지 시스템에 로그인하면 뜨는 안내문과 비슷한 것
+
+#### TCP/IP
+
+- OS마다 TCP/IP에 대한 반응이 다르기 때문에 반응에 따라 OS를 추측 가능
+- FIN Scan은 모든 OS에 적용되지 않기 때문에 FIN Scan을 이용해 OS를 추측 가능
+- 세션 연결 후 TCP 패킷의 Sequence Number(순서 번호) 생성을 관찰
+  - 윈도우 계열은 시간에 따른 순서 번호를 생성
+  - 리눅스 계열은 Random으로 생성
+
+목록화
+---
+
+풋 프린팅, 스캐닝 작업을 통해 얻은 정보를 실제 공격에 사용할 수 있도록 목록화
+
+- 공유 자원 목록화, 사용자 및 그룹 목록화, 응용프로그램 목록화로 구분
