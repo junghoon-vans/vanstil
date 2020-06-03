@@ -29,4 +29,5 @@ Security
   - [VPN](Network/VPN.md)
   - [최신 기술](Network/Latest-Technology.md)
 - 애플리케이션 보안
-  - [FTP](FTP.md)
+  - [FTP](Application/FTP.md)
+  - [Email](Application/Email.md)
