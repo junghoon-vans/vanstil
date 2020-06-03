@@ -4,21 +4,21 @@ Django
 교안
 ---
 
-- [What is Django](What-is-Django.md)
-- [MTV Pattern](MTV-Pattern.md)
-- [Install Django](Install-Django.md)
-- [Django Project Start!](Django-Project-Start.md)
-- [Hello Lion](Hello-Lion.md)
-- [Extend Template](Extend-Template.md)
-- [static and media](static-and-media.md)
-- [image field in model](image-field-in-model.md)
-- [Create Post](Create-Post.md)
-- [csrf-token](csrf-token.md)
-- [GET/POST](GET-POST.md)
-- [Update and Delete Post](update-and-delete-post.md)
+- [What is Django](Study/What-is-Django.md)
+- [MTV Pattern](Study/MTV-Pattern.md)
+- [Install Django](Study/Install-Django.md)
+- [Django Project Start!](Study/Django-Project-Start.md)
+- [Hello Lion](Study/Hello-Lion.md)
+- [Extend Template](Study/Extend-Template.md)
+- [static and media](Study/static-and-media.md)
+- [image field in model](Study/image-field-in-model.md)
+- [Create Post](Study/Create-Post.md)
+- [csrf-token](Study/csrf-token.md)
+- [GET/POST](Study/GET-POST.md)
+- [Update and Delete Post](Study/update-and-delete-post.md)
 
 문제 해결
 ---
 
-- [Circle Image Cropping](Circle-Image-Cropping.md)
-- [OSError: mysqlconfig not found](OSError-mysqlconfig-not-found.md)
+- [Circle Image Cropping](Troubleshooting/Circle-Image-Cropping.md)
+- [OSError: mysqlconfig not found](Troubleshooting/OSError-mysqlconfig-not-found.md)
