@@ -27,3 +27,4 @@ Security
   - [IDS/IPS](Network/IDS-and-IPS.md)
   - [방화벽](Network/Firewall.md)
   - [VPN](Network/VPN.md)
+  - [최신 기술](Network/Latest-Technology.md)
