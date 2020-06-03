@@ -28,3 +28,5 @@ Security
   - [방화벽](Network/Firewall.md)
   - [VPN](Network/VPN.md)
   - [최신 기술](Network/Latest-Technology.md)
+- 애플리케이션 보안
+  - [FTP](FTP.md)
