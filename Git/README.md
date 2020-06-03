@@ -5,3 +5,8 @@ Git
 - [core.autocrlf](core.autocrlf.md)
 - [Rebase Commit](Rebase-Commit.md)
 - [gitignore](gitignore.md)
+
+문제 해결
+---
+
+- [Apply Case Change](Troubleshooting/Apply-Case-Change.md)
