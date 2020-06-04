@@ -33,3 +33,4 @@ Security
   - [Email](Application/Email.md)
   - [HTTP](Application/HTTP.md)
   - [SSL/TSL](Application/SSL-TLS.md)
+  - [DHCP/DNS](Application/DHCP-DNS.md)
