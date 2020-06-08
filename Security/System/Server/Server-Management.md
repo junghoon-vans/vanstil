@@ -49,14 +49,14 @@ $ reboot # 강제 재부팅
 - 프로세스 관리
   - [관련 명령어](../Linux/Process-Management.md#관련-명령어)
 - 메모리 관리
-  - `free`(메모리 및 swap 메모리 사용 현황)
+  - `free` (메모리 및 swap 메모리 사용 현황)
 - 디스크 관리
   - [관련 명령어](../Linux/Commands-about-File-System.md#파일-관련-명령어)
 
 ### 네트워크 관리
 
 | 명령어 | 설명 |
-|------|-----|
+|--------|------|
 | ifconfig | 통신 디바이스(NIC) 상태 |
 | netstat -an | 현 시스템에서 사용되는 통신 서비스의 상태 |
 | top | 시스템 자원(CPU, memory 등)의 사용현황 |
@@ -68,7 +68,7 @@ $ reboot # 강제 재부팅
 윈도우 로그
 ---
 
-- 이벤트(Event)라는 중앙 집권화된 로그를 수집하여 저장
+- `이벤트(Event)`라는 중앙 집권화된 로그를 수집하여 저장
 - 관리는 편하나 보안수준이 낮음
 
 ### 이벤트 로그 종류
@@ -108,14 +108,14 @@ $ reboot # 강제 재부팅
 유닉스/리눅스 로그
 ---
 
-- 로그를 여러 곳에 저장
+- 로그를 `여러 곳`에 저장
 - 모두 파악하고 관리하기 어려움
 - 다양한 로그들의 분석으로 공격자 추적 가능
 
 ### 로그 종류
 
 | 로그 | 설명 |
-|-----|-----|
+|------|------|
 | utmp | 현재 시스템에 로그인한 사용자의 상태를 출력 |
 | wtmp | 사용자의 로그인/로그아웃, 시스템 종료/부팅 정보를 저장 |
 | sulog | su 명령어(계정 변경)에 대한 로그. 텍스트 형태로 저장 |
@@ -143,41 +143,14 @@ $ reboot # 강제 재부팅
 facility.priority action(logfile-location)
 ```
 
-facility에 대하여 priority의 경우에 해당하는 상황이 발생 시 logfile-location 파일에 기록
+`facility`에 대하여 `priority`의 경우에 해당하는 상황이 발생 시 `logfile-location` 파일에 기록
 
-- 서비스(facility) 종류
-  - *(모든 서비스)
-  - auth
-  - authpriv(xinetd, telnet 등)
-  - cron
-  - ftp
-  - kern
-  - lpr
-  - mail
-  - ntp
-  - security
-  - syslog 
-- 메시지 우선순위(priority)
-  1. Emergency
-  2. Alert
-  3. Critical
-  4. Error
-  5. Warning
-  6. Notice
-  7. Info
-  8. Debug
-- 행동(action)
-  - 로그를 어디에 남길지 결정
-  - 로그 파일
-    - 경로명 지정
-  - 터미널/콘솔
-    - `/dev/console`로 지정
-  - 원격 로그 서버
-    - `@호스트주소`
-  - 유저
-    - 지정한 사용자의 스크린으로 전송
-  - *
-    - 현재 로그인된 사용자에게 메시지
+| 항목 | 도메인 |
+|------|--------|
+| facility | *(모든 서비스), auth, authpriv(xinetd, telnet 등), cron, ftp, kern, lpr, mail, ntp, security, syslog |
+| priority | Emergency, Alert, Critical, Error, Warning, Notice, Info, Debug |
+| action | 로그를 어디에 남길지 결정 |
+| logfile-location | 터미널/콘솔(/dev/console), 원격 로그 서버(@호스트주소), user(지정한 사용자 스크린), *(현재 로그인된 사용자) |
 
 웹 서버 로그
 ---
@@ -198,30 +171,21 @@ facility에 대하여 priority의 경우에 해당하는 상황이 발생 시 lo
 
 ### Apache 웹 서버 로그
 
-- access log
-  - 클라이언트의 요청에 의해 웹 서버가 응답한 내용에 대한 로그
-- error log
-  - 클라이언트의 요청에 의해 웹 서버에 오류가 발생한 내용에 대한 로그
+- access log: 클라이언트의 요청에 의해 웹 서버가 응답한 내용에 대한 로그
+- error log: 클라이언트의 요청에 의해 웹 서버에 오류가 발생한 내용에 대한 로그
 
 크래킹 S/W
 ---
 
 크래킹이란 악의적인 목적을 가지고 시스템에 침임하는 행위이다.
 
-- John the Ripper
-  - 패스워드 점검도구로 유명한 프로그램
-- pwdump
-  - 윈도우에서 패스워드를 덤프하기 위한 프로그램
-- L0phtCrack
-  - 패스워드 취약점 점검도구
-- ipccrack
-  - 패스워드를 원격지에서 추측하여 취약점을 점검하는 프로그램
-- chntpw
-  - 물리적으로 접근이 가능한 시스템에서 패스워드를 리셋시키는 프로그램
-- ERD Commander
-  - 윈도우에서 패스워드를 복구하는 프로그램
-- 키로거(Keylogger)
-  - 키보드로 입력한 정보를 로그로 남겨 실기간으로/정해진 시간에 공격자에게 전송
+- John the Ripper: 패스워드 점검도구로 유명한 프로그램
+- pwdump: 윈도우에서 패스워드를 덤프하기 위한 프로그램
+- L0phtCrack: 패스워드 취약점 점검도구
+- ipccrack: 패스워드를 원격지에서 추측하여 취약점을 점검하는 프로그램
+- chntpw: 물리적으로 접근이 가능한 시스템에서 패스워드를 리셋시키는 프로그램
+- ERD Commander: 윈도우에서 패스워드를 복구하는 프로그램
+- 키로거(Keylogger): 키보드로 입력한 정보를 로그로 남겨 실기간으로/정해진 시간에 공격자에게 전송
 
 서버보안용 S/W
 ---
