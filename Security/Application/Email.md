@@ -42,7 +42,7 @@ Contents
 ### SMTP(Simple Mail Transfer Protocol)
 
 - MTA 클라이언트와 서버를 규정하는 공식적인 프로토콜(TCP/25)
-- 송신자와 송신자의 메일서버 사이 그리고 두 메일 서버들 사이에서 총 `두 번 사용`된다.
+- 송신자와 송신자의 메일서버 사이 그리고 두 메일 서버들 사이에서 총 `두 번` 사용된다.
 
 ### POP3(Post Office Protocol ver3)
 
