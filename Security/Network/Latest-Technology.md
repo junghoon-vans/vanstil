@@ -13,7 +13,7 @@ Contents
   - [주요 기능](#주요-기능-1)
   - [구성](#구성)
 - [기타 보안 솔루션](#기타-보안-솔루션)
-  - [SIEM(Secure Information Event Management)](siemsecure-information-event-management)
+  - [SIEM(Secure Information Event Management)](#siemsecure-information-event-management)
   - [PMS(Patch Management System)](#pmspatch-management-system)
 - [APT(Advanced Persistent Threat)](#aptadvanced-persistent-threat)
   - [기존 공격과의 차이점](#기존-공격과의-차이점)

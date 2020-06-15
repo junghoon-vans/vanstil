@@ -10,7 +10,7 @@ Contents
   - [비바 무결성 모델(Biba Integrity Model)](#비바-무결성-모델biba-integrity-model)
   - [클락-윌슨 무결성 모델(Clark-Wilson Integrity Model)](#클락-윌슨-무결성-모델clark-wilson-integrity-model)
   - [만리장성 모델(Chinese Wall Model)](#만리장성-모델chinese-wall-model))
-- [임의적 접근통제(DAC, Discretionary Access Control)](#임의적-접근통제-dacdiscretionary-access-control))
+- [임의적 접근통제(DAC, Discretionary Access Control)](#임의적-접근통제-dac-discretionary-access-control))
   - [접근 제어 행렬(Access Control Matrix)](#접근-제어-행렬access-control-matrix)
   - [자격 목록(Capability List, Capability Tickets)](#자격-목록capability-list-capability-tickets))
   - [접근제어 목록(ACLs, Access Control Lists)](#접근제어-목록acls-access-control-lists))
