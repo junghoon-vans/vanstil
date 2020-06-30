@@ -7,6 +7,7 @@ Category
 - [Algorithm](/Algorithm)
 - [CSS](/CSS)
 - [Django](/Django)
+- [Flutter](/Flutter)
 - [Git](/Git)
 - [HTML5](/HTML5)
 - [JavaScript](/JavaScript)
