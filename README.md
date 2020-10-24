@@ -6,6 +6,7 @@ Category
 
 - [Algorithm](/Algorithm)
 - [CSS](/CSS)
+- [Design Patterns](/Design-Patterns)
 - [Django](/Django)
 - [Flutter](/Flutter)
 - [Git](/Git)
