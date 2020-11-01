@@ -6,7 +6,7 @@ Hello Lion
 구현 과정
 ---
 
-![Structure.png](image/Structure.png)
+![Structure.png](../image/Structure.png)
 
 ```Hello Lion```을 출력하는 장고 프로젝트를 구현 과정은 크게 4단계로 나누어 볼 수 있다.
 
@@ -124,6 +124,6 @@ path는 세 인자(url, 함수, 이름)를 받는다. 이를 통해서 url과 �
 $ python manage.py runserver
 ```
 
-![Hello-Lion](image/Hello-Lion.png)
+![Hello-Lion](../image/Hello-Lion.png)
 
 서버를 작동하면, 로컬 호스트(http://127.0.0.1:8000/)에서 ```Hello Lion```이라는 문자를 브라우저에서 확인 할 수 있다!
