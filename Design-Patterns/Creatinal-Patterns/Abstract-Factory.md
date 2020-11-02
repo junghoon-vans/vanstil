@@ -1,15 +1,9 @@
-Abstract Factory - 추상 팩토리
+추상 팩토리(Abstract Factory) 
 ===
 
-의도
----
+상세화된 서브클래스를 정의하지 않고도 서로 관련성이 있거나 독립적인 여러 객체의 군을 생성하기 위한 인터페이스를 제공
 
-상세화된 서브클래스를 정의하지 않고도 서로 관련성이 있거나 독립적인 여러 객체의 군을 생성하기 위한 인터페이스를 제공한다.
-
-다른 이름
----
-
-키트(Kit)
+> 키트(Kit)라는 이름으로도 불린다.
 
 동기
 ---
@@ -26,11 +20,11 @@ Abstract Factory - 추상 팩토리
 참여자
 ---
 
-- AbstractFactory: 개념적 제품에 대한 객체를 생성하는 연산으로 인터페이스를 정의
-- ConcreteFactory: 구체적인 제품에 대한 객체를 생성하는 연산을 구현
-- AbstractProduct: 개념적 제품 객체에 대한 인터페이스를 정의
-- ConcreteProduct: 구체적으로 팩토리가 생성할 객체를 정의하고 AbstractProduct에서 정의한 인터페이스를 구현
-- Client: AbstractFactory와 AbstractProduct 클래스에 선언된 인터페이스를 사용
+- `AbstractFactory`: 개념적 제품에 대한 객체를 생성하는 연산으로 인터페이스를 정의
+- `ConcreteFactory`: 구체적인 제품에 대한 객체를 생성하는 연산을 구현
+- `AbstractProduct`: 개념적 제품 객체에 대한 인터페이스를 정의
+- `ConcreteProduct`: 구체적으로 팩토리가 생성할 객체를 정의하고 `AbstractProduct`에서 정의한 인터페이스를 구현
+- `Client`: `AbstractFactory`와 `AbstractProduct` 클래스에 선언된 인터페이스를 사용
 
 협력방법
 ---
@@ -58,3 +52,10 @@ Abstract Factory - 추상 팩토리
 ---
 
 `AbstractFactory` 클래스는 `팩토리 메서드` 패턴을 이용해서 구현되는데, Prototype 패턴을 이용할 때도 있다. 구체 팩토리는 `Singleton` 패턴을 이용해 구현하는 경우가 많다.
+
+참고문헌
+---
+
+- Gof의 디자인 패턴 번역본
+- [Department of Computer Science University of North Carolina](https://www.cs.unc.edu/~stotts/GOF/hires/pat3afso.htm)
+- [위키피디아 추상 팩토리 패턴](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%83%81_%ED%8C%A9%ED%86%A0%EB%A6%AC_%ED%8C%A8%ED%84%B4)
