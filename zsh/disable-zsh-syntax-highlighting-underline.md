@@ -1,4 +1,15 @@
-disable zsh-syntax-highlighting underline
+---
+title: "disable zsh-syntax-highlighting underline"
+linkTitle: "disable zsh-syntax-highlighting underline"
+date: 2020-11-16
+type: docs
+draft: false
+weight: 3
+description: >
+  Syntax-Highlighting 밑줄 기능 제거
+---
+
+
 ===
 
 `zsh-syntax-highlighting`을 사용하는 경우, 파일이나 디렉터리의 경로가 밑줄이 그어진다.
