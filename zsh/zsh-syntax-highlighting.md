@@ -1,14 +1,19 @@
-zsh-syntax-highlighting
-==
-Contents
 ---
-- 설치
-  - [일반 설치](#일반-설치)
-  - [plugin manager 이용](#plugin-manager-이용)
-- [오류 해결](#오류-해결)
+title: "zsh-syntax-highlighting"
+linkTitle: "zsh-syntax-highlighting"
+date: 2020-11-16
+type: docs
+draft: false
+weight: 2
+description: >
+  ZSH 상에 문법 강조하기
+---
 
 설치
 ---
+
+설치하는 방법에는 두 가지가 존재하는 데 필자는 플러그인으로 추가하는 방법을 추천한다.
+
 ### 일반 설치
 
 #### 설치
