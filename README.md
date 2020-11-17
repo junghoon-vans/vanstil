@@ -1,22 +1,11 @@
 Today I Learned
 ===============
 
-Category
+I have a lot of things to learn, but unfortunately I can't learn everything at once.
+So I organize what today I learned in this repo.
+
+Notice
 ---
 
-- [Algorithm](/Algorithm)
-- [CSS](/CSS)
-- [Design Patterns](/Design-Patterns)
-- [Django](/Django)
-- [Flutter](/Flutter)
-- [Git](/Git)
-- [HTML5](/HTML5)
-- [JavaScript](/JavaScript)
-- [Linux](/Linux)
-- [Network](/Network)
-- [Nodejs](/Nodejs)
-- [Python](/Python)
-- [Security](/Security)
-- [VSCode](/VScode)
-- [WSL](/WSL)
-- [zsh](/zsh)
+Now this repo has been changed for migration to hugo blog.
+If you want to see a previous version of the documents, [click here](https://github.com/Jeonghun-Ban/TIL/tree/v1.0).
