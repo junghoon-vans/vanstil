@@ -2,7 +2,7 @@ logo = true
 logoText = "Today I Learned"
 logoType = "short" # long, short
 description = "Jeonghun's TIL hugo pages"
-editBaseURL = "https://github.com/Jeonghun-Ban/TIL/blob/hugo-pages/content"
+editBaseURL = "https://github.com/Jeonghun-Ban/TIL/blob/master/content/ko"
 themeOptions = ["light", "dark"]
 
 useFaviconGenerator = true

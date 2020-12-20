@@ -1,4 +1,4 @@
-baseURL = "http://jeonghun-ban.github.io/TIL/"
+baseURL = "http://jeonghun-ban.github.io/"
 title = "Today I Learned"
 theme = "zdoc"
 
