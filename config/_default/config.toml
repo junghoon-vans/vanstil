@@ -1,0 +1,47 @@
+baseURL = "http://jeonghun-ban.github.io/"
+title = "Today I Learned"
+theme = "zdoc"
+
+defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = true
+contentDir = "content/docs"
+
+copyright = "©{year}, All Rights Reserved" # copyright symbol: $copy; current year: {year}
+timeout = 10000
+enableEmoji = true
+paginate = 13 # Number of items per page in paginated lists.
+rssLimit = 100
+
+googleAnalytics = ""
+
+disableKinds = ["taxonomyTerm"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+      xHTML = true
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "index"
+    isPlainText = true
+    notAlternative = true
+    
+[taxonomies]
+  tag = "tags"

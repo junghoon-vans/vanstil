@@ -1,0 +1,13 @@
+[ko]
+  title = "Today I Learned"
+  languageName = "한국어"
+  weight = 1
+  languagedir = "ltr"
+  contentdir = "content/ko"
+  
+[en]
+  title = "Today I Learned"
+  languageName = "English"
+  weight = 2
+  languagedir = "ltr"
+  contentdir = "content/en"

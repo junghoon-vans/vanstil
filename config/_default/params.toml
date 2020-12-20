@@ -1,0 +1,37 @@
+logo = true
+logoText = "Today I Learned"
+logoType = "short" # long, short
+description = "Jeonghun's TIL hugo pages"
+editBaseURL = "https://github.com/Jeonghun-Ban/TIL/blob/hugo-pages/content"
+themeOptions = ["light", "dark"]
+
+useFaviconGenerator = true
+
+wideViewAsDefault = true
+
+enableWideBlogSwitch = true
+enableTocSwitch = true
+enableLandingBackground = true
+enableSearch = true
+enableSearchHighlight = true
+enableLangChange = true
+enableDarkMode = true
+enableBreadcrumb = true
+enableBlogBreadcrumb = true
+enableEditBtn = true
+enableToc = true
+enableMenu = true
+enableNavbar = true
+enableFooter = true
+showPoweredBy = true
+
+paginateWindow = 1
+taxoPaginate = 13
+taxoGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
+
+github = "https://github.com/Jeonghun-Ban"
+
+enableComment = false
+[utterances]       # https://utteranc.es/
+  owner = "Jeonghun-Ban"
+  repo = "TIL"
