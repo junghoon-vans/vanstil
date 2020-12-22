@@ -2,7 +2,7 @@ logo = true
 logoText = "Today I Learned"
 logoType = "short" # long, short
 description = "Jeonghun's TIL hugo pages"
-editBaseURL = "https://github.com/Jeonghun-Ban/TIL/blob/master/content/ko"
+editBaseURL = "https://github.com/Jeonghun-Ban/til/blob/master/content/ko"
 themeOptions = ["light", "dark"]
 
 useFaviconGenerator = true
@@ -34,4 +34,4 @@ github = "https://github.com/Jeonghun-Ban"
 enableComment = false
 [utterances]       # https://utteranc.es/
   owner = "Jeonghun-Ban"
-  repo = "TIL"
+  repo = "til"
