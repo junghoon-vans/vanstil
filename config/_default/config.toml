@@ -1,11 +1,10 @@
-baseURL = "http://jeonghun-ban.github.io/"
+baseURL = "http://jeonghun-ban.github.io/TIL"
 title = "Today I Learned"
 theme = "zdoc"
 
 defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = false
 hasCJKLanguage = true
-contentDir = "content/docs"
 
 copyright = "©{year}, All Rights Reserved" # copyright symbol: $copy; current year: {year}
 timeout = 10000
@@ -15,7 +14,7 @@ rssLimit = 100
 
 googleAnalytics = ""
 
-disableKinds = ["taxonomyTerm"]
+disableKinds = ["taxonomyTerm", "blog"]
 
 [markup]
   [markup.goldmark]
