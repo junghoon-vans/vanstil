@@ -1,8 +1,9 @@
 ---
 title: "Cryptology"
-linkTitle: "Cryptology"
-date: 2020-11-16
-weight: 2
+date: 2020-12-25
 description: >
   암호학
+draft: false
+collapsible: true
+weight: 2
 ---

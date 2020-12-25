@@ -1,5 +1,8 @@
 ---
 title: "생성 패턴"
-linkTitle: "Creatinal-Patterns"
-date: 2020-11-16
+date: 2020-12-25
+description: >
+    Creational Patterns
+draft: false
+collapsible: true
 ---

@@ -1,8 +1,9 @@
 ---
 title: "Security"
-linkTitle: "Security"
-date: 2020-11-16
-weight: 5
+date: 2020-12-25
 description: >
   네트워크 보안
+draft: false
+collapsible: true
+weight: 5
 ---
