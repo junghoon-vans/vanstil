@@ -1,8 +1,9 @@
 ---
 title: "Application"
-linkTitle: "Application"
-date: 2020-11-16
-weight: 6
+date: 2020-12-25
 description: >
   애플리케이션 보안
+draft: false
+collapsible: true
+weight: 6
 ---

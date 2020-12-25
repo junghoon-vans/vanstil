@@ -1,9 +1,8 @@
 ---
-title: "Cryptology"
+title: "생성 패턴"
 date: 2020-12-25
 description: >
-  암호학
+    Creational Patterns
 draft: false
 collapsible: true
-weight: 2
 ---

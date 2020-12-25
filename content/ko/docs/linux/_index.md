@@ -1,5 +1,6 @@
 ---
 title: "Linux"
-linkTitle: "Linux"
-date: 2020-11-16
+date: 2020-12-25
+draft: false
+collapsible: true
 ---
