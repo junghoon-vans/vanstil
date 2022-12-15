@@ -1,14 +1,3 @@
----
-title: "Introduction"
-linkTitle: "Introduction"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  자바스크립트 개요
----
-
 개요
 ----
 

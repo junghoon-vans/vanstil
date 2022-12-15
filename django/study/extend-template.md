@@ -1,12 +1,3 @@
----
-title: "Extend Template"
-linkTitle: "Extend Template"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 6
----
-
 장고에서는 템플릿 상에서 중복되는 코드를 줄이게 도와주는 `템플릿 상속`이라는 기능을 제공한다.
 
 방법

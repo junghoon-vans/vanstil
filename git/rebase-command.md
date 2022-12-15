@@ -1,13 +1,3 @@
----
-title: "Rebase Command"
-linkTitle: "Rebase Command"
-date: 2020-11-16
-type: docs
-draft: false
-description: >
-    커밋 정리하기
----
-
 커밋 수정
 ---
 

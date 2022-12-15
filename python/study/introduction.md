@@ -1,14 +1,3 @@
----
-title: "Introduction"
-linkTitle: "Introduction"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  파이썬 시작하기
----
-
 파이썬이 설치되어 있지 않다면 우선 [이 링크](https://www.python.org/)에 접속하여 설치한다.
 > 맥이나 리눅스의 경우 Python2는 기본적으로 설치되어 있고,
 우분투와 같은 경우에는 Python3 또한 설치되어 있다.

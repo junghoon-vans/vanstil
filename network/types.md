@@ -1,14 +1,3 @@
----
-title: "Types"
-linkTitle: "Types"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  네트워크 종류
----
-
 데이터 전송 방식
 ---
 

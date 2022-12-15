@@ -1,14 +1,3 @@
----
-title: "Network Scanning"
-linkTitle: "Network Scanning"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  네트워크 스캐닝
----
-
 사이버 공격을 위한 정보 수집은 `풋 프린팅`, `스캐닝`, `목록화` 과정을 거친다.
 
 풋 프린팅

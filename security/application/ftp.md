@@ -1,14 +1,3 @@
----
-title: "FTP"
-linkTitle: "FTP"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  파일 전송 프로토콜
----
-
 연결 모드
 ---
 

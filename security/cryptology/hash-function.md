@@ -1,14 +1,3 @@
----
-title: "Hash Function"
-linkTitle: "Hash Function"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  해시 함수
----
-
 임의의 길이를 가지는 메시지를 고정된 길이의 값으로 바꾸어주는 함수
 
 일방향 해시함수

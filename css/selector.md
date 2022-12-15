@@ -1,11 +1,3 @@
----
-title: "Selector"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
----
-
 정의
 ---
 선택자(Selector): HTML 태그의 모양을 꾸밀 스타일 시트를 선택하는 기능

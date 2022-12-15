@@ -1,12 +1,3 @@
----
-title: "Create New Post"
-linkTitle: "Create New Post"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 9
----
-
 Post Form
 ---
 

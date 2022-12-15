@@ -1,14 +1,3 @@
----
-title: "zsh-syntax-highlighting"
-linkTitle: "zsh-syntax-highlighting"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  ZSH 상에 문법 강조하기
----
-
 설치
 ---
 

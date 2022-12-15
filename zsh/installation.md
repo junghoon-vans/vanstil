@@ -1,15 +1,3 @@
----
-title: "Installation"
-linkTitle: "Installation"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  ZSH 설치하기
----
-
-
 `ZSH(Z Shell)`은 강력한 자동완성 기능을 제공하는 bash보다 개선된 쉘이다. 그렇기 때문에 개발하는 데 있어서 명령어를 모두 외우지 않아도 된다는 점에서 사용자에게 큰 편의성을 제공한다. 그래서 인지 `macOS Catalina`에서는 기본 쉘로 zsh이 채택되기도 했다. 
 
 ### zsh 설치

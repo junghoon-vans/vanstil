@@ -1,12 +1,3 @@
----
-title: "Static & Media"
-linkTitle: "Static & Media"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 7
----
-
 정적 파일이란?
 ---
 

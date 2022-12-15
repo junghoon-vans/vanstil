@@ -1,14 +1,3 @@
----
-title: "Email"
-linkTitle: "Email"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  이메일
----
-
 구조
 ---
 

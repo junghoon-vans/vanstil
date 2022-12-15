@@ -1,11 +1,3 @@
----
-title: "Installation"
-linkTitle: "Installation"
-date: 2020-11-16
-type: docs
-draft: false
----
-
 1. Launch Terminal
 2. Install Nodejs using apt package manager
 

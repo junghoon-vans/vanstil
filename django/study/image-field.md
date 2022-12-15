@@ -1,13 +1,3 @@
----
-title: "Image Field"
-linkTitle: "Image Field"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 8
----
-
-
 이미지를 업로드할 수 있는 모델을 생성하기 위해서는 우선적으로 media 설정이 필요하다. 만약 진행하지 않았다면 해당 [링크](\static-and-media.md)를 참고하여 진행하도록 한다.
 
 ```python

@@ -1,14 +1,3 @@
----
-title: "Firewall"
-linkTitle: "Firewall"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 7
-description: >
-  방화벽
----
-
 사설 네트워크를 외부로부터 보호하기 위해 공중 네트워크와 사설 네트워크 사이에 설치된 일종의 벽
 
 - 보안정책에 따라 인가된 N/W 서비스에 대한 접근 허용, 인가되지 않은 트래픽 차단

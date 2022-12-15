@@ -1,14 +1,3 @@
----
-title: "Client"
-linkTitle: "Client"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  클라이언트 보안
----
-
 악성 소프트웨어
 ---
 

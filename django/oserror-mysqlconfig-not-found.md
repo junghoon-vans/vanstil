@@ -1,12 +1,3 @@
----
-title: "OSError: mysql_config not found"
-linkTitle: "OSError: mysql_config not found"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
----
-
 에러 발생
 ---
 

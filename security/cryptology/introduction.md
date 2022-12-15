@@ -1,14 +1,3 @@
----
-title: "Introduction"
-linkTitle: "Introduction"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  암호학 개요
----
-
 평문(Plain Text)를 암호문(Cipher Text)로 만드는 `암호기술(Crytography)`과 이를 해독하는 `암호해독(Cryptanalysis)`에 대하여 연구하는 학문
 
 암호 기법

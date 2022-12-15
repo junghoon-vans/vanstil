@@ -1,11 +1,3 @@
----
-title: "Change FTP Server"
-linkTitle: "Change FTP Server"
-date: 2020-11-16
-type: docs
-draft: false
----
-
 우분투의 경우 apt 패키지를 ``` http://archive.ubuntu.com/ubuntu```에서 가져오도록 설정되어 있는데, 해당 주소에서 다운 속도가 느리기 때문에 한국 서버로 변경하면 편리하다.
 
 다음카카오에서 apt 패키지를 다운받을 수 있는 ftp서버를 제공하고 있으므로 이것을 이용하도록 하자.

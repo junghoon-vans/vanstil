@@ -1,12 +1,3 @@
----
-title: "DHCP/DNS"
-linkTitle: "DHCP/DNS"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 5
----
-
 DHCP(Dynamic Host Configuration Protocol)
 ---
 

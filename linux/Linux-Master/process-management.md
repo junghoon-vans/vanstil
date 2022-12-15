@@ -1,14 +1,3 @@
----
-title: "Process Management"
-linkTitle: "Process Management"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 7
-description: >
-  프로세스 관리
----
-
 프로세스
 --------
 

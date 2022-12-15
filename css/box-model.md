@@ -1,11 +1,3 @@
----
-title: "Box Model"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
----
-
 박스 모델
 ---
 HTML 태그는 사각형 박스로 다루어진다.

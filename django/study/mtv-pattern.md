@@ -1,12 +1,3 @@
----
-title: "MTV Pattern"
-linkTitle: "MTV Pattern"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
----
-
 장고는 `MTV(Model, Template, View) 패턴`을 따른다. 해당 디자인 패턴을 통해서 웹 페이지가 어떻게 동작하는지 그 로직에 대해서 간단히 살펴보도록 하자.
 
 MTV 구조

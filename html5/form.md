@@ -1,12 +1,3 @@
----
-title: "Form"
-linkTitle: "Form"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
----
-
 웹 페이지에서 사용자 입력을 받는 폼으로 로그인, 등록, 검색, 예약, 쇼핑 등에 사용
 
 작성 방법

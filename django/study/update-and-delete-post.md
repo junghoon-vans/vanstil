@@ -1,12 +1,3 @@
----
-title: "Update & Delete Post"
-linkTitle: "Update & Delete Post"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 12
----
-
 Delete
 ---
 

@@ -1,12 +1,3 @@
----
-title: "Structure"
-linkTitle: "Structure"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
----
-
 전형적인 구조
 ---
 

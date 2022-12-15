@@ -1,14 +1,3 @@
----
-title: "File System Commands"
-linkTitle: "File System Commands"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 5
-description: >
-  파일 시스템 명령어
----
-
 권한 및 그룹
 ------------
 

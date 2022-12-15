@@ -1,14 +1,3 @@
----
-title: "Access Control"
-linkTitle: "Access Control"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  접근 통제 개요
----
-
 허가되지 않은 자원의 사용과 허가되지 않은 방법을 통한 자원 사용을 제어하는 것
 
 절차

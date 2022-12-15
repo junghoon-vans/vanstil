@@ -1,14 +1,3 @@
----
-title: "HTTP(Hypertext Transfer Protocol)"
-linkTitle: "HTTP"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  서버-클라이언트가 인터넷 상에서 데이터를 주고받기 위한 프로토콜
----
-
 영속성
 ---
 

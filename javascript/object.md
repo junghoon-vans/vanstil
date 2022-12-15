@@ -1,14 +1,3 @@
----
-title: "Object"
-linkTitle: "Object"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  자바스크립트에서의 객체
----
-
 구성
 ---
 여러 개의 프로퍼티와 메소드로 구성

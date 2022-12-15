@@ -1,11 +1,3 @@
----
-title: "Apply Case Change"
-linkTitle: "Apply Case Change"
-date: 2020-11-16
-type: docs
-draft: false
----
-
 Git은 일반적인 파일명 변경으로는 대소문자를 변경이 적용되지 않는다.
 
 해결

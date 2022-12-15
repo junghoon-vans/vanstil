@@ -1,14 +1,3 @@
----
-title: "OWASP TOP10"
-linkTitle: "OWASP TOP10"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 9
-description: >
-  오픈소스 웹 애플리케이션 보안 프로젝트
----
-
 `OWASP(Open Web Application Security Project)`에서는 3~4년 주기로 10가지 보안이슈를 발표한다.
 
 인젝션

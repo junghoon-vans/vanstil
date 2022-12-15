@@ -1,14 +1,3 @@
----
-title: "how to fix a corrupt zsh history"
-linkTitle: "how to fix a corrupt zsh history"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 6
-description: >
-  ZSH 히스토리 파일 충돌 에러 해결
----
-
 에러 발생
 ---
 

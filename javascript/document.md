@@ -1,14 +1,3 @@
----
-title: "Document"
-linkTitle: "Document"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 6
-description: >
-  DOM 트리의 최상위 객체
----
-
 HTML 문서 전체를 대변하는 객체이자 DOM 객체를 접근하는 경로의 시작점
 > HTML 문서 로드 전, Document 객체를 생성하고 DOM 트리 생성
 

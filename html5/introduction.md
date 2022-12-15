@@ -1,12 +1,3 @@
----
-title: "Introduction"
-linkTitle: "Introduction"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
----
-
 HTML 언어의 역사
 ---
 

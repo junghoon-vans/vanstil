@@ -1,14 +1,3 @@
----
-title: "Document Obeject Model"
-linkTitle: "DOM"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 5
-description: >
-  웹 페이지에 대한 인터페이스
----
-
 자바스트립트 코드는 브라우저로부터 3가지 유형의 객체를 제공받아 활용한다.
 - BOM 객체
 - 코어 객체

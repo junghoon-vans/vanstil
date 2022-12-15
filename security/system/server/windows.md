@@ -1,14 +1,3 @@
----
-title: "Windows"
-linkTitle: "Windows"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  윈도우 서버 보안
----
-
 윈도우 시스템
 ---
 

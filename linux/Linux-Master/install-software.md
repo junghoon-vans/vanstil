@@ -1,14 +1,3 @@
----
-title: "Install Software"
-linkTitle: "Install Software"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 9
-description: >
-  소프트웨어 설치
----
-
 설치
 ----
 

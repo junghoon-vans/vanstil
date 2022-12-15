@@ -1,14 +1,3 @@
----
-title: "Management"
-linkTitle: "Management"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  네트워크 관리
----
-
 네트워크 자원들에 대하여 적절한 관리행위
 
 - 네트워크 사업자와 사용자에게 안정적인 네트워크 서비스 제공

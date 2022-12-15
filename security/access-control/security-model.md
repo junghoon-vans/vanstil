@@ -1,14 +1,3 @@
----
-title: "Security Model"
-linkTitle: "Security Model"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  보안 모델
----
-
 강제적 접근통제(MAC, Mandatory Access Control)
 ---
 

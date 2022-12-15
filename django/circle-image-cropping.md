@@ -1,14 +1,3 @@
----
-title: "Circle Image Cropping"
-linkTitle: "Circle Image Cropping"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-    이미지를 원형으로 자르는 방법
----
-
 아래 코드를 이용하면 폼을 이용해 업로드한 이미지를 원형으로 자를 수 있다.
 > 이미지 변형을 위해 `Pillow` 라이브러리를 우선 설치해두어야 한다.
 

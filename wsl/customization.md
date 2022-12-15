@@ -1,14 +1,3 @@
----
-title: "Customizing"
-linkTitle: "Customizing"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  터미널 예쁘게 커스터마이징하기
----
-
 `Windows Subsystem for Linux` 터미널의 문제점
 
 -	기본적으로 제공하는 색상이나 폰트가 예쁘지 않고 가독성이 떨어짐.

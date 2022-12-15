@@ -1,14 +1,3 @@
----
-title: "Device Settings"
-linkTitle: "Device Settings"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 10
-description: >
-  장치 설정
----
-
 프린터
 ---
 인쇄시스템으로 초기에는 `LPRng`를 기본으로 사용했으나, 최근에는 `CUPS`라는 시스템을 추가로 사용하고 있다.

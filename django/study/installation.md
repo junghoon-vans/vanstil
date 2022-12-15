@@ -1,12 +1,3 @@
----
-title: "Installation"
-linkTitle: "Installation"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
----
-
 가상환경
 ---
 

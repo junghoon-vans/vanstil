@@ -1,14 +1,3 @@
----
-title: "SSO(Single Sign On)"
-linkTitle: "SSO"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  통합인증체계
----
-
 한 번의 시스템 인증을 통하여 접근하고자 하는 다양한 시스템에 재인증 절차 없이 접근할 수 있도록 하는 `통합 로그인 솔루션`
 
 - 장점

@@ -1,14 +1,3 @@
----
-title: "RSA"
-linkTitle: "RSA"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  Rivest-Shamir-Adleman
----
-
 공개키 암호 알고리즘의 표준으로 인수분해 문제 해결이 어렵다는 사실에 기반하고 있다. 암호화와 전자서명 등에 사용된다.
 
 

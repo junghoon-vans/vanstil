@@ -1,15 +1,3 @@
-
----
-title: "Directory path"
-linkTitle: "Directory path"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  Windows-WSL 간 파일 시스템 접속 경로
----
-
 ### 윈도우 파일 시스템에서 Linux 디렉토리 접속 경로
 
 ```

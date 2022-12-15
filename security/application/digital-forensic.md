@@ -1,14 +1,3 @@
----
-title: "Digital Forensic"
-linkTitle: "Digital Forensic"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 8
-description: >
-  디지털 포렌식
----
-
 다양한 `디지털 장치`에서 범인과 연관된 자료를 발견하고 `분석`하여 법적인 문제를 해결하는 방법
 
 > 포렌식을 통해 증거획득하고 이 증거가 법적인 효력을 가지려면 그 증거를 발견, 기록, 획득, 보관하는 절차가 필요

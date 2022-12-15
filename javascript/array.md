@@ -1,14 +1,3 @@
----
-title: "Array"
-linkTitle: "Array"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  연속적으로 원소들을 저장하는 데이터 구조
----
-
 생성방법
 ---
 

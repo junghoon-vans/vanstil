@@ -1,14 +1,3 @@
----
-title: "Register Alias"
-linkTitle: "Register Alias"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 5
-description: >
-  명령어 단축해서 사용하기
----
-
 zsh에서는 `~/.zshrc`에 필요한 alias를 등록하면 된다.
 
 ```vi

@@ -1,14 +1,3 @@
----
-title: "Data Type"
-linkTitle: "Data Type"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  데이터를 저장하는 방식
----
-
 식별자
 ------
 

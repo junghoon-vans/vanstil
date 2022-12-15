@@ -1,14 +1,3 @@
----
-title: "PKI(Public Key Infrastructure)"
-linkTitle: "PKI"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 7
-description: >
-  공개키 기반 구조
----
-
 공개키 암호 및 전자서명의 기술을 사회적인 기반구조로 만들어 가는 것
 
 - 공개키 알고리즘을 위한 키 관리 구조

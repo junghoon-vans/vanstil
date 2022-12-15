@@ -1,14 +1,3 @@
----
-title: "Installation"
-linkTitle: "Installation"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  WSL 설치하기
----
-
 ### WSL?
 
 -	기존에 Windows의 미흡한 개발환경을 보완하고자 등장

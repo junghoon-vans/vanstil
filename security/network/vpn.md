@@ -1,14 +1,3 @@
----
-title: "VPN(Virtual Private Network)"
-linkTitle: "VPN"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 8
-description: >
-  가상 사설망
----
-
 공중 네트워크를 이용하여 사설 네트워크가 요구하는 서비스를 제공
 
 > 전용 회선처럼 사용할 수 있게 해주는 기술

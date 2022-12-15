@@ -1,14 +1,3 @@
----
-title: "Security Management"
-linkTitle: "Security Management"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  서버 보안 관리
----
-
 서버 관리자의 업무
 ---
 

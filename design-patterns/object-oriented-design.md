@@ -1,12 +1,3 @@
----
-title: "객체지향설계"
-linkTitle: "Object Oriented Design"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
----
-
 개발 과정
 ---
 

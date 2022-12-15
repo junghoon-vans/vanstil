@@ -1,14 +1,3 @@
----
-title: "Event"
-linkTitle: "Event"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 7
-description: >
-  이벤트 처리
----
-
 개요
 ---
 ### 이벤트 정의

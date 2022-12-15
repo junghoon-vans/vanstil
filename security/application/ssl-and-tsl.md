@@ -1,14 +1,3 @@
----
-title: "SSL/TLS"
-linkTitle: "SSL/TLS"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  TCP 기반 애플리케이션에 대한 종단간 보안서비스 제공을 위해 만들어진 전송계층 프로토콜
----
-
 - 대칭키 암호, 일방향 해시함수, MAC, 의사난수 생성기, 전자서명을 조합해 안전한 통신 수행
 - 암호 스위트를 변경하여 강력한 알고리즘 사용 (특정 암호기술에 의존 X)
 

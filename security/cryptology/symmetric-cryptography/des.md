@@ -1,14 +1,3 @@
----
-title: "DES"
-linkTitle: "DES"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  Data Encryption Standard
----
-
 1973년, 미국 국립기술표준원(NIST)에서 국가적으로 사용할 대칭키 암호시스템으로 채택
 
 구조

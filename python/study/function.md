@@ -1,14 +1,3 @@
----
-title: "Function"
-linkTitle: "Function"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  함수
----
-
 함수(fuction)이란 재사용 가능한 프로그램 코드 블록으로, 자주 수행되는 작업을 매번 새로운 코드로 처리하지 않기 위해서 사용한다.
 
 - 내장 함수

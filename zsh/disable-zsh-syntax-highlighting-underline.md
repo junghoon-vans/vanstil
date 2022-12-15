@@ -1,17 +1,3 @@
----
-title: "disable zsh-syntax-highlighting underline"
-linkTitle: "disable zsh-syntax-highlighting underline"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  Syntax-Highlighting 밑줄 기능 제거
----
-
-
-===
-
 `zsh-syntax-highlighting`을 사용하는 경우, 파일이나 디렉터리의 경로가 밑줄이 그어진다.
 다만 WSL 우분투에 위 기능을 사용하게 되면 창 리사이즈 시 밑줄이 화면 한 줄을 차지해버리는 문제가 발생한다.
 따라서 이 기능을 지워서 사용하는 것이 오히려 편리하다.

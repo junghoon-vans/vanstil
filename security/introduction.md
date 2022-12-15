@@ -1,14 +1,3 @@
----
-title: "Introduction"
-linkTitle: "Introduction"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  정보보호 개요
----
-
 정보보호(Information Security)
 ---
 

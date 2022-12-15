@@ -1,15 +1,3 @@
----
-title: "AES"
-linkTitle: "AES"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  Advanced Encryption Standard
----
-
-
 기존에 사용하던 DES의 문제점은 키의 길이가 54bit로 짧아 `Brute Force Attack(무차별 대입 공격)`이 가능하다는 것이었다. 그래서 NIST(미국 국립기술표준원)는 DES를 대체하기 위한 알고리즘을 공모하였고 최종적으로 AES가 선정되었다.
 
 구조

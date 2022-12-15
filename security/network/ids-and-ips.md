@@ -1,14 +1,3 @@
----
-title: "IDS/IPS"
-linkTitle: "IDS/IPS"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 6
-description: >
-  침입 탐지/방지 시스템
----
-
 IDS(침입탐지 시스템)
 ---
 

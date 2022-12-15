@@ -1,13 +1,3 @@
----
-title: "gitignore"
-linkTitle: "gitignore"
-date: 2020-11-16
-type: docs
-draft: false
-description: >
-    깃으로 관리하지 않을 파일을 지정
----
-
 적용 방법
 ---
 1. 프로젝트 폴더 내에 `.gitignore` 파일 생성

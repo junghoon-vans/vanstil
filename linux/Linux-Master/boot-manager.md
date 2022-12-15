@@ -1,14 +1,3 @@
----
-title: "Boot Manager"
-linkTitle: "Boot Manager"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  부트 매니저
----
-
 개요
 ----
 

@@ -1,14 +1,3 @@
----
-title: "License"
-linkTitle: "License"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  라이선스
----
-
 라이선스 종류
 -------------
 

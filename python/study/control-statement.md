@@ -1,14 +1,3 @@
----
-title: "Control Statement"
-linkTitle: "Control Statement"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  제어문
----
-
 if문
 ---
 

@@ -1,12 +1,3 @@
----
-title: "IOS Build Error"
-linkTitle: "IOS Build Error"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
----
-
 에러메시지
 ---
 

@@ -1,12 +1,3 @@
----
-title: "What is Django?"
-linkTitle: "What is Django?"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
----
-
 장고란?
 ---
 

@@ -1,14 +1,3 @@
----
-title: "Latest Technology"
-linkTitle: "Latest Technology"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 9
-description: >
-  최신 보안 기술
----
-
 역추적 시스템
 ---
 

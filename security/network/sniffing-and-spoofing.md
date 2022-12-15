@@ -1,14 +1,3 @@
----
-title: "Sniffing/Spoofing"
-linkTitle: "Sniffing/Spoofing"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 5
-description: >
-  스니핑/스푸핑
----
-
 스니핑
 ---
 

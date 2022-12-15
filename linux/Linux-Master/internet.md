@@ -1,14 +1,3 @@
----
-title: "Internet"
-linkTitle: "Internet"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 12
-description: >
-  인터넷
----
-
 네트워크
 ---
 

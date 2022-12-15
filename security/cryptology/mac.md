@@ -1,14 +1,3 @@
----
-title: "MAC(Message Authentication Code)"
-linkTitle: "MAC"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 5
-description: >
-  메시지 인증 코드
----
-
 해시함수는 데이터의 `무결성`을 보장하지만 발신자의 신원 확인이 불가능하다. 이러한 문제를 해결하기 위해 `인증 절차`를 추가한 것이 `메시지 인증 코드(MAC)`이다.
 
 개념

@@ -1,14 +1,3 @@
----
-title: "Editor"
-linkTitle: "Editor"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 8
-description: >
-  텍스트 에디터
----
-
 종류
 ----
 

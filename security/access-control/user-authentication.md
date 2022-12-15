@@ -1,14 +1,3 @@
----
-title: "User Authentication"
-linkTitle: "User Authentication"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  사용자 인증
----
-
 인증에는 `메시지 인증`과 `사용자 인증`이 존재한다.
 
 - 메시지 인증

@@ -1,14 +1,3 @@
----
-title: "Security-Threats"
-linkTitle: "Security-Threats"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 5
-description: >
-  접근통제 보안위협 및 대응책
----
-
 패스워드 크래커
 ---
 

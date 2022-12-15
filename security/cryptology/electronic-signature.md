@@ -1,14 +1,3 @@
----
-title: "Electronic Signature"
-linkTitle: "Electronic Signature"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 6
-description: >
-  전자서명
----
-
 메시지에 전자적인 서명을 하는 것으로, 메시지와 메시지를 생성한 사람과의 인증을 의미한다.
 
 전자서명 개념

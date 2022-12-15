@@ -1,14 +1,3 @@
----
-title: "DoS Attack"
-linkTitle: "DoS Attack"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  서비스 거부 공격
----
-
 서비스 거부 공격(DoS)
 ---
 

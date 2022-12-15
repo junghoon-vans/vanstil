@@ -1,14 +1,3 @@
----
-title: "System Threats"
-linkTitle: "System Threats"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  시스템 보안위협
----
-
 버퍼 오버플로우 공격
 ---
 

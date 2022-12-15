@@ -1,11 +1,3 @@
----
-title: "Introduction"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
----
-
 CSS3 개요
 ---
 ### 정의

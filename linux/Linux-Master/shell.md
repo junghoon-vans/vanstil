@@ -1,14 +1,3 @@
----
-title: "Shell"
-linkTitle: "Shell"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 6
-description: >
-  명령 해석기, 쉘
----
-
 개념
 ----
 

@@ -1,14 +1,3 @@
----
-title: "Secure OS"
-linkTitle: "Secure OS"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  보안 운영체제
----
-
 기존 운영체제 내에 보안기능을 통합시킨 `보안 커널`을 추가로 이식한 운영체제
 
 주요 제공 기능

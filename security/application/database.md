@@ -1,14 +1,3 @@
----
-title: "Database"
-linkTitle: "Database"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 6
-description: >
-  통합된 데이터, 저장된 데이터, 운영 데이터, 공용 데이터
----
-
 기본 개념
 ---
 

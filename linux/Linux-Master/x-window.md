@@ -1,14 +1,3 @@
----
-title: "X Window"
-linkTitle: "X Window"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 11
-description: >
-  리눅스 윈도우 시스템
----
-
 개념
 ---
 주로 유닉스 계열 운영체제에서 사용되는 윈도우 시스템이다.

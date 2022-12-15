@@ -1,13 +1,3 @@
----
-title: "core.autocrlf"
-linkTitle: "core.autocrlf"
-date: 2020-11-16
-type: docs
-draft: false
-description: >
-    서로 다른 운영체제 간 협업하기
----
-
 `git`을 통해서 윈도우와 맥이나 리눅스 개발자가 협업을 할 때 개행문자의 차이로 인해 `whitespace` 에러가 발생한다.
 
 ```bash

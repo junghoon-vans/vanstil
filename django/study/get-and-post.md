@@ -1,13 +1,3 @@
----
-title: "GET/POST"
-linkTitle: "GET/POST"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 11
----
-
-
 HTTP 통신 프로토콜을 통해서 정보를 주고받는 방식에는 여러가지가 있지만, 보통 GET과 POST 두가지를 많이 사용한다.
 
 GET과 POST 차이

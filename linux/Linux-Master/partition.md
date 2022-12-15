@@ -1,14 +1,3 @@
----
-title: "Partition"
-linkTitle: "Partition"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 3
-description: >
-  파티션
----
-
 개요
 ----
 

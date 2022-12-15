@@ -1,14 +1,3 @@
----
-title: "UNIX/Linux"
-linkTitle: "UNIX/Linux"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 2
-description: >
-  유닉스/리눅스 서버 보안
----
-
 유닉스 시스템
 ---
 

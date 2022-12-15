@@ -1,12 +1,3 @@
----
-title: "Create Project & App"
-linkTitle: "Create Project & App"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
----
-
 Project 생성
 ---
 

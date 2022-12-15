@@ -1,14 +1,3 @@
----
-title: "Introduction"
-linkTitle: "Introduction"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 1
-description: >
-  리눅스 개요
----
-
 리눅스의 특징
 -------------
 

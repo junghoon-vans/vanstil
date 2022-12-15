@@ -1,13 +1,3 @@
----
-title: "Git Credential"
-linkTitle: "Git Credential"
-date: 2020-11-16
-type: docs
-draft: false
-description: >
-    리눅스에서 계정정보 저장하기
----
-
 윈도우나 맥에서는 기본적으로 깃 사용자의 아이디 및 비밀번호를 저장하여 관리한다.
 반면 우분투에서 깃을 사용하면 `git pull/push`를 할 때마다 아이디 비밀번호를 입력해야만 한다. 이러한 번거로움을 줄이기 위해 `Git Credential`이라는 계정정보 저장기능을 사용한다.
 

@@ -1,14 +1,3 @@
----
-title: "Upgrade to WSL2"
-linkTitle: "Upgrade to WSL2"
-date: 2020-11-16
-type: docs
-draft: false
-weight: 4
-description: >
-  WSL2로 업그레이드 하기
----
-
 기존 WSL1의 문제점
 ---
 
