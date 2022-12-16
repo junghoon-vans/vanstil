@@ -1,37 +1,40 @@
-  
 name: deploy
-
-on:
+on: 
   push:
-    branches: [ master ]
 
 jobs:
-  build:
-    runs-on: ubuntu-20.04
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout blog source
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          submodules: recursive
+          python-version: '3.10'
+        
+      - name: install dependencies
+        run: |
+          sudo apt-get install -y zsync snapd
+          sudo snap install zola --edge
 
-      - name: npm install
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: build obsidian-zola
+        env:
+          REPO_URL: "https://github.com/junghoon-vans/vanstil/"
+          SITE_URL: "https://til-junghoon-vans.vercel.app/"
+          SITE_TITLE: "vanstil"
+          TIMEZONE: "Asia/Seoul"
+          SORT_BY: "date"
+          LANDING_BUTTON: "Go to my brain"
+          LANDING_DESCRIPTION: "Everything I've learned"
+          LANDING_PAGE: "readme"
+          LANDING_TITLE: "vanstil"
+        run: | 
+          rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true
+          git clone https://github.com/ppeetteerrs/obsidian-zola.git __site
+          __site/run.sh
+          
+      - name: deploy to vercel 
+        uses: amondnet/vercel-action@v25
         with:
-          node-version: '15.3.0'
-      - run: npm install
-
-      - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.78.1'
-          extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.TOKEN }}
-          publish_dir: ./public
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.ORG_ID }}
+          vercel-project-id: ${{ secrets.PROJECT_ID }}
