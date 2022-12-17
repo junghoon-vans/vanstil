@@ -20,13 +20,13 @@ jobs:
         env:
           REPO_URL: "https://github.com/junghoon-vans/vanstil/"
           SITE_URL: ${{ github.ref == 'refs/heads/main' && 'https://til.vanslog.io/' || 'https://til-junghoon-vans.vercel.app/' }}
-          SITE_TITLE: "vanstil"
+          SITE_TITLE: "Vanstil"
           TIMEZONE: "Asia/Seoul"
           SORT_BY: "date"
           LANDING_BUTTON: "Go to my brain"
           LANDING_DESCRIPTION: "Everything I've learned"
           LANDING_PAGE: "readme"
-          LANDING_TITLE: "vanstil"
+          LANDING_TITLE: "Vanstil"
         run: | 
           rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true
           git clone https://github.com/ppeetteerrs/obsidian-zola.git __site
