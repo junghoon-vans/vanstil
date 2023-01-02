@@ -21,6 +21,7 @@ jobs:
           REPO_URL: "https://github.com/junghoon-vans/vanstil/"
           SITE_URL: ${{ github.ref == 'refs/heads/main' && 'https://til.vanslog.io/' || 'https://til-junghoon-vans.vercel.app/' }}
           SITE_TITLE: "Vanstil"
+          FOOTER: "© 2023 Vanstil "
           TIMEZONE: "Asia/Seoul"
           SORT_BY: "date"
           LANDING_BUTTON: "Go to my brain"
