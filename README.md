@@ -7,4 +7,4 @@ So I organize what today I learned in this repo.
 License
 ---
 
-This page is licensed under the [MIT license](./LICENSE.md).
+This page is licensed under the [MIT license](./LICENSE).
