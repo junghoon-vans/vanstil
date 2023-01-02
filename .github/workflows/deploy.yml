@@ -27,6 +27,7 @@ jobs:
           LANDING_DESCRIPTION: "Everything I've learned"
           LANDING_PAGE: "readme"
           LANDING_TITLE: "Vanstil"
+          SIDEBAR_COLLAPSED: "y"
         run: | 
           rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true
           git clone https://github.com/ppeetteerrs/obsidian-zola.git __site
