@@ -18,7 +18,7 @@ jobs:
 
       - name: build obsidian-zola
         env:
-          REPO_URL: "https://github.com/junghoon-vans/vanstil/"
+          REPO_URL: "https://github.com/junghoon-vans/"
           SITE_URL: ${{ github.ref == 'refs/heads/main' && 'https://til.vanslog.io/' || 'https://til-junghoon-vans.vercel.app/' }}
           SITE_TITLE: "Vanstil"
           FOOTER: "© 2023 Vanstil "
