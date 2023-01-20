@@ -29,6 +29,7 @@ jobs:
           LANDING_PAGE: "readme"
           LANDING_TITLE: "Vanstil"
           SIDEBAR_COLLAPSED: "y"
+          GANALYTICS: "G-EYQF27C69F"
         run: | 
           rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true
           git clone https://github.com/ppeetteerrs/obsidian-zola.git __site
