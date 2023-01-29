@@ -57,7 +57,7 @@ background : skyblue url("media/spongebob.png") center center/100px 100px repeat
 /* color, image, position/size, repeat, origin 순 */
 ```
 
-###시각적 효과
+### 시각적 효과
 #### 텍스트 그림자
 ```css3
 text-shadow: h-shadow v-shadow blur-radius color|none
