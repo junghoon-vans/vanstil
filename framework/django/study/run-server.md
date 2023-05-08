@@ -3,7 +3,7 @@
 구현 과정
 ---
 
-![Structure.png](../image/Structure.png)
+![Structure.png](Structure.png)
 
 ```Hello Lion```을 출력하는 장고 프로젝트를 구현 과정은 크게 4단계로 나누어 볼 수 있다.
 
@@ -14,7 +14,7 @@
 
 이러한 구조는 장고 프로젝트의 기본이라 할 수 있는 것이므로 익혀두어야만 한다.
 
-> 장고 구조에 대해서 좀 더 알아보고 싶다면 [MTV패턴](MTV-Pattern.md) 글을 참고하자
+> 장고 구조에 대해서 좀 더 알아보고 싶다면 [MTV패턴](mtv-pattern.md) 글을 참고하자
 
 
 앱 프로젝트 연결
@@ -121,6 +121,6 @@ path는 세 인자(url, 함수, 이름)를 받는다. 이를 통해서 url과 �
 $ python manage.py runserver
 ```
 
-![Hello-Lion](../image/Hello-Lion.png)
+![Hello-Lion](Hello-Lion.png)
 
 서버를 작동하면, 로컬 호스트(http://127.0.0.1:8000/)에서 ```Hello Lion```이라는 문자를 브라우저에서 확인 할 수 있다!
