@@ -24,8 +24,8 @@
 ## 스택 포인터와 Activation Record
 
 1. `Stack Pointer(SP)`는 초기에 `스택의 상단`을 가리킨다.
-2. 함수 호출 시 Activation Record를 할당하기 위해서 `SP를 증가`
-3. 함수 종료 시 스택에서 Activation Record를 해제하기 위해 `SP를 감소`
+2. 함수 호출 시 Activation Record를 할당하기 위해서 `SP를 감소`
+3. 함수 종료 시 스택에서 Activation Record를 해제하기 위해 `SP를 증가`
 
 ## 출처
 - [JavaTPoint - Activation Record](https://www.javatpoint.com/activation-record)
