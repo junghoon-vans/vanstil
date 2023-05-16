@@ -33,7 +33,7 @@ jobs:
           SUBSECTION_SYMBOL: ""
         run: | 
           rm -rf __obsidian __site && mkdir __obsidian && mv * __obsidian || true
-          git clone https://github.com/ppeetteerrs/obsidian-zola.git __site
+          git clone https://github.com/junghoon-vans/obsidian-zola.git __site
           __site/run.sh
           
       - name: deploy to vercel 
