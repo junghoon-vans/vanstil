@@ -14,37 +14,54 @@
 
 ### Control Link
 
-- 스택의 `이전 레코드`를 가리킴
-	- 이는 호출자의 활성 레코드임
-- Dynamic하게 동작하는 프로그램은 Control Link들의 체인으로 추적된다.
+- `호출자의 활성 레코드`를 참조
+- Dynamic하게 동작하는 프로그램은 Control Link들의 체인으로 추적됨
 - 그래서 이를 `Dynamic Link`라고도 함
 
-```mermaid LR
-flowchart
-	printNumber --> main
-```
-
-예를 들어 `main()`에서 `printNumber()`를 호출하면 다음과 같은 컨트롤 링크가 생성된다. `printNumber()`가 자신의 호출한 `main()`의 레코드를 주소를 가지고 있는 모습이다.
-
-### Access Link
-
-- `다른 활성화 레코드`에 저장된 비로컬 데이터를 참조하는 데 사용
-	- 다시 말해 전역 변수에 접근하기 위한 것
-- `Static Link`라고도 함
-
 ```C
+#include<stdio.h>
+
 int num = 10;
 
-void printNumber() {
+void print_number() {
 	printf("%d", num);
 }
 
 void main() {
-	printNumber(); // 10 출력
+	print_number(); // 10 출력
 }
 ```
 
-예시 코드에서 `main()`을 실행하면 `10`이 출력된다. 이것이 가능한 이유는 `printNumber()`가 전역변수인 `num`에 액세스할 수 있기 때문이다. 이것을 가능케 하는 것이 Activation Record의 `Access Link`이다. `printNumber()`의 Access Link는 전역변수인 num을 참조하고 있으므로 지역변수가 아님에도 사용할 수 있다.
+예를 들어 C언어로 `main()`에서 `print_number()`를 호출하는 코드를 작성한다면, `print_number()`의 호출자는 `main()`이 된다. 다시 말해  `print_number()`의 Control Link는 `main()`의 활성 레코드 주소이다.
+
+```mermaid LR
+flowchart
+	print_number --> main
+```
+
+그림으로 보면 위와 같이 `print_number()`가 `main()`을 참조하는 모습일 것이다.
+
+### Access Link
+
+- `다른 활성 레코드`에 저장된 정보를 참조
+	- 지역 변수가 아닌 `외부 스코프`의 데이터에 접근하기 위함
+- `Static Link`라고도 함
+
+```C
+#include<stdio.h>
+
+int num = 10;
+
+void print_number() {
+	printf("%d", num);
+}
+
+void main() {
+	print_number(); // 10 출력
+}
+```
+
+앞서 보았던 예시 코드를 다시 살펴보면 `print_number()`는 `num`이라는 변수를 지역변수가 아님에도 접근하고 있다. 이것이 가능한 이유는 외부 스코프에 접근할 수 있기 때문인데, 이것을 가능케 하는 것이 바로 `Access Link`이다.
 
 ### Saved Machine Status
 
@@ -59,6 +76,11 @@ void main() {
 ### Temporaries
 
 - 표현식(Expression) 평가에서 발생하는 값을 저장
+
+Control Link와 Access Link의 차이
+---
+
+둘 다 유사하게 `활성 레코드를 참조`하는 값이다. 하지만 주요 차이점은 Control Link는 자신을 호출한 `Caller`를 가리키는 반면, Access Link는 자신의 `상위 스코프`를 가리킨다. Control Link는 함수의 `흐름 제어`와 관련되어 있다면, Access Link는 `상위 스코프의 변수`에 접근하기 위함이다.
 
 ## 스택 포인터와 Activation Record
 
