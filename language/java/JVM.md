@@ -1,7 +1,7 @@
 
 ![JVM 구조](https://www.javainterviewpoint.com/java-virtual-machine-architecture-in-java/jvm-architecture/)
 
-JVM 구조는 자바의 동작을 이해하기 위해서 필수적인 개념이다. 자바 코드는 바이트코드로 컴파일된 이후 JVM 위에서 동작하기 때문이다. JVM은 크게 5가지 영역으로 구분된다.
+JVM은 자바의 동작을 이해하기 위해서 필수적인 개념이다. 자바 코드는 바이트코드로 컴파일된 이후 JVM 위에서 동작하기 때문이다. JVM은 크게 5가지 영역으로 구분된다.
 
 Class Loader Subsystem
 ---

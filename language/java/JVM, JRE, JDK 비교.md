@@ -1,6 +1,6 @@
 ![jvm-jre-jdk-비교](https://media.geeksforgeeks.org/wp-content/uploads/20210218150010/JDK.png)
 
-자바는 하나의 코드로 여러 플랫폼에서 실행 가능하다는 특징을 가진다. 이를 `WORA(Write Once Run Anywhere)`라고도 한다. 자바는 이것을 위해 `JVM(Java Virtual Machine)`이라는 가상 머신을 사용한다. JVM은 운영체제나 하드웨어와 독립적으로 동작하며, `JDK(Java Development Kit)` 또는 `JRE(Java Runtime Environment)`에 포함되어 배포된다.
+자바는 하나의 코드로 여러 플랫폼에서 실행 가능하다는 특징을 가진다. 이를 `WORA(Write Once Run Anywhere)`라고도 한다. 자바는 이것을 위해 [[JVM]](Java Virtual Machine)`이라는 가상 머신을 사용한다. JVM은 운영체제나 하드웨어와 독립적으로 동작하며, `JDK(Java Development Kit)` 또는 `JRE(Java Runtime Environment)`에 포함되어 배포된다.
 
 JVM(Java Virtual Machine)
 ---
