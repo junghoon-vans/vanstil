@@ -20,8 +20,8 @@ Post Form
 ```
 
 <주요 개념>
-- [GET/POST](\GET-POST.md)
-- [csrf-token](\csrf-token.md)
+- [[get-and-post]]
+- [[csrf-token]]
 
 Url path
 ---
