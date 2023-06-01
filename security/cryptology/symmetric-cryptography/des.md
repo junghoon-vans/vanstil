@@ -3,7 +3,7 @@
 구조
 ---
 
-![DES 구조](images/2020-05-24-17-42-53.png)
+![DES 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-24-17-42-53.png)
 
 - 데이터 길이
   - 평문: 64bit
@@ -24,7 +24,7 @@ DES 함수
 
 라운드 함수를 구성하는 함수로 4가지로 이루어져 있음
 
-![DES 함수](images/2020-05-24-19-45-56.png)
+![DES 함수](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-24-19-45-56.png)
 
 - 확장 P-box
 - 키 XOR

@@ -35,7 +35,7 @@ Diffie-Hellman의 키 교환
 
 ### 키 교환 절차
 
-![Key exchange procedure](images/2020-05-25-15-48-57.png)
+![Key exchange procedure](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-25-15-48-57.png)
 
 - 통신의 주체는 두개의 수 p와 g를 선택
   - p(1024bit, 300자리가 넘는 십진수)

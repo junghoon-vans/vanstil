@@ -4,7 +4,7 @@ MTV 구조
 ---
 `MTV 패턴`을 사용하는 웹 페이지는 다음과 같이 동작한다.
 
-![MTV_structure](MTV_structure.png)
+![MTV 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/django/mtv-structure.png)
 
 웹 서버의 데이터를 단순히 조회하는 경우, 데이터베이스 상의 데이터는 `Model`을 통해서 가져오게 된다. 그리고 가져온 데이터는 `View`에서 적절히 가공되며 이것이 `Template`으로 전달된다.
 

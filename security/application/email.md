@@ -17,7 +17,7 @@
 프로토콜
 ---
 
-![이메일 프로토콜](images/2020-06-03-20-38-14.png)
+![이메일 프로토콜](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-03-20-38-14.png)
 
 ### SMTP(Simple Mail Transfer Protocol)
 

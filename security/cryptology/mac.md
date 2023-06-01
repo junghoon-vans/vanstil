@@ -7,7 +7,7 @@
 
 변경 감지 코드(MDC, Modification Detection Code)는 메시지의 `무결성을 보장`하는 다이제스트이다.
 
-![변경 감지 코드(MDC)](images/2020-06-08-01-53-11.png)
+![변경 감지 코드(MDC)](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-08-01-53-11.png)
 
 #### 인증 과정
 
@@ -26,7 +26,7 @@
 
 송ㆍ수신자 간 `비밀키`를 공유하는 것으로 안전한 채널이 확보되지 않아도 `무결성`과 전송자의 `신원 인증`을 가능하게 하는 방법
 
-![메시지 인증 코드(MAC)](images/2020-06-08-01-53-17.png)
+![메시지 인증 코드(MAC)](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-08-01-53-17.png)
 
 #### 인증 과정
 
@@ -48,7 +48,7 @@
 
 MAC의 안전성을 높이기 위해 고안된 방법
 
-![Nested MAC](images/2020-06-08-01-24-20.png)
+![Nested MAC](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-08-01-24-20.png)
 
 - 동일한 해시함수로 두 단계 해시 과정을 거침
 - 따라서 `두 개의 키`가 존재
@@ -57,7 +57,7 @@ MAC의 안전성을 높이기 위해 고안된 방법
 
 NIST는 Nested MAC에 관한 표준인 FIPS 198을 제정
 
-![HMAC](images/2020-06-08-01-31-29.png)
+![HMAC](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-08-01-31-29.png)
 
 - `Nested MAC`에 패딩 요소 추가
 - SHA1과 같은 `일방향 해시함수` 사용
@@ -79,7 +79,7 @@ NIST는 Nested MAC에 관한 표준인 FIPS 198을 제정
 
 NIST표준 FIPS 113에 정의된 MAC으로써 대칭키 암호시스템의 `CBC모드`를 활용하는 방법
 
-![CMAC](images/2020-06-08-01-44-43.png)
+![CMAC](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-08-01-44-43.png)
 
 - `암호 블록체인`과 동일한 알고리즘
 - 이전 블록의 암호문과 입력값를 XOR 연산하는 방식

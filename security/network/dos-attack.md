@@ -7,7 +7,7 @@
 
 TCP 연결 과정 중에 3-way handshaking 과정에서 `Half-Open` 연결 시도가 가능하다는 취약점을 이용한 공격 기법
 
-![TCP SYN Flooding Attack](images/2020-05-31-16-21-21.png)
+![TCP SYN Flooding Attack](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-31-16-21-21.png)
 
 - 클라이언트가 `SYN`을 보내면 서버는 이에 대한 응답으로 `SYN + ACK`을 보내고 `SYN Received` 상태가 됨
 - 이후 서버는 클라이언트로부터의 ACK 패킷 수신을 `일정시간동안 대기`하게 된다.

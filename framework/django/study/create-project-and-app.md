@@ -95,7 +95,7 @@ $ python manage.py runserver
 
 위 명령어를 사용하면, 장고 프로젝트가 로컬에서 실행된다.
 
-![localhost](localhost.png)
+![localhost](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/django/localhost.png)
 
 > 작동중인 로컬 서버는 로컬주소인 `127.0.0.1:8000`에서 확인할 수 있다.
 

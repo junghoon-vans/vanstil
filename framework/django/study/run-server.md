@@ -3,7 +3,7 @@
 구현 과정
 ---
 
-![Structure.png](Structure.png)
+![장고 프로젝트 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/django/project-structure.png)
 
 ```Hello Lion```을 출력하는 장고 프로젝트를 구현 과정은 크게 4단계로 나누어 볼 수 있다.
 
@@ -121,6 +121,6 @@ path는 세 인자(url, 함수, 이름)를 받는다. 이를 통해서 url과 �
 $ python manage.py runserver
 ```
 
-![Hello-Lion](Hello-Lion.png)
+![hello lion](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/django/hello-lion.png)
 
 서버를 작동하면, 로컬 호스트(http://127.0.0.1:8000/)에서 ```Hello Lion```이라는 문자를 브라우저에서 확인 할 수 있다!

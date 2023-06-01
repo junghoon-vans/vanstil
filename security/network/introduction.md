@@ -100,7 +100,7 @@ IEEE 802.1x에서 사용자 인증 방법으로 사용
 
 #### 암호화 절차
 
-![WEP 암호화 절차](images/2020-05-31-14-00-55.png)
+![WEP 암호화 절차](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-31-14-00-55.png)
 
 - 공유키와 난수 발생기를 이용하여 `RC4 알고리즘`을 통한 키스트림 생성
 - 무결성 보장을 위해 `CRC-32 알고리즘`으로 구성되는 ICV(Integrity Check Value)를 사용
@@ -178,7 +178,7 @@ WAP(Wireless Application Protocol)
 
 ### 프로토콜 구조
 
-![WAP 프로토콜 구조](images/2020-05-31-14-55-53.png)
+![WAP 프로토콜 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-31-14-55-53.png)
 
 - 무선 세션 프로토콜(WSP)
   - 연결형 세션 서비스

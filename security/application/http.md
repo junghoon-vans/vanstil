@@ -11,7 +11,7 @@
 트랜잭션
 ---
 
-![HTTP 트랜잭션](images/2020-06-04-15-20-24.png)
+![HTTP 트랜잭션](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-04-15-20-24.png)
 
 웹 브라우저가 웹 서버에 요청을 보내고 웹 서버가 이를 처리한 응답을 전송하는 한번의 과정
 

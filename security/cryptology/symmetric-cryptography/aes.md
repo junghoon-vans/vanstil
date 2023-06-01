@@ -3,7 +3,7 @@
 구조
 ---
 
-![AES 구조](images/2020-05-24-20-22-40.png)
+![AES 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-24-20-22-40.png)
 
 - `non-Feistel` 알고리즘, `SPN` 구조
 - 키 사이즈에 따라 라운드가 상이
@@ -14,7 +14,7 @@
 라운드 과정
 ---
 
-![Round](images/2020-05-24-20-59-09.png)
+![Round](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-24-20-59-09.png)
 
 - SubBytes
   - 바이트 단위로 치환

@@ -38,7 +38,7 @@ TLS 프로토콜
 TLS 구조
 ---
 
-![TLS 구조](images/2020-06-04-18-39-22.png)
+![TLS 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-04-18-39-22.png)
 
 ### Record Protocol
 
@@ -71,7 +71,7 @@ TLS 구조
 
 클라이언트와 서버는 SSL 버전, 키교환/메시지인증/암호화를 위한 알고리즘, 압축 방법, 난수 등을 수집
 
-![초기협상 단계](images/2020-06-05-01-33-39.png)
+![초기협상 단계](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-05-01-33-39.png)
 
 - Hello_Request: 서버가 클라이언트에게 협상의 시작을 요구
 - Client_Hello: 클라이언트가 서버에 연결을 시작하거나 `HelloRequest` 메시지에 대해 응답
@@ -81,7 +81,7 @@ TLS 구조
 
 서버는 인증서와 키 교환 전송 후 인증서를 요청, hello 메시지 종료 시그널 전송
 
-![서버 인증 단계](images/2020-06-05-01-39-28.png)
+![서버 인증 단계](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-05-01-39-28.png)
 
 - Certificate: 선택된 `cipher suite`의 키 교환 알고리즘에 맞는 `서버의 인증서`를 보냄
 - Server_Key_Exchange: 인증서를 보내지 않았거나, 보낸 인증서에 정보가 부족할 때 전송
@@ -92,7 +92,7 @@ TLS 구조
 
 클라이언트는 요청이 있을 시 인증서, 키 교환, 인증서 확인 전송
 
-![클라이언트 인증 단계](images/2020-06-05-02-25-39.png)
+![클라이언트 인증 단계](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-05-02-25-39.png)
 
 - Certificate: 서버가 클라이언트의 인증을 요구할 경우 클라이언트가 보내는 메시지
 - Client_Key_Exchange: 세션키를 생성하기 위해 48bytes의 비밀 정보를 생성, 공개키 알고리즘을 사용하여 `pre_master_secret`를 서버와 공유
@@ -102,7 +102,7 @@ TLS 구조
 
 암호 스위트 변경 후 handshake 프로토콜 종료
 
-![종료 단계](images/2020-06-05-02-25-51.png)
+![종료 단계](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-06-05-02-25-51.png)
 
 - Change_Cipher_Spec: 이 메시지 이후에 전송되는 메시지는 새롭게 협상된 알고리즘과 키를 이용할 것임을 나타냄. (Handshake 프로토콜에 포함되지 않음)
 - Finished: `협상된 알고리즘과 키`가 처음으로 적용, 이후 `데이터 전송`이 시작됨

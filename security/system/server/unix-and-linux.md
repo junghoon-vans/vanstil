@@ -1,7 +1,7 @@
 유닉스 시스템
 ---
 
-![유닉스 시스템 구조](images/2020-05-29-21-54-59.png)
+![유닉스 시스템 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-29-21-54-59.png)
 
 - 대화식 운영체제 : Shell(셸)
 - 멀티태스킹, 멀티유저, 호환성/이식성 우수

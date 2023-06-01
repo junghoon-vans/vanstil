@@ -3,7 +3,7 @@
 
 5개의 링으로 구성됨
 
-![윈도우 시스템 구조](images/2020-05-29-16-43-07.png)
+![윈도우 시스템 구조](https://vanslog.s3.ap-northeast-2.amazonaws.com/image/security/2020-05-29-16-43-07.png)
 
 - HAL(Hardware Abstraction Layer): H/W와 S/W가 원활히 통신할 수 있게 도움
 - 마이크로 커널: 하드웨어와 통신만 하는 최소한의 커널
