@@ -12,5 +12,5 @@ CSRF란 사이트 간 요청 위조(Closs-site request forgery)라는 웹사이�
     ...
 ```
 
-장고는 이러한 CSRF 공격을 막기위해서 CSRF 토큰이라는 것을 사용한다.
+[[django]]는 이러한 CSRF 공격을 막기위해서 `CSRF` 토큰이라는 것을 사용한다.
 사용하는 방법은 POST 방식으로 데이터를 전송하는 템플릿 폼에 `{% csrf_token %}`을 써주기만 하면 된다.
