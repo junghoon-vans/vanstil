@@ -22,7 +22,7 @@ WSL2 업그레이드 방법
 - 2004 이상 버전의 윈도우 10
   - `설정 > 시스템 > 정보 > 버전`
 - `WSL1`의 설치
-  - 설치가 되어 있지 않다면 [해당 페이지](/WSL/Installation.md)를 참고
+  - 설치가 되어 있지 않다면 [해당 페이지](linux/wsl/installation.md)를 참고
 - [WSL2 Lunix 커널 업데이트 패키지 설치](https://docs.microsoft.com/ko-kr/windows/wsl/wsl2-kernel)
 
 ### 1. Virtual Machine Platform 활성화

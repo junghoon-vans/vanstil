@@ -58,4 +58,4 @@ zsh/oh-my-zsh
 
 WSL에서 기본적으로 제공하는 리눅스 Shell은 `bash`이다. 다양한 테마와 기능을 제공하는 `zsh`를 사용하면 보다 편리하게 코딩 작업이 가능하다.
 
-zsh와 oh-my-zsh를 설정하는 문서를 별도로 분리하게 되었다. 해당 문서는 [여기](../../zsh/installation)를 클릭하면 이동할 수 있다.
+zsh와 oh-my-zsh를 설정하는 문서를 별도로 분리하게 되었다. 해당 문서는 [여기](linux/zsh/installation.md)를 클릭하면 이동할 수 있다.
