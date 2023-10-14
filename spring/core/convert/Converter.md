@@ -2,7 +2,7 @@ Spring Core에서 제공하는 [Type Conversion](https://docs.spring.io/spring-f
 
 ```mermaid
 flowchart LR
-	AObject --> AToBConverter --> BObject
+	A --> AToBConverter --> B
 ```
 
 쉽게 말해 A 타입의 데이터를 B 타입으로 변경하고 싶을 때 사용한다.
