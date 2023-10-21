@@ -1,3 +1,8 @@
+---
+tags:
+  - spring-framework
+---
+
 Spring Framework에서 [[Converter]]는 직접 호출하여 사용하는 방법은 권장되지 않는다.
 그 대신 [ConversionService](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/convert/ConversionService.html)라는 서비스 인터페이스를 활용한다.
 

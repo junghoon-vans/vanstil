@@ -1,3 +1,9 @@
+---
+tags:
+  - blockchain
+  - crypto
+  - cbdc
+---
 `CBDC(central bank digital currencies)`는 중앙 은행에서 발행하는 디지털 형태의 `법정 화폐(fiat money)`이다.
 ## 스테이블코인과 차이점
 

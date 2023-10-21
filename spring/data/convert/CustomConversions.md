@@ -1,3 +1,8 @@
+---
+tags:
+  - spring-data
+---
+
 [org.springframework.data.convert.CustomConversions](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/convert/CustomConversions.html)
 
 ```java
