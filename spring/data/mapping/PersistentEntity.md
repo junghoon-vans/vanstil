@@ -2,7 +2,6 @@
 tags:
   - spring-data
 ---
-
 ## API
 
 [org.springframework.data.mapping.PersistentEntity](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/mapping/PersistentEntity.html)

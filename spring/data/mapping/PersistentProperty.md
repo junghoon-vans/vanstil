@@ -2,7 +2,6 @@
 tags:
   - spring-data
 ---
-
 ## API
 
 [org.springframework.data.mapping.PersistentProperty](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/mapping/PersistentProperty.html)
@@ -20,4 +19,4 @@ Interface PersistentProperty<P extends PersistentProperty<P>>
 - 데이터 저장소에 저장될 Entity의 프로퍼티 정보이다.
 - `Field`에 대한 값은 존재하지 않으며, Field 정보만을 가진다. (중요)
 	- [getGetter()](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/mapping/PersistentProperty.html#getGetter()) 메서드를 통해 실제 값에 접근할 수 있다.
-- 이외 `Association`, `TypeInformation` 등 정보를 가진다.
+- 이외 `Association`, [[TypeInformation]] 등 정보를 가진다.
