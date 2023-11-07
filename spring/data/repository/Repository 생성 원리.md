@@ -1,7 +1,18 @@
-**Spring Data**를 사용하면 인터페이스만 정의하는 것으로 `Repository`를 사용할 수 있다. 해당 문서에서는 어떻게`Repository`가 빈으로 생성되는 지에 대해 다룬다.
-
 > ⚠️ Spring Data 라이브러리를 직접 구현하며 얻은 지식들을 정리한 문서이므로, 내용 상에 오류가 있을 수도 있습니다.
-## 팩토리 빈
+
+**Spring Data**를 사용하면 인터페이스만 정의하는 것으로 `Repository`를 사용할 수 있다. 해당 문서에서는 어떻게`Repository`가 빈으로 생성되는 지에 대해 다룬다.
+## RepositoryFactory
+
+`RepositoryFactory`는 Repository를 생성하는 팩토리 클래스이다. [getRepository](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/core/support/RepositoryFactorySupport.html#getRepository(java.lang.Class)) 메서드에 Repository 인터페이스를 전달하면 Repository 구현을 반환한다. 해당 클래스의 구현은 추상 클래스인[RepositoryFactorySupport](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/core/support/RepositoryFactorySupport.html#getRepository(java.lang.Class))를 사용한다.
+
+```mermaid
+flowchart
+	RepositoryFactoryBean --> | #getRepository | RepositoryFactory
+	RepositoryFactory --> | ConcreteRepo | RepositoryFactoryBean
+```
+
+하지만 일반적으로 RepositoryFactory를 **직접 사용하지는 않는다**. `RepsitoryFactoryBean`가 대신 RepositoryFactory를 호출하여 필요한 Repository 객체를 생성하고 빈에 등록해주기 때문이다.
+## RepositoryFactoryBean
 
 ```java
 interface UserRepository extends CrudRepository<User, Integer> {}
@@ -14,9 +25,13 @@ flowchart LR
   UserRepository --> RepositoryFactoryBean --> | 생성 | UserRepositoryImpl
 ```
 
-그러면 `RepositoryFactoryBean`을 통해 실제 객체(Proxy 객체)로 만들어 빈으로 등록한다. 해당 클래스는 추상 클래스인 [RepositoryFactoryBeanSupport](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/core/support/RepositoryFactoryBeanSupport.html)를 구현하며, 데이터스토어에 따라 별도로 만들어야 한다.
+그러면 `RepositoryFactoryBean`을 통해 실제 객체(Proxy 객체)로 만들어 빈으로 등록한다. 해당 클래스의 구현은 추상 클래스인 [RepositoryFactoryBeanSupport](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/core/support/RepositoryFactoryBeanSupport.html)를 사용한다.
 
-> Spring Data KeyValue를 사용하여 구현하는 경우 [KeyValueRepositoryFactoryBean](https://docs.spring.io/spring-data/keyvalue/docs/current/api/org/springframework/data/keyvalue/repository/support/KeyValueRepositoryFactoryBean.html)이 제공되므로, 이것을 이용해도 된다.
+> 일반적인 데이터스토어는 RepositoryFactory와 RepositoryFactoryBean 모두 직접 구현해야 한다.
+
+> 반면 Spring Data KeyValue를 사용한 구현체의 경우 기본 구현이 제공된다.
+> - [KeyValueRepositoryFactory](https://docs.spring.io/spring-data/keyvalue/docs/current/api/org/springframework/data/keyvalue/repository/support/KeyValueRepositoryFactory.html)
+> - [KeyValueRepositoryFactoryBean](https://docs.spring.io/spring-data/keyvalue/docs/current/api/org/springframework/data/keyvalue/repository/support/KeyValueRepositoryFactoryBean.html)
 
 ## 프록시 객체
 
