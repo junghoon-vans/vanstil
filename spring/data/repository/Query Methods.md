@@ -1,5 +1,5 @@
 Spring Data의 `Repository` 인터페이스는 메서드명을 사용하여 동적 쿼리를 생성하는 기능을 제공한다.
-## 동작 과정
+## Query 생성
 
 사용자가 정의한 메서드명이 쿼리로 변환되는 과정을 아주 간단하게 살펴보면 다음과 같다.
 
@@ -11,8 +11,6 @@ MethodName --> |input| PartTree --> |tree| QueryCreator --> |output| Query
 1. 메서드 이름은 [PartTree](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/query/parser/PartTree.html)에게 전달된다.
 2. `PartTree`는 메서드 이름에서 Tree를 파싱해낸다.
 3. [QueryCreator](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/query/parser/AbstractQueryCreator.html)는 Tree를 기반으로 `Query`를 만들어낸다.
-## 관련 클래스
-
 ### PartTree
 
 [PartTree](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/query/parser/PartTree.html)는 메서드명을 파싱하는 클래스이자 `QueryCreator`에게 전달되는 VO로써 사용된다.
@@ -42,3 +40,28 @@ MethodName --> |input| PartTree --> |tree| QueryCreator --> |output| Query
 - Query를 만들기 위한 `중간 표현`이다.
 - PartTree를 Traverse해서 Criteria를 생성하고 합친다.
 	- 따라서 Criteria 클래스는 체이닝 가능한 형태로 구현되어야 한다.
+
+## Query 실행
+
+Query를 실행하는 클래스는 다음과 같다. 
+
+- 일반적인 구현체(Spring Data Commons)
+	- `XXXTemplate`(e.g. AbstractElasticsearchTemplate)
+- KeyValue 구현체(Spring Data KeyValue)
+	- `XXXKeyValueAdapter`(e.g. RedisKeyValueAdapter)
+
+> Spring Data KeyValue의 경우 Template과는 구분되는 [Adapter](https://docs.spring.io/spring-data/keyvalue/docs/current/reference/html/#key-value.core-concepts)이라는 레이어를 가지고 있다.
+### Query Engine
+
+Spring Data KeyValue에서는 [QueryEngine](https://docs.spring.io/spring-data/keyvalue/docs/current/api/org/springframework/data/keyvalue/core/QueryEngine.html)이라는 쿼리를 수행하는 엔진을 제공한다. 
+
+```mermaid
+flowchart LR
+	AbstractKeyValueAdapter --> | find/count | QueryEngine --> | execute | KeyValueStore
+```
+
+1. `KeyValueAdapter`가 QueryEngine에게 **Query와 함께 요청**한다.
+2. `QueryEngine`의 내부 로직을 통해 실제 **Key-Value 스토어**에 오퍼레이션을 수행한다.
+3. 응답에 따라 값을 리턴한다.
+
+> Spring Data Commons에서는 구현을 제공하지 않으므로 직접 구현해야 한다.
